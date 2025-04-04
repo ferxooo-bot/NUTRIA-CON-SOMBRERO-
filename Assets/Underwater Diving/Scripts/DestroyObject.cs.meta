@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 277b4147a52d940189758bd1464788f1
+timeCreated: 1498278305
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 94029
+  packageName: UnderWater Diving
+  packageVersion: 1.0
+  assetPath: Assets/Underwater Diving/Scripts/DestroyObject.cs
+  uploadId: 186884

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 4864edf8ab52b4f8dadb0f4c8db5a501
+timeCreated: 1498427541
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 94029
+  packageName: UnderWater Diving
+  packageVersion: 1.0
+  assetPath: Assets/Underwater Diving/Scripts/TitleScreen.cs
+  uploadId: 186884
