@@ -1,109 +1,40 @@
-# 🌊 EcoNutria: Una aventura por el medio ambiente
+# 🦦 Otter Quest
 
-**EcoNutria** es un videojuego educativo desarrollado en Unity que busca enseñar a los niños sobre el cuidado del medio ambiente a través de una historia interactiva, divertida y visualmente atractiva.
+**Otter Quest** is a 2D educational adventure game developed in Unity. The game aims to teach children about environmental care through fun and interactive gameplay.
 
-## 🎯 Objetivo del proyecto
+## 🎯 Project Goals
 
-**Objetivo general:**
-Desarrollar un videojuego educativo interactivo que enseñe a los niños sobre el cuidado ambiental y fomente la conciencia ecológica de forma efectiva.
+### General Objective
+Develop a simple and engaging game that promotes environmental awareness in children by showing real-world ecological issues through the journey of an otter.
 
-**Objetivos específicos:**
+### Specific Objectives
+- Design a child-friendly interface and art style.
+- Implement mechanics that encourage respect for nature and wildlife.
+- Present real environmental problems in a gamified and accessible format.
 
-- Diseñar una interfaz amigable para niños que facilite la comprensión de temas ambientales.
-- Establecer mecánicas que enseñen conceptos como la conservación de la flora y fauna.
-- Incluir misiones y desafíos que simulen problemas ambientales reales, como la contaminación y el tráfico animal.
+## 🌍 Theme & Story
 
----
+The player takes on the role of an otter trying to return to its natural habitat. Along the way, the otter must navigate areas damaged by human activity—such as a warehouse and polluted waters—before reaching a healthy ecosystem. The narrative emphasizes the impact of environmental neglect and the importance of conservation.
 
-## 🧠 Historia y narrativa
+## 🧩 Game Features
 
-EcoNutria sigue la historia de una nutria que es capturada por humanos y debe atravesar diferentes escenarios para regresar a su hogar. Durante su travesía, el jugador aprende sobre los efectos negativos de la intervención humana y la importancia de conservar la naturaleza.
+- 2D movement with elements of exploration, stealth, and puzzle-solving.
+- Simple mechanics: swim, jump, interact with objects and animals.
+- Visuals designed for kids, with optional narration and simple cutscenes.
+- Points and feedback systems to reward positive actions (like cleaning up trash or helping animals).
 
-### 📘 Estructura narrativa:
+## 🛠️ Technologies
 
-1. **Captura y escape**: La nutria escapa de una bodega donde fue retenida.
-2. **Mar contaminado**: Nada a través de un mar lleno de desechos y redes peligrosas.
-3. **Regreso al hábitat natural**: Llega a un ecosistema limpio donde puede vivir en paz.
+- **Engine:** Unity
+- **Language:** C#
+- **Platform:** PC
 
----
+## 📌 Planned Content
 
-## 🕹️ Mecánicas principales
-
-- **Movimiento**: Control por teclado (WASD), incluye salto, nado, correr y empujar objetos.
-- **Interacción**: Recolección de objetos, ayuda a NPCs, resolución de misiones ambientales.
-- **Puntaje**: Basado en recolección de basura, ayuda a animales y superación de desafíos.
-- **Desbloqueables**: Personalización (por ejemplo, sombreros) y niveles secretos.
-
----
-
-## 🌍 Niveles del juego
-
-### Nivel 1: El Escape  
-- Ubicación: Bodega cerrada  
-- Tema: Tráfico animal  
-- Mecánica: Plataformas, sigilo, evasión de humanos  
-
-### Nivel 2: Mar contaminado  
-- Ubicación: Océano  
-- Tema: Contaminación y pesca industrial  
-- Mecánica: Limpieza, esquivar trampas, ayudar animales
-
-### Nivel 3: Regreso al hogar  
-- Ubicación: Hábitat natural  
-- Tema: Conservación y equilibrio ecológico  
-- Mecánica: Exploración, pequeñas misiones, ambiente relajado
+- Multiple levels with different environmental settings.
+- Collectibles and basic UI (menu, score, etc.).
+- Simple progression system with cosmetic rewards.
 
 ---
 
-## 🧩 Características del juego
-
-- 🎨 Estilo visual amigable para niños.
-- 🔊 Diálogos y cinemáticas simples con apoyo de voz e imágenes.
-- 🎯 Sistema de vidas y penalizaciones educativas (reinicio o vidas con temporizador).
-- ✅ Planeado para plataforma PC.
-
----
-
-## 🚧 Estado del desarrollo
-
-- [x] Documento de diseño general (GDD)
-- [ ] Prototipo de movimiento
-- [ ] Primer nivel jugable
-- [ ] Implementación de UI y menús
-- [ ] Sistema de puntuación y recompensas
-- [ ] Cinématicas educativas
-- [ ] Pruebas y retroalimentación con usuarios
-
----
-
-## 🧑‍💻 Equipo de desarrollo
-
-- Alejandro U
-- Brayan :)
-- Maicol Fonseca Muños
-- [Tu nombre y el de otros colaboradores si deseas agregarlos]
-
----
-
-## 💡 Tecnologías usadas
-
-- Unity Engine
-- C#
-- Herramientas de diseño gráfico y sonido
-
----
-
-## 📚 Licencia
-
-Este juego es un proyecto académico sin fines de lucro, desarrollado como parte de un curso de diseño y programación de videojuegos. Todos los derechos de imagen y sonido serán usados de acuerdo a licencias libres o propias del equipo.
-
----
-
-## 📩 Contacto
-
-Para sugerencias, ideas o colaboraciones, puedes escribirnos a:  
-📧 [tu-email@example.com]  
-📍 Universidad de Cundinamarca
-
----
-
+*Otter Quest is currently under development as part of an academic project focused on educational and social impact through game design.*
