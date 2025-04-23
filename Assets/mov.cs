@@ -1,15 +1,17 @@
 using System;
 using UnityEngine;
+using Random = System.Random;
 
 public class MovingPlatform : MonoBehaviour
 {
  // Reference to the platform that the player will follow
-    public float speed = 2f; // Speed at which the platform moves
-    public float minX = 110f; // Min X position for platform movement
-    public float maxX = 130f; // Max X position for platform movement
-
+    public float speed = 7f; // Speed at which the platform moves
+   
+    public float maxX = 127f; // Max X position for platform movement
+    public float minX = 112; // Min X position for platform movement
     private int direction = 1; // Movement direction (1 = right, -1 = left)
-    
+
+
 
     void Update()
     {
