@@ -65,20 +65,17 @@ public class Teleporter : MonoBehaviour
         // Verificar si el jugador está en rango
         if (distancia <= rangoDeteccion)
         {
+            // Interfaz de presione E
+            playerInRange = true;
+            MostrarUI();
+            
             // Si requiere tecla, verificar si se ha presionado
             if (!requiereTecla || (requiereTecla && Input.GetKeyDown(teclaTeleport)))
             {
                 StartCoroutine(TeletransportarJugador());
             }
-        }
-        if (distancia <= rangoDeteccion)
-        {
-            playerInRange = true;
-            MostrarUI();
             
-            // ... (código del teletransporte)
-        }
-        else
+        } else
         {
             playerInRange = false;
             OcultarUI();
