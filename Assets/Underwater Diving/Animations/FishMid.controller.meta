@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 1312164ac4f0a47738f879b2673424cd
+timeCreated: 1498423437
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 94029
+  packageName: UnderWater Diving
+  packageVersion: 1.0
+  assetPath: Assets/Underwater Diving/Animations/FishMid.controller
+  uploadId: 186884

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ec5a7268875ab4e15a8bb7030cc6545b
+timeCreated: 1498234825
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 94029
+  packageName: UnderWater Diving
+  packageVersion: 1.0
+  assetPath: Assets/Underwater Diving/Animations/Player.controller
+  uploadId: 186884

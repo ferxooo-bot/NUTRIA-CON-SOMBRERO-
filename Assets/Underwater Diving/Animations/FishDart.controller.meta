@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: de5459972d47f4fba954a351a5f1346f
+timeCreated: 1498423558
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 94029
+  packageName: UnderWater Diving
+  packageVersion: 1.0
+  assetPath: Assets/Underwater Diving/Animations/FishDart.controller
+  uploadId: 186884

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b385501bc5c8d48da873e99935a3b9bf
+timeCreated: 1498424168
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 94029
+  packageName: UnderWater Diving
+  packageVersion: 1.0
+  assetPath: Assets/Underwater Diving/Prefabs/Environment/bottom-3.prefab
+  uploadId: 186884

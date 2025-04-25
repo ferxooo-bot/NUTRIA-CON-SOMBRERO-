@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 284e1f6f23ae941e5bc02d6bb1025ae6
+timeCreated: 1498280395
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 94029
+  packageName: UnderWater Diving
+  packageVersion: 1.0
+  assetPath: Assets/Underwater Diving/Animations/Explosion.controller
+  uploadId: 186884

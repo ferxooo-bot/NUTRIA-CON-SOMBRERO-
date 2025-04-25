@@ -1,20 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class HurtPlayer : MonoBehaviour {
-
-	private PlayerController thePlayer;
-
-	// Use this for initialization
-	void Start () {
-		thePlayer = FindObjectOfType<PlayerController> ();	
-	}
-
-	void OnTriggerEnter2D(Collider2D other){
-		if(other.tag == "Player"){
-			thePlayer.hurt ();	 
-		}
-
-	}
+public class HurtPlayer : MonoBehaviour 
+{
+    // Elimina la búsqueda en Start() y hazlo directamente en OnTriggerEnter2D
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player")) // Usa CompareTag en lugar de .tag (más eficiente)
+        {
+            FatherMoment1 player = other.GetComponent<FatherMoment1>(); // Obtén el componente del jugador colisionado
+            if (player != null)
+            {
+                player.Hurt(); // Llama al método hurt() solo si el jugador existe
+            }
+            else
+            {
+                Debug.LogWarning("El jugador no tiene el componente FatherMoment1.");
+            }
+        }
+    }
 }

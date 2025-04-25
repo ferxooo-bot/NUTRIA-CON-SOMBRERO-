@@ -1,3 +1,7 @@
+using System.Collections;
+using System.Collections.Generic;
+
+
 using TMPro;
 using UnityEngine;
 
@@ -11,12 +15,16 @@ public class pregunta : MonoBehaviour
     private int repuestaC = 1;
     [SerializeField] private float rangoDeteccion = 7f;
     private GameObject jugador;
+    public AudioSource rCorrecta;
+    public AudioSource rIncorrecta;
+    public GameObject mensajeCorrecto; // Lo arrastras desde el Inspector
+
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         canvasPregunta.SetActive(false);
-        
+        mensajeCorrecto.SetActive(false);
         // Asegurarte de obtener el jugador
         jugador = GameObject.FindGameObjectWithTag("Player");
     }
@@ -38,6 +46,7 @@ public class pregunta : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.B)) { revisarR(1); }
             if (Input.GetKeyDown(KeyCode.C)) { revisarR(2); }
             if (Input.GetKeyDown(KeyCode.D)) { revisarR(3); }
+            if (Input.GetKeyDown(KeyCode.Escape)) {cerrar();}
         }
     }
 
@@ -55,8 +64,11 @@ public class pregunta : MonoBehaviour
     {
         if (index == repuestaC)
         {
-            Destroy(puerta);
-            cerrar();
+            StartCoroutine(EsperarYCerrar());
+
+        } else
+        {
+            rIncorrecta.Play();
         }
     }
 
@@ -64,4 +76,20 @@ public class pregunta : MonoBehaviour
     {
         canvasPregunta.SetActive(false);
     }
+    
+        
+    IEnumerator EsperarYCerrar()
+    {
+        cerrar();
+        
+        
+        mensajeCorrecto.SetActive(true);
+        yield return new WaitForSeconds(4f);
+        
+        rCorrecta.Play();
+        mensajeCorrecto.SetActive(false);
+        Destroy(puerta);
+        
+    }
+    
 }
