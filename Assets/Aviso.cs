@@ -6,6 +6,7 @@ public class Aviso : MonoBehaviour
         [SerializeField] private GameObject promptUI;
         [SerializeField] private float rangoDeteccion = 2f;
         private GameObject jugador;
+        
     
     void Start()
     {
@@ -58,6 +59,7 @@ public class Aviso : MonoBehaviour
     }
     void MostrarMenu()
     {
+        
         Debug.Log("¡Presionaste E cerca del objeto!");
     }
 }

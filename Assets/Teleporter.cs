@@ -19,13 +19,16 @@ public class Teleporter : MonoBehaviour
     private GameObject jugador;
     [Header("Interfaz de Usuario")]
     [SerializeField] private GameObject promptUI; // Arrastra el Canvas desde el editor
-    
+
+
+    private AudioSource audioSource;
     private bool playerInRange = false;
     
     
     
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         
         if (promptUI != null)
         {
@@ -73,6 +76,7 @@ public class Teleporter : MonoBehaviour
             if (!requiereTecla || (requiereTecla && Input.GetKeyDown(teclaTeleport)))
             {
                 StartCoroutine(TeletransportarJugador());
+                audioSource.Play();
             }
             
         } else

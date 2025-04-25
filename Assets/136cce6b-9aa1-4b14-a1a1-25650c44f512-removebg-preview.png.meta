@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b40123bb40f94fa45a5ee75af5ac2d4d
+guid: dbd5fa4081fbc654b82de8251f5a151e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6855218837941648915
-    second: puerta_0
+      213: -6733302702198627400
+    second: 136cce6b-9aa1-4b14-a1a1-25650c44f512-removebg-preview_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: puerta_0
+      name: 136cce6b-9aa1-4b14-a1a1-25650c44f512-removebg-preview_0
       rect:
         serializedVersion: 2
         x: 10
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: de10ce299ce5dd0a0800000000000000
-      internalID: -6855218837941648915
+      spriteID: 8b3e54eedd08e82a0800000000000000
+      internalID: -6733302702198627400
       vertices: []
       indices: 
       edges: []
