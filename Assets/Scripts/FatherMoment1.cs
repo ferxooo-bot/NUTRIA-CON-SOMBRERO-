@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class FatherMoment1 : MonoBehaviour
 {
    public Controls controls; // se crea la variable para controlar el Input Action llamado Controls
-    
+    public bool puedeMoverse = true;
     public Vector2 direction; // almacena la dirección del movimiento
     public Rigidbody2D rb2D; 
     public float movementVelocityWalk =7f; 
@@ -89,8 +89,18 @@ private bool isDead = false;
 
     // ----------- update ------------
     private void Update(){
-
-        direction = controls.Movement.Move.ReadValue<Vector2>(); 
+        // si otro script modifica esa varibale no va a poder  moverse 
+        if (puedeMoverse)
+        {
+            direction = controls.Movement.Move.ReadValue<Vector2>(); 
+        }
+        else
+        {
+            direction = Vector2.zero;
+        }
+            
+        
+        
         AdjustRotation(direction.x);
         animatorSprite.SetFloat("Horizontal", Mathf.Abs(direction.x)); 
         animatorBones.SetFloat("Horizontal", Mathf.Abs(direction.x)); 
@@ -114,7 +124,15 @@ private bool isDead = false;
     private void FixedUpdate()
     {
         float speed = isRunning ? movementVelocityRun : movementVelocityWalk;
-        rb2D.linearVelocity = new Vector2(direction.x * speed, rb2D.linearVelocityY); 
+        if (puedeMoverse)
+        {
+            rb2D.linearVelocity = new Vector2(direction.x * speed, rb2D.linearVelocityY);
+        }
+        else
+        {
+            rb2D.linearVelocity = Vector2.zero;
+        }
+         
         
 
         //OverlapBox detecta coliciones en un area determinada, a un layer determinado => devuelve true/false
