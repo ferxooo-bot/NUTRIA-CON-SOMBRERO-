@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 3fbd62a000eb60943bb97a644fa7b9a1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7220644092012896621
+    second: elec nivel green_0
+  - first:
+      213: -6393765416598546551
+    second: elec nivel green_1
+  - first:
+      213: -4162183162453177755
+    second: elec nivel green_2
+  - first:
+      213: -5962806030818231387
+    second: elec nivel green_3
+  - first:
+      213: 2526986585995313276
+    second: elec nivel green_4
+  - first:
+      213: 5111709853338656922
+    second: elec nivel green_5
+  - first:
+      213: 2221184562696979169
+    second: elec nivel green_6
+  - first:
+      213: -6078047345964484396
+    second: elec nivel green_7
+  - first:
+      213: -2432745803539954952
+    second: elec nivel green_8
+  - first:
+      213: 3903859158847519281
+    second: elec nivel green_9
+  - first:
+      213: 5485758746479227255
+    second: elec nivel green_10
+  - first:
+      213: 3035173502965263748
+    second: elec nivel green_11
+  - first:
+      213: 6445054082912686345
+    second: elec nivel green_12
+  - first:
+      213: -1321142451873259800
+    second: elec nivel green_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: elec nivel green_0
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 2884
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d61a3f98b81e43460800000000000000
+      internalID: 7220644092012896621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elec nivel green_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 2514
+        width: 1747
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 987577eaa38c447a0800000000000000
+      internalID: -6393765416598546551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elec nivel green_2
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 2764
+        width: 1142
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56acdd74774fc36c0800000000000000
+      internalID: -4162183162453177755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elec nivel green_3
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 2644
+        width: 1142
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5abb58cd18bdf3da0800000000000000
+      internalID: -5962806030818231387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elec nivel green_4
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 2474
+        width: 1142
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c708d6259e8a11320800000000000000
+      internalID: 2526986585995313276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elec nivel green_5
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1234
+        width: 1747
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a906d13570170f640800000000000000
+      internalID: 5111709853338656922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elec nivel green_6
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 2294
+        width: 1142
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e28228679b33de10800000000000000
+      internalID: 2221184562696979169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elec nivel green_7
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 2134
+        width: 1142
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d8f7c7442076aba0800000000000000
+      internalID: -6078047345964484396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elec nivel green_8
+      rect:
+        serializedVersion: 2
+        x: 2059
+        y: 1894
+        width: 387
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f2cd27b4962d3ed0800000000000000
+      internalID: -2432745803539954952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elec nivel green_9
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 1899
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13af240b83b4d2630800000000000000
+      internalID: 3903859158847519281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elec nivel green_10
+      rect:
+        serializedVersion: 2
+        x: 2674
+        y: 1899
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 771f26fd384512c40800000000000000
+      internalID: 5485758746479227255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elec nivel green_11
+      rect:
+        serializedVersion: 2
+        x: 2639
+        y: 1659
+        width: 122
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48d2ceb483a1f1a20800000000000000
+      internalID: 3035173502965263748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elec nivel green_12
+      rect:
+        serializedVersion: 2
+        x: 2759
+        y: 1659
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90111328a8e617950800000000000000
+      internalID: 6445054082912686345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elec nivel green_13
+      rect:
+        serializedVersion: 2
+        x: 2839
+        y: 1659
+        width: 122
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eed76290fb5aade0800000000000000
+      internalID: -1321142451873259800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      elec nivel green_0: 7220644092012896621
+      elec nivel green_1: -6393765416598546551
+      elec nivel green_10: 5485758746479227255
+      elec nivel green_11: 3035173502965263748
+      elec nivel green_12: 6445054082912686345
+      elec nivel green_13: -1321142451873259800
+      elec nivel green_2: -4162183162453177755
+      elec nivel green_3: -5962806030818231387
+      elec nivel green_4: 2526986585995313276
+      elec nivel green_5: 5111709853338656922
+      elec nivel green_6: 2221184562696979169
+      elec nivel green_7: -6078047345964484396
+      elec nivel green_8: -2432745803539954952
+      elec nivel green_9: 3903859158847519281
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
