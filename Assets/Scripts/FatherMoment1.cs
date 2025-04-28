@@ -43,7 +43,11 @@ private bool isDead = false;
     private bool isInvulnerable = false;
     //---------------------
 
-
+    // Variables agregadas para el nuevo sistema de ground check
+    public Transform groundCheck;
+    public float groundCheckRadius = 0.2f;
+    public float groundCheckWidth = 0.8f;
+    private bool wasGrounded;
 
 
     // -------------------- ANIMACIÓN HIJOS--------------
@@ -67,10 +71,18 @@ private bool isDead = false;
     
     }
     private void Start()
-{
-    
-    ResetHearts();
-}
+    {
+        // Si no se ha asignado groundCheck en el inspector, crear uno
+        if (groundCheck == null)
+        {
+            GameObject checkObject = new GameObject("GroundCheck");
+            checkObject.transform.parent = this.transform;
+            checkObject.transform.localPosition = new Vector3(0, -0.5f, 0); // Ajusta esta posición según tu personaje
+            groundCheck = checkObject.transform;
+        }
+        
+        ResetHearts();
+    }
     private void OnEnable()
     {
         controls.Enable(); 
@@ -133,12 +145,8 @@ private bool isDead = false;
             rb2D.linearVelocity = Vector2.zero;
         }
          
-        
-
-        //OverlapBox detecta coliciones en un area determinada, a un layer determinado => devuelve true/false
-        //Caja para detectar suelo
-        // Parámetros => posiciónDelCentroDeLaCaja Transform => ObjEmpty / Dimensiones V3 / Rotación / LayerMask  
-        GroundCheck(); 
+        // Método mejorado para detectar el suelo
+        CheckGrounded();
         
         animatorSprite.SetBool("inGround", inGround); 
         animatorBones.SetBool("inGround", inGround); 
@@ -175,16 +183,56 @@ private bool isDead = false;
 
 // -----------------------------
 
-
-    private void GroundCheck(){
-        float rayLenth = 0.7f; 
-        Ray ray= new Ray(transform.position, Vector2.down); 
-
-        Debug.DrawRay(ray.origin, ray.direction * rayLenth, Color.red); 
-
-        inGround = Physics2D.Raycast(ray.origin, ray.direction, rayLenth, whatIsGround); 
-
+    // Método mejorado para detectar el suelo
+    void CheckGrounded()
+    {
+        // Usar tres puntos para la detección: izquierda, centro y derecha
+        Vector2 center = groundCheck.position;
+        Vector2 left = new Vector2(center.x - groundCheckWidth/2, center.y);
+        Vector2 right = new Vector2(center.x + groundCheckWidth/2, center.y);
+        
+        bool centerGrounded = Physics2D.OverlapCircle(center, groundCheckRadius, whatIsGround);
+        bool leftGrounded = Physics2D.OverlapCircle(left, groundCheckRadius, whatIsGround);
+        bool rightGrounded = Physics2D.OverlapCircle(right, groundCheckRadius, whatIsGround);
+        
+        // Si cualquiera de los tres puntos detecta suelo, entonces está en el suelo
+        bool currentlyGrounded = centerGrounded || leftGrounded || rightGrounded;
+        
+        // Actualizamos el estado previo y actual
+        wasGrounded = inGround;
+        inGround = currentlyGrounded;
+        
+        // También podemos detectar el momento de aterrizaje si es necesario
+        // (cuando pasamos de estar en el aire a tocar suelo)
+        if (!wasGrounded && inGround)
+        {
+            // Aquí podríamos agregar lógica para el aterrizaje si es necesario
+            // Por ejemplo, reproducir un sonido o una animación específica
+        }
     }
+
+    // Visualización de depuración
+    void OnDrawGizmos()
+    {
+        if (groundCheck != null)
+        {
+            // Dibujar el punto central
+            Gizmos.color = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround) ? Color.green : Color.red;
+            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+            
+            // Dibujar puntos laterales
+            Vector2 center = groundCheck.position;
+            Vector2 left = new Vector2(center.x - groundCheckWidth/2, center.y);
+            Vector2 right = new Vector2(center.x + groundCheckWidth/2, center.y);
+            
+            Gizmos.color = Physics2D.OverlapCircle(left, groundCheckRadius, whatIsGround) ? Color.green : Color.red;
+            Gizmos.DrawWireSphere(left, groundCheckRadius);
+            
+            Gizmos.color = Physics2D.OverlapCircle(right, groundCheckRadius, whatIsGround) ? Color.green : Color.red;
+            Gizmos.DrawWireSphere(right, groundCheckRadius);
+        }
+    }
+
     public void Hurt()
 { if (isInvulnerable || currentHealth <= 0) return;
     
@@ -309,8 +357,3 @@ private IEnumerator RespawnAfterDelay()
     }*/
 
 }
-
-
-
-
-
