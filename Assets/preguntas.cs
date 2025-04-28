@@ -19,11 +19,13 @@ public class pregunta : MonoBehaviour
     
     [SerializeField] public GameObject mensajeCorrecto;
     [SerializeField] public GameObject mensajeInCorrecto; 
+    private Aviso aviso;
     
     public FatherMoment1 fatherMoment1Script;
-
+    
     void Start()
     {
+        aviso = GetComponent<Aviso>();
         canvasPregunta.SetActive(false);
         mensajeCorrecto.SetActive(false);
         mensajeInCorrecto.SetActive(false);
@@ -37,18 +39,21 @@ public class pregunta : MonoBehaviour
 
         if (distancia < rangoDeteccion)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) && intentosRestantes > 0)
             {
                 
                 MostrarPregunta();
                 sonidoA.Play();
             }
-
-            if (Input.GetKeyDown(KeyCode.Alpha1)) { revisarR(0); }
-            if (Input.GetKeyDown(KeyCode.Alpha2)) { revisarR(1); }
-            if (Input.GetKeyDown(KeyCode.Alpha3)) { revisarR(2); }
-            if (Input.GetKeyDown(KeyCode.Alpha4)) { revisarR(3); }
-            if (Input.GetKeyDown(KeyCode.Escape)) { cerrar(); }
+            if (canvasPregunta.activeSelf) {
+                if (Input.GetKeyDown(KeyCode.Alpha1)) { revisarR(0); }
+                if (Input.GetKeyDown(KeyCode.Alpha2)) { revisarR(1); }
+                if (Input.GetKeyDown(KeyCode.Alpha3)) { revisarR(2); }
+                if (Input.GetKeyDown(KeyCode.Alpha4)) { revisarR(3); }
+                if (Input.GetKeyDown(KeyCode.Escape)) { cerrar(); }
+                                                        
+            }
+            
         }
     }
 
@@ -132,7 +137,16 @@ public class pregunta : MonoBehaviour
 
     void DesactivarScript()
     {
-        canvasPregunta.SetActive(false);
+        cerrar();
         this.enabled = false;
+        fatherMoment1Script.puedeMoverse = true;
+        if (aviso != null)
+        {
+            aviso.OcultarUI();
+            aviso.enabled = false;
+            
+        }
+            
+            
     }
 }
