@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bg_04_dungeon_g_0: 7980592023087974500
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

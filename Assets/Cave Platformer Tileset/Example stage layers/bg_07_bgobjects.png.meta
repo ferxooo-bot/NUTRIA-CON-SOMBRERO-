@@ -847,7 +847,36 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bg_07_bgobjects_0: 1197691650830680919
+      bg_07_bgobjects_1: 4202797970653265942
+      bg_07_bgobjects_10: -5247563326743579950
+      bg_07_bgobjects_11: 7247148937626206478
+      bg_07_bgobjects_12: 1946272881912405273
+      bg_07_bgobjects_13: -3683931067450754571
+      bg_07_bgobjects_14: 6516316683932605933
+      bg_07_bgobjects_15: 5468225381494827251
+      bg_07_bgobjects_16: 8152299909186092019
+      bg_07_bgobjects_17: -7475409449012720998
+      bg_07_bgobjects_18: 5193592635374044878
+      bg_07_bgobjects_19: 8026474830358503555
+      bg_07_bgobjects_2: 8484451566875147199
+      bg_07_bgobjects_20: -8655179142040843406
+      bg_07_bgobjects_21: -2268991484279931699
+      bg_07_bgobjects_22: 5317800114761100142
+      bg_07_bgobjects_23: 7211113503773905945
+      bg_07_bgobjects_24: -7740737238355267858
+      bg_07_bgobjects_25: 7121874255400000619
+      bg_07_bgobjects_26: -218948179676869309
+      bg_07_bgobjects_27: 6284011518443771398
+      bg_07_bgobjects_28: 911526664444408990
+      bg_07_bgobjects_3: -7112139108971397881
+      bg_07_bgobjects_4: 8119447746915849594
+      bg_07_bgobjects_5: -1416342816885837972
+      bg_07_bgobjects_6: 6890449521941965523
+      bg_07_bgobjects_7: -8307917563809276208
+      bg_07_bgobjects_8: 289293958856405151
+      bg_07_bgobjects_9: 8687071611627005901
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
