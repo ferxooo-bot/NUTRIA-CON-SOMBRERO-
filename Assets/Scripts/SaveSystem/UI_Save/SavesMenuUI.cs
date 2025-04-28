@@ -8,7 +8,8 @@ public class SavesMenuUI : MonoBehaviour
 {
     public GameObject saveButtonPrefab;
     public Transform savesContainer;
-    public TMP_InputField newSaveNameInput;
+    
+    // Removed input field for new save name since we're focusing on resuming saves
 
     private void OnEnable()
     {
@@ -17,38 +18,50 @@ public class SavesMenuUI : MonoBehaviour
 
     public void RefreshSavesList()
     {
-        // Limpiar lista actual
+        // Clear current list
         foreach (Transform child in savesContainer)
         {
             Destroy(child.gameObject);
         }
 
-        // Obtener todas las partidas guardadas
+        // Get all saved games
         List<GameSave> saves = SaveSystem.Instance.GetAllSaves();
 
-        // Crear botón para cada partida
+        if (saves.Count == 0)
+        {
+            // Create message when no saves exist
+            GameObject messageObj = new GameObject("NoSavesMessage");
+            messageObj.transform.SetParent(savesContainer, false);
+            TextMeshProUGUI messageText = messageObj.AddComponent<TextMeshProUGUI>();
+            messageText.text = "No hay partidas guardadas.";
+            messageText.fontSize = 24;
+            messageText.alignment = TextAlignmentOptions.Center;
+            return;
+        }
+
+        // Create button for each save
         foreach (GameSave save in saves)
         {
             GameObject buttonObj = Instantiate(saveButtonPrefab, savesContainer);
             SaveButton saveButton = buttonObj.GetComponent<SaveButton>();
             
-            // Formatear tiempo de juego en horas:minutos
+            // Format play time as hours:minutes
             int hours = (int)(save.playTime / 3600);
             int minutes = (int)((save.playTime % 3600) / 60);
             string playTimeStr = string.Format("{0:D2}:{1:D2}", hours, minutes);
             
             saveButton.Initialize(save.saveName, save.saveDate, playTimeStr);
             
-            // Configurar eventos
+            // Configure events
             Button button = buttonObj.GetComponent<Button>();
-            string saveName = save.saveName; // Variable local para captura
+            string saveName = save.saveName; // Local variable for capture
             
             button.onClick.AddListener(() => {
                 SaveSystem.Instance.LoadSave(saveName);
-                StartGame();
+                ResumeGame();
             });
-
-            // Botón de eliminar
+            
+            // Delete button
             Transform deleteButton = buttonObj.transform.Find("DeleteButton");
             if (deleteButton != null)
             {
@@ -60,21 +73,19 @@ public class SavesMenuUI : MonoBehaviour
         }
     }
 
-    public void CreateNewSave()
+    // Renamed method to better reflect its purpose
+    private void ResumeGame()
     {
-        string saveName = newSaveNameInput.text;
-        if (string.IsNullOrEmpty(saveName))
-        {
-            saveName = "Partida " + (SaveSystem.Instance.GetAllSaves().Count + 1);
-        }
-
-        SaveSystem.Instance.CreateNewSave(saveName);
-        StartGame();
-    }
-
-    private void StartGame()
-    {
-        // Cargar la escena del juego
+        // Load the game scene
         SceneManager.LoadScene("GameScene");
+    }
+    
+    // If you still need the ability to create a new game, but don't want it front and center,
+    // you can keep this method and call it from a less prominent "New Game" button
+    public void CreateNewGame()
+    {
+        string saveName = "Partida " + (SaveSystem.Instance.GetAllSaves().Count + 1);
+        SaveSystem.Instance.CreateNewSave(saveName);
+        ResumeGame();
     }
 }
