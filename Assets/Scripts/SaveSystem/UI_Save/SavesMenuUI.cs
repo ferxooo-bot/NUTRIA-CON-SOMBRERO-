@@ -6,86 +6,104 @@ using UnityEngine.UI;
 
 public class SavesMenuUI : MonoBehaviour
 {
-    public GameObject saveButtonPrefab;
-    public Transform savesContainer;
+    [Header("Referencias UI")]
+    [SerializeField] private GameObject panelReanudarPrefab;
+    [SerializeField] private Transform savesContainer;
+    [SerializeField] private TextMeshProUGUI titleText;
     
-    // Removed input field for new save name since we're focusing on resuming saves
-
+    [Header("Configuración")]
+    [SerializeField] private string gameSceneName = "GameScene";
+    
+    private void Awake()
+    {
+        // Opcional: establecer título u otros elementos de UI
+    }
+    
     private void OnEnable()
     {
         RefreshSavesList();
     }
-
+    
     public void RefreshSavesList()
     {
-        // Clear current list
+        // Limpiar lista actual
         foreach (Transform child in savesContainer)
         {
             Destroy(child.gameObject);
         }
-
-        // Get all saved games
+        
+        // Obtener todas las partidas guardadas
         List<GameSave> saves = SaveSystem.Instance.GetAllSaves();
-
+        
         if (saves.Count == 0)
         {
-            // Create message when no saves exist
+            // Mostrar mensaje cuando no hay partidas guardadas
             GameObject messageObj = new GameObject("NoSavesMessage");
             messageObj.transform.SetParent(savesContainer, false);
             TextMeshProUGUI messageText = messageObj.AddComponent<TextMeshProUGUI>();
             messageText.text = "No hay partidas guardadas.";
             messageText.fontSize = 24;
             messageText.alignment = TextAlignmentOptions.Center;
+            
+            RectTransform rectTransform = messageText.GetComponent<RectTransform>();
+            rectTransform.anchorMin = new Vector2(0, 0);
+            rectTransform.anchorMax = new Vector2(1, 1);
+            rectTransform.offsetMin = new Vector2(20, 20);
+            rectTransform.offsetMax = new Vector2(-20, -20);
             return;
         }
-
-        // Create button for each save
+        
+        // Ordenar partidas por fecha (más recientes primero)
+        saves.Sort((a, b) => System.DateTime.Parse(b.saveDate)
+            .CompareTo(System.DateTime.Parse(a.saveDate)));
+        
+        // Crear un panel para cada partida
         foreach (GameSave save in saves)
         {
-            GameObject buttonObj = Instantiate(saveButtonPrefab, savesContainer);
-            SaveButton saveButton = buttonObj.GetComponent<SaveButton>();
+            // Instanciar un panel para cada partida
+            GameObject panelInstance = Instantiate(panelReanudarPrefab, savesContainer);
             
-            // Format play time as hours:minutes
-            int hours = (int)(save.playTime / 3600);
-            int minutes = (int)((save.playTime % 3600) / 60);
-            string playTimeStr = string.Format("{0:D2}:{1:D2}", hours, minutes);
+            // Buscar el componente SavePanel (que debería contener el método Initialize)
+            NewPanelReanudar savePanel = panelInstance.GetComponent<NewPanelReanudar>();
+            if (savePanel != null)
+            {
+                // Formatear tiempo de juego
+                int hours = (int)(save.playTime / 3600);
+                int minutes = (int)((save.playTime % 3600) / 60);
+                string playTimeStr = string.Format("{0:D2}:{1:D2}", hours, minutes);
+                
+                // Inicializar el panel con los datos de la partida
+                savePanel.Initialize(save.saveName, save.saveDate, playTimeStr);
+            }
             
-            saveButton.Initialize(save.saveName, save.saveDate, playTimeStr);
+            // Configurar el botón de reanudar
+            Button resumeButton = panelInstance.transform.Find("ResumeButton").GetComponent<Button>();
+            if (resumeButton != null)
+            {
+                string saveNameCopy = save.saveName;
+                resumeButton.onClick.RemoveAllListeners();
+                resumeButton.onClick.AddListener(() => {
+                    SaveSystem.Instance.LoadSave(saveNameCopy);
+                    LoadGameScene();
+                });
+            }
             
-            // Configure events
-            Button button = buttonObj.GetComponent<Button>();
-            string saveName = save.saveName; // Local variable for capture
-            
-            button.onClick.AddListener(() => {
-                SaveSystem.Instance.LoadSave(saveName);
-                ResumeGame();
-            });
-            
-            // Delete button
-            Transform deleteButton = buttonObj.transform.Find("DeleteButton");
+            // Configurar el botón de eliminar
+            Button deleteButton = panelInstance.transform.Find("DeleteButton").GetComponent<Button>();
             if (deleteButton != null)
             {
-                deleteButton.GetComponent<Button>().onClick.AddListener(() => {
-                    SaveSystem.Instance.DeleteSave(saveName);
+                string saveNameForDelete = save.saveName;
+                deleteButton.onClick.RemoveAllListeners();
+                deleteButton.onClick.AddListener(() => {
+                    SaveSystem.Instance.DeleteSave(saveNameForDelete);
                     RefreshSavesList();
                 });
             }
         }
     }
-
-    // Renamed method to better reflect its purpose
-    private void ResumeGame()
-    {
-        // Load the game scene
-        SceneManager.LoadScene("GameScene");
-    }
     
-    // If you still need the ability to create a new game, but don't want it front and center,
-    // you can keep this method and call it from a less prominent "New Game" button
-    public void CreateNewGame()
+    private void LoadGameScene()
     {
-        string saveName = "Partida " + (SaveSystem.Instance.GetAllSaves().Count + 1);
-        SaveSystem.Instance.CreateNewSave(saveName);
-        ResumeGame();
+        SceneManager.LoadScene(gameSceneName);
     }
 }

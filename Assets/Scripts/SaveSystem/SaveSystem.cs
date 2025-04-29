@@ -24,14 +24,15 @@ public class SaveSystem : MonoBehaviour
     private const string SAVES_DIRECTORY = "GameSaves";
     private GameSave currentSave;
     private float sessionStartTime;
-    public string gameVersion = "1.0"; // Actualizar con cada versión del juego
+    public string gameVersion = "1.0"; 
     
-    // Evento que se dispara cuando se carga una partida
+    // Eventos
     public event Action<PlayerData> OnGameLoaded;
     public event Action<PlayerData> OnGameSaved;
 
     private void Awake()
     {
+        Debug.Log("persistentDataPath: " + Application.persistentDataPath);
         if (_instance != null && _instance != this)
         {
             Destroy(gameObject);
@@ -41,7 +42,7 @@ public class SaveSystem : MonoBehaviour
         _instance = this;
         DontDestroyOnLoad(gameObject);
         
-        // Crear directorio de guardado si no existe
+        
         string savesPath = Path.Combine(Application.persistentDataPath, SAVES_DIRECTORY);
         if (!Directory.Exists(savesPath))
         {
@@ -51,7 +52,8 @@ public class SaveSystem : MonoBehaviour
         sessionStartTime = Time.time;
     }
 
-    // Obtener la lista de archivos de guardado disponibles
+    
+
     public List<GameSave> GetAllSaves()
     {
         List<GameSave> saves = new List<GameSave>();
@@ -90,10 +92,10 @@ public class SaveSystem : MonoBehaviour
         {
             health = 100,
             maxHealth = 100,
-            mana = 50,
-            maxMana = 50,
-            level = 1,
-            experience = 0
+            mana = 50,//PRUEBAS
+            maxMana = 50,//PRUEBAS
+            level = 1,//PRUEBAS
+            experience =0 //PRUEBAS
         };
         
         GameSave newSave = new GameSave
