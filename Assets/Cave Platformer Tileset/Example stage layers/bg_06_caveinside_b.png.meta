@@ -472,7 +472,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bg_06_caveinside_b_0: 6576161316272331261
+      bg_06_caveinside_b_1: 178284537845197409
+      bg_06_caveinside_b_10: -2541772299864539398
+      bg_06_caveinside_b_11: 8652388658238193981
+      bg_06_caveinside_b_12: 1986573598470616332
+      bg_06_caveinside_b_13: 8317732966137802474
+      bg_06_caveinside_b_2: -4489651128244142349
+      bg_06_caveinside_b_3: -7621561411515874896
+      bg_06_caveinside_b_4: 916985132050065107
+      bg_06_caveinside_b_5: -4371774639545057563
+      bg_06_caveinside_b_6: -5823069930446065732
+      bg_06_caveinside_b_7: 2458242847192429966
+      bg_06_caveinside_b_8: -657108653469981018
+      bg_06_caveinside_b_9: 896057727422042840
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -70,7 +70,6 @@ private bool isDead = false;
     Debug.Log($"Tamaño Fulls: {heartFulls?.Length}, Tamaño Emptys: {heartEmptys?.Length}");
     
     }
-    
     private void Start()
     {
         // Si no se ha asignado groundCheck en el inspector, crear uno
