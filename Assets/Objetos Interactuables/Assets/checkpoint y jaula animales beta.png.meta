@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: e7be819a6095f2b418bd2c2eb492e7db
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4160910892919024020
+    second: checkpoint y jaula animales beta_0
+  - first:
+      213: -8987755046733354902
+    second: checkpoint y jaula animales beta_1
+  - first:
+      213: -4809956070891506092
+    second: checkpoint y jaula animales beta_2
+  - first:
+      213: -6340066481110888006
+    second: checkpoint y jaula animales beta_3
+  - first:
+      213: 8511107412827128704
+    second: checkpoint y jaula animales beta_4
+  - first:
+      213: -5431123477302101984
+    second: checkpoint y jaula animales beta_5
+  - first:
+      213: -1317162544047555299
+    second: checkpoint y jaula animales beta_6
+  - first:
+      213: -7373427785626332106
+    second: checkpoint y jaula animales beta_7
+  - first:
+      213: -3281344637654391614
+    second: checkpoint y jaula animales beta_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: checkpoint y jaula animales beta_0
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 2207
+        width: 482
+        height: 686
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 499ed7269668eb930800000000000000
+      internalID: 4160910892919024020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: checkpoint y jaula animales beta_1
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 2207
+        width: 482
+        height: 686
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a68eb377764154380800000000000000
+      internalID: -8987755046733354902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: checkpoint y jaula animales beta_2
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 2837
+        width: 110
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4563741107a9f3db0800000000000000
+      internalID: -4809956070891506092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: checkpoint y jaula animales beta_3
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 2747
+        width: 92
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab15605602f8308a0800000000000000
+      internalID: -6340066481110888006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: checkpoint y jaula animales beta_4
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 2741
+        width: 104
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08341c229178d1670800000000000000
+      internalID: 8511107412827128704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: checkpoint y jaula animales beta_5
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1067
+        width: 626
+        height: 830
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 028bf1409f5c0a4b0800000000000000
+      internalID: -5431123477302101984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: checkpoint y jaula animales beta_6
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 1061
+        width: 626
+        height: 830
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d789215af78bde0800000000000000
+      internalID: -1317162544047555299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: checkpoint y jaula animales beta_7
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 1061
+        width: 842
+        height: 830
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6345fbcbe725ca990800000000000000
+      internalID: -7373427785626332106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: checkpoint y jaula animales beta_8
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 677
+        width: 566
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c42af6ff625672d0800000000000000
+      internalID: -3281344637654391614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      checkpoint y jaula animales beta_0: 4160910892919024020
+      checkpoint y jaula animales beta_1: -8987755046733354902
+      checkpoint y jaula animales beta_2: -4809956070891506092
+      checkpoint y jaula animales beta_3: -6340066481110888006
+      checkpoint y jaula animales beta_4: 8511107412827128704
+      checkpoint y jaula animales beta_5: -5431123477302101984
+      checkpoint y jaula animales beta_6: -1317162544047555299
+      checkpoint y jaula animales beta_7: -7373427785626332106
+      checkpoint y jaula animales beta_8: -3281344637654391614
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
