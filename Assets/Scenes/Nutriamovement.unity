@@ -448,11 +448,6 @@ MonoBehaviour:
   lookRight: 1
   BonesHeadBody: {fileID: 0}
   animatorBonesHeadBody: {fileID: 0}
---- !u!4 &198516067 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8713876396911673001, guid: 7fa293f9cd9963b4cb7cbcf3cbb8595a, type: 3}
-  m_PrefabInstance: {fileID: 1123288848}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &208359347
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -728,8 +723,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70b342d8ce5c2fd48b8fa3147d48d1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Weight: 1
-  m_Effectors: []
 --- !u!1 &333670046
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,10 +879,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fff0960ef4ea6e04eac66b4a7fd2189d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RigLayers:
-  - m_Rig: {fileID: 1110296801}
-    m_Active: 1
-  m_Effectors: []
 --- !u!95 &349789093
 Animator:
   serializedVersion: 7
@@ -975,17 +964,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796b75e345bd64d47a31edd757bd2670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Weight: 0.867
-  m_Data:
-    m_Root: {fileID: 1684861426}
-    m_Tip: {fileID: 2118241423}
-    m_Target: {fileID: 1570688833}
-    m_ChainRotationWeight: 1
-    m_TipRotationWeight: 0.807
-    m_MaxIterations: 15
-    m_Tolerance: 0.01
-    m_MaintainTargetPositionOffset: 1
-    m_MaintainTargetRotationOffset: 0
 --- !u!1 &413001020 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8653719598885068355, guid: 48a0a10782ecdde4d8f8e41abdee8bd2, type: 3}
@@ -1114,17 +1092,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796b75e345bd64d47a31edd757bd2670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Weight: 0.867
-  m_Data:
-    m_Root: {fileID: 1598816809}
-    m_Tip: {fileID: 1120196237}
-    m_Target: {fileID: 439222532}
-    m_ChainRotationWeight: 1
-    m_TipRotationWeight: 0.807
-    m_MaxIterations: 15
-    m_Tolerance: 0.01
-    m_MaintainTargetPositionOffset: 1
-    m_MaintainTargetRotationOffset: 0
 --- !u!1 &464974366
 GameObject:
   m_ObjectHideFlags: 0
@@ -1620,8 +1587,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 702658321}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 189.89}
+  m_LocalScale: {x: 0.012305113, y: 0.012305113, z: 0.012305113}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 630612027}
@@ -1631,9 +1598,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 10.61, y: -0.63}
+  m_SizeDelta: {x: 800, y: 487.60223}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &702658323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1673,7 +1640,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &702658325
 Canvas:
   m_ObjectHideFlags: 0
@@ -1683,7 +1650,7 @@ Canvas:
   m_GameObject: {fileID: 702658321}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 2
   m_Camera: {fileID: 4434583908524291835}
   m_PlaneDistance: 200
   m_PixelPerfect: 1
@@ -1967,8 +1934,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70b342d8ce5c2fd48b8fa3147d48d1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Weight: 1
-  m_Effectors: []
 --- !u!95 &1110296802
 Animator:
   serializedVersion: 7
@@ -1991,11 +1956,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!4 &1120196237 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8713876396911673001, guid: 7fa293f9cd9963b4cb7cbcf3cbb8595a, type: 3}
-  m_PrefabInstance: {fileID: 1176638378}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1123288848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2166,11 +2126,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -8653719598885068355, guid: 7fa293f9cd9963b4cb7cbcf3cbb8595a, type: 3}
   m_PrefabInstance: {fileID: 1123288848}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1123288852 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5754570211557010924, guid: 7fa293f9cd9963b4cb7cbcf3cbb8595a, type: 3}
-  m_PrefabInstance: {fileID: 1123288848}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1123288853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2207,10 +2162,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fff0960ef4ea6e04eac66b4a7fd2189d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RigLayers:
-  - m_Rig: {fileID: 312870247}
-    m_Active: 1
-  m_Effectors: []
 --- !u!95 &1123288856
 Animator:
   serializedVersion: 7
@@ -2938,10 +2889,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fff0960ef4ea6e04eac66b4a7fd2189d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RigLayers:
-  - m_Rig: {fileID: 1682660876}
-    m_Active: 1
-  m_Effectors: []
 --- !u!95 &1263095478
 Animator:
   serializedVersion: 7
@@ -4017,17 +3964,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796b75e345bd64d47a31edd757bd2670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Weight: 0.867
-  m_Data:
-    m_Root: {fileID: 1123288852}
-    m_Tip: {fileID: 198516067}
-    m_Target: {fileID: 1675610518}
-    m_ChainRotationWeight: 1
-    m_TipRotationWeight: 0.807
-    m_MaxIterations: 15
-    m_Tolerance: 0.01
-    m_MaintainTargetPositionOffset: 1
-    m_MaintainTargetRotationOffset: 0
 --- !u!1 &1494396404
 GameObject:
   m_ObjectHideFlags: 0
@@ -4592,11 +4528,6 @@ MonoBehaviour:
   limiteInferior: -0.32
   velocityVariation: 1.89
   velocityChangeSpeed: 0.26
---- !u!4 &1598816809 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5754570211557010924, guid: 7fa293f9cd9963b4cb7cbcf3cbb8595a, type: 3}
-  m_PrefabInstance: {fileID: 1176638378}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1644240504
 GameObject:
   m_ObjectHideFlags: 0
@@ -4947,8 +4878,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70b342d8ce5c2fd48b8fa3147d48d1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Weight: 1
-  m_Effectors: []
 --- !u!95 &1682660877
 Animator:
   serializedVersion: 7
@@ -4988,11 +4917,6 @@ Transform:
   - {fileID: 367289876}
   m_Father: {fileID: 1263095480}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1684861426 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5754570211557010924, guid: 7fa293f9cd9963b4cb7cbcf3cbb8595a, type: 3}
-  m_PrefabInstance: {fileID: 2040996257}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1695949355
 GameObject:
   m_ObjectHideFlags: 0
@@ -5824,11 +5748,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1263095477}
   m_SourcePrefab: {fileID: 4843985084834002234, guid: 7fa293f9cd9963b4cb7cbcf3cbb8595a, type: 3}
---- !u!4 &2118241423 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8713876396911673001, guid: 7fa293f9cd9963b4cb7cbcf3cbb8595a, type: 3}
-  m_PrefabInstance: {fileID: 2040996257}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &751309844616175602
 GameObject:
   m_ObjectHideFlags: 0
@@ -6310,6 +6229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4293d5549740f0e4cbb89dc262f1f257, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puedeMoverse: 1
   direction: {x: 0, y: 0}
   rb2D: {fileID: 9172963919692837740}
   movementVelocityWalk: 5
@@ -6337,6 +6257,9 @@ MonoBehaviour:
   isRunning: 0
   maxHealth: 3
   stateHandler: {fileID: 9172963919692837743}
+  groundCheck: {fileID: 0}
+  groundCheckRadius: 0.2
+  groundCheckWidth: 0.8
   lookRight: 1
 --- !u!114 &9172963919692837743
 MonoBehaviour:

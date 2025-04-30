@@ -29,6 +29,11 @@ public class FatherMoment1 : MonoBehaviour
 [SerializeField] private Transform respawnPoint; // Arrastra el punto de reinicio
 [SerializeField] private float respawnDelay = 1.0f; // Tiempo antes de reiniciar
 private bool isDead = false;
+[Header("Configuración de Daño")]
+
+[SerializeField] private float invulnerabilityTime = 1.5f;
+[SerializeField] private float blinkInterval = 0.15f;
+private SpriteRenderer playerSprite;
     //-------
     private int currentHealth;
     public float jumpForce = 4f; 
@@ -60,7 +65,7 @@ private bool isDead = false;
         ResetHearts();
         stateHandler = GetComponent<StateHandler>(); 
         controls = new();  
-        
+        playerSprite = GetComponentInChildren<SpriteRenderer>();
         animatorSprite = transform.GetChild(0).GetComponent<Animator>();       
         animatorBones = transform.GetChild(1).GetComponent<Animator>(); 
         currentHealth = maxHealth;
@@ -232,25 +237,7 @@ private bool isDead = false;
             Gizmos.DrawWireSphere(right, groundCheckRadius);
         }
     }
-
-    public void Hurt()
-{ if (isInvulnerable || currentHealth <= 0) return;
     
-    if (isInvulnerable || currentHealth <= 0) return;
-    
-    currentHealth--;
-    int heartIndex = Mathf.Clamp(currentHealth, 0, heartFulls.Length - 1);
-    StartCoroutine(FlashAndDisableHeart(heartIndex));
-    
-
-
-    ApplyKnockback();
-     if (currentHealth <= 0) Die();
-
-     
-    
-    
-}
 private void ApplyKnockback()
 {
    if (rb2D == null) // Verifica que el Rigidbody2D esté asignado
@@ -346,6 +333,54 @@ private IEnumerator RespawnAfterDelay()
     ResetHearts();
     controls.Enable();
     isDead = false;
+}
+public void TakeDamage(int damageAmount, Vector2 knockback)
+{
+    if(isDead || isInvulnerable) return;
+
+    currentHealth -= damageAmount;
+    UpdateHeartsUI();
+    
+    // Aplicar knockback
+    rb2D.linearVelocity = Vector2.zero;
+    rb2D.AddForce(knockback, ForceMode2D.Impulse);
+    
+    // Manejar muerte o invulnerabilidad
+    if(currentHealth <= 0)
+    {
+        Die();
+    }
+    else
+    {
+        StartCoroutine(InvulnerabilityRoutine());
+    }
+}
+
+private IEnumerator InvulnerabilityRoutine()
+{
+    isInvulnerable = true;
+    float timer = 0f;
+    bool visible = true;
+
+    while(timer < invulnerabilityTime)
+    {
+        playerSprite.enabled = visible;
+        visible = !visible;
+        timer += blinkInterval;
+        yield return new WaitForSeconds(blinkInterval);
+    }
+    
+    playerSprite.enabled = true;
+    isInvulnerable = false;
+}
+
+private void UpdateHeartsUI()
+{
+    for(int i = 0; i < heartFulls.Length; i++)
+    {
+        heartFulls[i].enabled = i < currentHealth;
+        heartEmptys[i].enabled = i >= currentHealth;
+    }
 }
 
     // --- Curacion, aun sin utilizar ---
