@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Ground
+  - "Da\xF1o"
+  - Saltable
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX
