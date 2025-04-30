@@ -8,8 +8,14 @@ public class pregunta : MonoBehaviour
     [SerializeField] public GameObject canvasPregunta;
     [SerializeField] public TextMeshProUGUI textoPregunta;
     [SerializeField] public TextMeshProUGUI[] textosRespuestas;
+    [SerializeField] public string preguntaT;
+    [SerializeField] public string re1;
+    [SerializeField] public string re2;
+    [SerializeField] public string re3;
+    [SerializeField] public string re4;
+    
     [SerializeField] public GameObject puerta;
-    [SerializeField] public int repuestaC; // Ahora se asigna desde el Inspector
+    [SerializeField] public int repuestaC = 1; 
     [SerializeField] private float rangoDeteccion = 7f;
     private GameObject jugador;
     [SerializeField] public AudioSource rCorrecta;
@@ -20,10 +26,16 @@ public class pregunta : MonoBehaviour
     [SerializeField] public GameObject mensajeCorrecto;
     [SerializeField] public GameObject mensajeInCorrecto; 
     
+    
+    
+    
+    private Aviso aviso;
+    
     public FatherMoment1 fatherMoment1Script;
-
+    
     void Start()
     {
+        aviso = GetComponent<Aviso>();
         canvasPregunta.SetActive(false);
         mensajeCorrecto.SetActive(false);
         mensajeInCorrecto.SetActive(false);
@@ -37,18 +49,21 @@ public class pregunta : MonoBehaviour
 
         if (distancia < rangoDeteccion)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) && intentosRestantes > 0)
             {
                 
                 MostrarPregunta();
                 sonidoA.Play();
             }
-
-            if (Input.GetKeyDown(KeyCode.Alpha1)) { revisarR(0); }
-            if (Input.GetKeyDown(KeyCode.Alpha2)) { revisarR(1); }
-            if (Input.GetKeyDown(KeyCode.Alpha3)) { revisarR(2); }
-            if (Input.GetKeyDown(KeyCode.Alpha4)) { revisarR(3); }
-            if (Input.GetKeyDown(KeyCode.Escape)) { cerrar(); }
+            if (canvasPregunta.activeSelf) {
+                if (Input.GetKeyDown(KeyCode.Alpha1)) { revisarR(0); }
+                if (Input.GetKeyDown(KeyCode.Alpha2)) { revisarR(1); }
+                if (Input.GetKeyDown(KeyCode.Alpha3)) { revisarR(2); }
+                if (Input.GetKeyDown(KeyCode.Alpha4)) { revisarR(3); }
+                if (Input.GetKeyDown(KeyCode.Escape)) { cerrar(); }
+                                                        
+            }
+            
         }
     }
 
@@ -57,11 +72,11 @@ public class pregunta : MonoBehaviour
         
         canvasPregunta.SetActive(true);
         fatherMoment1Script.puedeMoverse = false; 
-        textoPregunta.text = "¿Cuál de las siguientes acciones ayuda a cuidar el medio ambiente?";
-        textosRespuestas[0].text = "1. Dejar luces encendidas todo el día";
-        textosRespuestas[1].text = "2. Reciclar y reutilizar materiales";
-        textosRespuestas[2].text = "3. Usar plástico de un solo uso";
-        textosRespuestas[3].text = "4. Tirar basura en la calle";
+        textoPregunta.text = preguntaT;
+        textosRespuestas[0].text = re1;
+        textosRespuestas[1].text = re2 ;
+        textosRespuestas[2].text = re3 ;
+        textosRespuestas[3].text = re4;
     }
 
     void revisarR(int index)
@@ -132,7 +147,16 @@ public class pregunta : MonoBehaviour
 
     void DesactivarScript()
     {
-        canvasPregunta.SetActive(false);
+        cerrar();
         this.enabled = false;
+        fatherMoment1Script.puedeMoverse = true;
+        if (aviso != null)
+        {
+            aviso.OcultarUI();
+            aviso.enabled = false;
+            
+        }
+            
+            
     }
 }

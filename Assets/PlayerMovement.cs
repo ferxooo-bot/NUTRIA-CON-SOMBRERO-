@@ -184,9 +184,5 @@ public class PlayerMovement : MonoBehaviour
             Gizmos.color = Physics2D.OverlapCircle(right, groundCheckRadius, groundLayer) ? Color.green : Color.red;
             Gizmos.DrawWireSphere(right, groundCheckRadius);
         }
-
     }
-    // paarq ue se pegue a la plataforma 
-
-
 }
