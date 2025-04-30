@@ -27,7 +27,7 @@ public class NewGameStarter : MonoBehaviour
         }
 
         // Crear nueva partida con el nombre proporcionado
-        SaveSystem.Instance.CreateNewSave(saveName);
+        SaveSystem.Instance.CreateNewSave(saveName, playerName);
         
         GameSave currentSave = SaveSystem.Instance.GetCurrentSave();
         string startLevel = SaveSystem.Instance.GetSceneById(currentSave.playerData.currentLevelId); 

@@ -6,6 +6,7 @@ using UnityEngine;
 [Serializable]
 public class PlayerData
 {
+    public string playerName; 
     public int keys;
     public int food;
     public int coins;

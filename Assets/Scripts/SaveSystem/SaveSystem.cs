@@ -86,10 +86,11 @@ public class SaveSystem : MonoBehaviour
         return currentSave;
     }
 
-    public void CreateNewSave(string saveName)
+    public void CreateNewSave(string saveName, string playerName)
     {
         PlayerData newPlayerData = new PlayerData
         {
+            playerName = playerName,
             health = 3,
             level = 1,//PRUEBAS
             food =23,
