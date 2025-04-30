@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class RespawnZone : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class RespawnZone : MonoBehaviour
         {
     
             FatherMoment1 fatherMoment1 = other.GetComponent<FatherMoment1>();
-            PlayerDataSynchronizer dataSynchronizer = GetComponent<PlayerDataSynchronizer>();
+            PlayerDataSynchronizer dataSynchronizer = other.GetComponent<PlayerDataSynchronizer>();
             if (fatherMoment1 != null)
             {
                 // Actualizar respawn
@@ -19,7 +20,8 @@ public class RespawnZone : MonoBehaviour
                 // Guardar datos
                 if (dataSynchronizer != null)
                 {
-                    dataSynchronizer.UpdateSaveWithPlayerData(); 
+                    dataSynchronizer.UpdateSaveWithPlayerData();
+                    Debug.Log("sincronizando con la base de datos todo sobre el jugador");
                 }
             }
         }

@@ -739,7 +739,6 @@ MonoBehaviour:
   panelReanudarPrefab: {fileID: 8009695593323675201, guid: 097f60ef91252eebfbdea147b1d759f9, type: 3}
   savesContainer: {fileID: 774735954}
   titleText: {fileID: 8477205525617202714, guid: 1bd5b913d2d5ea71691b5d3f4eb9f144, type: 3}
-  gameSceneName: GameScene
 --- !u!1 &1542376094
 GameObject:
   m_ObjectHideFlags: 0
@@ -850,8 +849,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -41, y: 0}
-  m_SizeDelta: {x: -584.144, y: 483.2603}
+  m_AnchoredPosition: {x: -22.299, y: 0.0000019073}
+  m_SizeDelta: {x: -647.157, y: 406}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2135324905
 MonoBehaviour:

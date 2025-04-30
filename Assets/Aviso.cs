@@ -45,7 +45,7 @@ public class Aviso : MonoBehaviour
         if (promptUI != null)
         {
             promptUI.SetActive(true);
-            Debug.Log("Mostrando UI");
+            
         }
     }
     void OcultarUI()
@@ -53,7 +53,7 @@ public class Aviso : MonoBehaviour
         if (promptUI != null)
         {
             promptUI.SetActive(false);
-            Debug.Log("Ocultando UI");
+            
         }
         
     }

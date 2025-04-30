@@ -10,7 +10,7 @@ public class SavesMenuUI : MonoBehaviour
     [SerializeField] private GameObject panelReanudarPrefab;
     [SerializeField] private Transform savesContainer;
     [SerializeField] private TextMeshProUGUI titleText;
-     private string gameSceneName = "";
+     private string gameSceneName = "Pantalla_Inicial";
     
     private void Awake()
     {
