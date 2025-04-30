@@ -4,6 +4,7 @@ using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.InputSystem.HID;
 using System.Collections;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 
 public class FatherMoment1 : MonoBehaviour
@@ -18,6 +19,8 @@ public class FatherMoment1 : MonoBehaviour
     public GameObject sprite; // Animación de correr y saltar
     public Animator animatorSprite;
     public Animator animatorBones; 
+    private BoxCollider2D boxCollider;
+    private ShadowCaster2D shadowCaster;
 
    
 [Header("Heart System")]
@@ -29,6 +32,18 @@ public class FatherMoment1 : MonoBehaviour
 [SerializeField] private Transform respawnPoint; // Arrastra el punto de reinicio
 [SerializeField] private float respawnDelay = 1.0f; // Tiempo antes de reiniciar
 private bool isDead = false;
+
+[Header("Configuración del Collider")]
+[SerializeField] private Vector2 normalColliderSize = new Vector2(0.27f, 0.82f);
+[SerializeField] private Vector2 normalColliderSizeOffSet = new Vector2(0.27f, 0.82f);
+[SerializeField] private Vector2 normalColliderSizeI = new Vector2(0.27f, 0.82f);
+[SerializeField] private Vector2 normalColliderSizeOffSetI = new Vector2(0.27f, 0.82f);
+[SerializeField] private Vector2 runningColliderSize = new Vector2(0.92f, 0.20f);
+[SerializeField] private Vector2 jumpingColliderSize = new Vector2(0.42f, 0.38f);
+[SerializeField] private Vector2 runningColliderOffset = new Vector2(0f, 0.5f);
+[SerializeField] private Vector2 jumpingColliderOffset = new Vector2(0f, 0.6f);
+
+private bool isJumping;
 [Header("Configuración de Daño")]
 
 [SerializeField] private float invulnerabilityTime = 1.5f;
@@ -77,6 +92,10 @@ private SpriteRenderer playerSprite;
     }
     private void Start()
     {
+        
+        shadowCaster = GetComponent<ShadowCaster2D>();
+
+        boxCollider = GetComponent<BoxCollider2D>();
         // Si no se ha asignado groundCheck en el inspector, crear uno
         if (groundCheck == null)
         {
@@ -106,6 +125,20 @@ private SpriteRenderer playerSprite;
 
     // ----------- update ------------
     private void Update(){
+        
+        if(isJumping){
+            boxCollider.size = jumpingColliderSize;
+            boxCollider.offset = jumpingColliderOffset;
+        }
+        else if(isRunning && (direction.x != 0)){
+            boxCollider.size = runningColliderSize;
+            boxCollider.offset = runningColliderOffset;
+        } else if(direction.x != 0){
+            boxCollider.size = normalColliderSize;
+            boxCollider.offset = normalColliderSizeOffSet;
+        }
+
+        
         // si otro script modifica esa varibale no va a poder  moverse 
         if (puedeMoverse)
         {
@@ -175,7 +208,8 @@ private SpriteRenderer playerSprite;
         lookRight = !lookRight;
         Vector3 escala = transform.localScale; 
         escala.x *= -1;
-        transform.localScale = escala; 
+        transform.localScale = escala;
+        
     }
 
     
@@ -183,6 +217,7 @@ private SpriteRenderer playerSprite;
     private void Jump(){
         if(inGround){
             rb2D.AddForce(new Vector2(0,jumpForce), ForceMode2D.Impulse);     
+            isJumping = true;
         }        
     }
 
@@ -211,6 +246,7 @@ private SpriteRenderer playerSprite;
         // (cuando pasamos de estar en el aire a tocar suelo)
         if (!wasGrounded && inGround)
         {
+            isJumping = false;
             // Aquí podríamos agregar lógica para el aterrizaje si es necesario
             // Por ejemplo, reproducir un sonido o una animación específica
         }
@@ -355,6 +391,15 @@ public void TakeDamage(int damageAmount, Vector2 knockback)
         StartCoroutine(InvulnerabilityRoutine());
     }
 }
+public void InstantKill()
+{
+    if(isDead) return;
+    
+    currentHealth = 0;
+    UpdateHeartsUI();
+    Die();
+}
+
 
 private IEnumerator InvulnerabilityRoutine()
 {
