@@ -28,6 +28,8 @@ public class FatherMoment1 : MonoBehaviour
 [SerializeField] private SpriteRenderer[] heartEmptys = new SpriteRenderer[3]; // Corazones vacíos
 [SerializeField] private float flashIntensity = 3f; // Intensidad del brillo al parpadear
 
+
+
 [Header("Configuración de Muerte")]
 [SerializeField] private Transform respawnPoint; // Arrastra el punto de reinicio
 [SerializeField] private float respawnDelay = 1.0f; // Tiempo antes de reiniciar
@@ -92,8 +94,10 @@ private SpriteRenderer playerSprite;
     }
     private void Start()
     {
+        Physics2D.autoSyncTransforms = true; 
+        Physics2D.defaultContactOffset = 0.01f;
         
-        shadowCaster = GetComponent<ShadowCaster2D>();
+        
 
         boxCollider = GetComponent<BoxCollider2D>();
         // Si no se ha asignado groundCheck en el inspector, crear uno
