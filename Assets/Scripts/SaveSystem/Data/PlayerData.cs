@@ -12,7 +12,7 @@ public class PlayerData
     public int level;
     public int health; 
     public List<int> unlockedLevels = new List<int>();
-    public Vector3 lastRespawnPosition;
+    public string lastRespawn;
     public int currentLevelId;
     
     // Lista de datos de cada nivel

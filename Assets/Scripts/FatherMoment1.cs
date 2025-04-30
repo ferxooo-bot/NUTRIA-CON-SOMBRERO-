@@ -26,11 +26,11 @@ public class FatherMoment1 : MonoBehaviour
 [SerializeField] private float flashIntensity = 3f; // Intensidad del brillo al parpadear
 
 [Header("Configuración de Muerte")]
-[SerializeField] private Transform respawnPoint; // Arrastra el punto de reinicio
+[SerializeField] public Transform respawnPoint; // Arrastra el punto de reinicio
 [SerializeField] private float respawnDelay = 1.0f; // Tiempo antes de reiniciar
 private bool isDead = false;
     //-------
-    private int currentHealth;
+    public int currentHealth;
     public float jumpForce = 4f; 
     public LayerMask whatIsGround; 
     public bool inGround; 
@@ -282,7 +282,7 @@ private void Die()
     StartCoroutine(RespawnAfterDelay());
     
 }
-private IEnumerator RespawnAfterDelay()
+public IEnumerator RespawnAfterDelay()
 {
    yield return new WaitForSeconds(respawnDelay);
 
@@ -299,6 +299,26 @@ private IEnumerator RespawnAfterDelay()
     controls.Enable();
     isDead = false;
 }
+
+
+public void SetRespawnPoint(string lastRespawn)
+{
+    // Buscar el Transform con el nombre 'lastRespawn'
+    Transform newRespawnPoint = GameObject.Find(lastRespawn)?.transform;
+
+    // Verificar si se encontró el respawn
+    if (newRespawnPoint != null)
+    {
+        // Asignar el nuevo respawn al campo 'respawnPoint'
+        respawnPoint = newRespawnPoint;
+    }
+    else
+    {
+        Debug.LogWarning("No se encontró el respawn con el nombre: " + lastRespawn);
+    }
+}
+
+
 
     // --- Curacion, aun sin utilizar ---
     /*public void Heal()

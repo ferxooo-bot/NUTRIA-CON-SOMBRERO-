@@ -297,11 +297,11 @@ public class SaveSystem : MonoBehaviour
         }
     }
 
-    public void SetRespawnPoint(Vector3 position, int levelId)
+    public void SetRespawnPoint(string lastRespawn, int levelId)
     {
         if (currentSave == null) return;
         
-        currentSave.playerData.lastRespawnPosition = position;
+        currentSave.playerData.lastRespawn = lastRespawn;
         currentSave.playerData.currentLevelId = levelId;
         SaveGame();
     }
