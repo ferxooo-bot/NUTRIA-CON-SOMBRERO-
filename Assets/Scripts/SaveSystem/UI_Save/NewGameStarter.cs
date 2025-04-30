@@ -19,16 +19,19 @@ public class NewGameStarter : MonoBehaviour
 
     public void StartNewGame()
     {
+        string saveName = "Partida " + (SaveSystem.Instance.GetAllSaves().Count + 1);
         string playerName = playerNameInput.text;
         if (string.IsNullOrEmpty(playerName))
         {
-            playerName = "Partida " + (SaveSystem.Instance.GetAllSaves().Count + 1);
+            playerName = "SIN NOMBRE"; 
         }
 
         // Crear nueva partida con el nombre proporcionado
-        SaveSystem.Instance.CreateNewSave(playerName);
+        SaveSystem.Instance.CreateNewSave(saveName);
         
-        // Cargar la escena del juego
-        SceneManager.LoadScene("Lv.1");
+        GameSave currentSave = SaveSystem.Instance.GetCurrentSave();
+        string startLevel = SaveSystem.Instance.GetSceneById(currentSave.playerData.currentLevelId); 
+        
+        SceneManager.LoadScene(startLevel);
     }
 }

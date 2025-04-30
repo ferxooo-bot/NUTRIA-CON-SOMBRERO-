@@ -90,12 +90,11 @@ public class SaveSystem : MonoBehaviour
     {
         PlayerData newPlayerData = new PlayerData
         {
-            health = 100,
-            maxHealth = 100,
-            mana = 50,//PRUEBAS
-            maxMana = 50,//PRUEBAS
+            health = 3,
             level = 1,//PRUEBAS
-            experience =0 //PRUEBAS
+            food =23,
+            coins =100,
+            currentLevelId = 1
         };
         
         GameSave newSave = new GameSave
@@ -518,5 +517,26 @@ public class SaveSystem : MonoBehaviour
         
         LevelData levelData = currentSave.playerData.GetLevelData(levelId);
         return levelData.isCompleted;
+    }
+
+
+
+
+    public string GetSceneById(int levelId)
+    {
+        switch (levelId)
+        {
+            case 1:
+                return "Lv.1";
+            case 2:
+                return "Lv.2";
+            case 3:
+                return "Lv.3";
+            // Añade todos los niveles que tengas
+            default:
+                // Si el ID no coincide con ningún nivel conocido, carga la escena principal
+                Debug.LogWarning($"ID de nivel desconocido: {levelId}. Cargando escena predeterminada.");
+                return "";
+        }
     }
 }

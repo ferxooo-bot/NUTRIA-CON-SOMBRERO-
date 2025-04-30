@@ -32,8 +32,6 @@ public class PlayerSaveController : MonoBehaviour
     
     private void LoadPlayerData(PlayerData playerData)
     {
-        // Asignar datos del jugador
-        maxHealth = playerData.maxHealth;
         currentHealth = playerData.health;
         
         // Si hay posición de respawn guardada, usarla

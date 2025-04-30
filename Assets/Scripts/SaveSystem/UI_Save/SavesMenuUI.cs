@@ -10,9 +10,7 @@ public class SavesMenuUI : MonoBehaviour
     [SerializeField] private GameObject panelReanudarPrefab;
     [SerializeField] private Transform savesContainer;
     [SerializeField] private TextMeshProUGUI titleText;
-    
-    [Header("Configuración")]
-    [SerializeField] private string gameSceneName = "GameScene";
+     private string gameSceneName = "";
     
     private void Awake()
     {
@@ -84,7 +82,7 @@ public class SavesMenuUI : MonoBehaviour
                 resumeButton.onClick.RemoveAllListeners();
                 resumeButton.onClick.AddListener(() => {
                     SaveSystem.Instance.LoadSave(saveNameCopy);
-                    LoadGameScene();
+                    LoadGameScene(save);
                 });
             }
             
@@ -102,8 +100,28 @@ public class SavesMenuUI : MonoBehaviour
         }
     }
     
-    private void LoadGameScene()
+    private void LoadGameScene(GameSave save)
     {
-        SceneManager.LoadScene(gameSceneName);
+        int levelId = save.playerData.currentLevelId;
+        string sceneName = GetSceneById(levelId);
+        SceneManager.LoadScene(sceneName);
+    }
+
+    private string GetSceneById(int levelId)
+    {
+        switch (levelId)
+        {
+            case 1:
+                return "Lv.1";
+            case 2:
+                return "Lv.2";
+            case 3:
+                return "Lv.3";
+            // Añade todos los niveles que tengas
+            default:
+                // Si el ID no coincide con ningún nivel conocido, carga la escena principal
+                Debug.LogWarning($"ID de nivel desconocido: {levelId}. Cargando escena predeterminada.");
+                return gameSceneName;
+        }
     }
 }

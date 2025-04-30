@@ -9,12 +9,8 @@ public class PlayerData
     public int keys;
     public int food;
     public int coins;
-    public int health;
-    public int maxHealth;
-    public int mana;
-    public int maxMana;
-    public int experience;
     public int level;
+    public int health; 
     public List<int> unlockedLevels = new List<int>();
     public Vector3 lastRespawnPosition;
     public int currentLevelId;
