@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 9c321da001b5be7478d9e6f42bc59b90
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7353712488028957618
+    second: Respuesta correcta xx-Photoroom_0
+  - first:
+      213: 3875789889799248371
+    second: Respuesta correcta xx-Photoroom_1
+  - first:
+      213: -4881617901937711971
+    second: Respuesta correcta xx-Photoroom_2
+  - first:
+      213: 8707960045808769703
+    second: Respuesta correcta xx-Photoroom_3
+  - first:
+      213: -712218675719224276
+    second: Respuesta correcta xx-Photoroom_4
+  - first:
+      213: -4119963268532972741
+    second: Respuesta correcta xx-Photoroom_5
+  - first:
+      213: 5444845281237966798
+    second: Respuesta correcta xx-Photoroom_6
+  - first:
+      213: 3677796661236382095
+    second: Respuesta correcta xx-Photoroom_7
+  - first:
+      213: 8168829459236758713
+    second: Respuesta correcta xx-Photoroom_8
+  - first:
+      213: 7876749974626734747
+    second: Respuesta correcta xx-Photoroom_9
+  - first:
+      213: 7127273014939687594
+    second: Respuesta correcta xx-Photoroom_10
+  - first:
+      213: 4918513001246607937
+    second: Respuesta correcta xx-Photoroom_11
+  - first:
+      213: 130803070168071477
+    second: Respuesta correcta xx-Photoroom_12
+  - first:
+      213: -7745608752429655483
+    second: Respuesta correcta xx-Photoroom_13
+  - first:
+      213: 5362437665470753122
+    second: Respuesta correcta xx-Photoroom_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Respuesta correcta xx-Photoroom_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 124
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bbe155db82ad0660800000000000000
+      internalID: 7353712488028957618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta correcta xx-Photoroom_1
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 66
+        width: 82
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9d885be5299c530800000000000000
+      internalID: 3875789889799248371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta correcta xx-Photoroom_2
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 63
+        width: 82
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d94a0d1d162014cb0800000000000000
+      internalID: -4881617901937711971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta correcta xx-Photoroom_3
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 66
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aad9b06683e8d870800000000000000
+      internalID: 8707960045808769703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta correcta xx-Photoroom_4
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 66
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c244b5f43e0bd16f0800000000000000
+      internalID: -712218675719224276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta correcta xx-Photoroom_5
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 66
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b335f6b5c33f2d6c0800000000000000
+      internalID: -4119963268532972741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta correcta xx-Photoroom_6
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 28
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf962d6fe9ff8b40800000000000000
+      internalID: 5444845281237966798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta correcta xx-Photoroom_7
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 28
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f89bc1dd3982a0330800000000000000
+      internalID: 3677796661236382095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta correcta xx-Photoroom_8
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 28
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b4ad84ec138d5170800000000000000
+      internalID: 8168829459236758713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta correcta xx-Photoroom_9
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 28
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b92913e7e56df4d60800000000000000
+      internalID: 7876749974626734747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta correcta xx-Photoroom_10
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 28
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaa15b09b0929e260800000000000000
+      internalID: 7127273014939687594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta correcta xx-Photoroom_11
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 28
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14ac176e381124440800000000000000
+      internalID: 4918513001246607937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta correcta xx-Photoroom_12
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 28
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53df5e403b4b0d100800000000000000
+      internalID: 130803070168071477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta correcta xx-Photoroom_13
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 28
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54a164ea0e1128490800000000000000
+      internalID: -7745608752429655483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta correcta xx-Photoroom_14
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 28
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2692f8435a43b6a40800000000000000
+      internalID: 5362437665470753122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Respuesta correcta xx-Photoroom_0: 7353712488028957618
+      Respuesta correcta xx-Photoroom_1: 3875789889799248371
+      Respuesta correcta xx-Photoroom_10: 7127273014939687594
+      Respuesta correcta xx-Photoroom_11: 4918513001246607937
+      Respuesta correcta xx-Photoroom_12: 130803070168071477
+      Respuesta correcta xx-Photoroom_13: -7745608752429655483
+      Respuesta correcta xx-Photoroom_14: 5362437665470753122
+      Respuesta correcta xx-Photoroom_2: -4881617901937711971
+      Respuesta correcta xx-Photoroom_3: 8707960045808769703
+      Respuesta correcta xx-Photoroom_4: -712218675719224276
+      Respuesta correcta xx-Photoroom_5: -4119963268532972741
+      Respuesta correcta xx-Photoroom_6: 5444845281237966798
+      Respuesta correcta xx-Photoroom_7: 3677796661236382095
+      Respuesta correcta xx-Photoroom_8: 8168829459236758713
+      Respuesta correcta xx-Photoroom_9: 7876749974626734747
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,67 +1,162 @@
+using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
 public class pregunta : MonoBehaviour
 {
-    public GameObject canvasPregunta;
-    public TextMeshProUGUI textoPregunta;
-    public TextMeshProUGUI[] textosRespuestas;
-    private AudioSource audioSource;
-    public GameObject puerta;
-    private int repuestaC = 1;
+    [SerializeField] public GameObject canvasPregunta;
+    [SerializeField] public TextMeshProUGUI textoPregunta;
+    [SerializeField] public TextMeshProUGUI[] textosRespuestas;
+    [SerializeField] public string preguntaT;
+    [SerializeField] public string re1;
+    [SerializeField] public string re2;
+    [SerializeField] public string re3;
+    [SerializeField] public string re4;
+    
+    [SerializeField] public GameObject puerta;
+    [SerializeField] public int repuestaC = 1; 
     [SerializeField] private float rangoDeteccion = 7f;
     private GameObject jugador;
-
+    [SerializeField] public AudioSource rCorrecta;
+    [SerializeField] public AudioSource rIncorrecta;
+    [SerializeField] public AudioSource sonidoA;
+    [SerializeField] public int intentosRestantes = 2;
+    
+    [SerializeField] public GameObject mensajeCorrecto;
+    [SerializeField] public GameObject mensajeInCorrecto; 
+    
+    
+    
+    
+    private Aviso aviso;
+    
+    public FatherMoment1 fatherMoment1Script;
+    
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        aviso = GetComponent<Aviso>();
         canvasPregunta.SetActive(false);
+        mensajeCorrecto.SetActive(false);
+        mensajeInCorrecto.SetActive(false);
         
-        // Asegurarte de obtener el jugador
         jugador = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update()
     {
-        // Calcular distancia
         float distancia = Vector2.Distance(transform.position, jugador.transform.position);
 
         if (distancia < rangoDeteccion)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) && intentosRestantes > 0)
             {
+                
                 MostrarPregunta();
-                audioSource.Play();
+                sonidoA.Play();
             }
-
-            if (Input.GetKeyDown(KeyCode.A)) { revisarR(0); }
-            if (Input.GetKeyDown(KeyCode.B)) { revisarR(1); }
-            if (Input.GetKeyDown(KeyCode.C)) { revisarR(2); }
-            if (Input.GetKeyDown(KeyCode.D)) { revisarR(3); }
+            if (canvasPregunta.activeSelf) {
+                if (Input.GetKeyDown(KeyCode.Alpha1)) { revisarR(0); }
+                if (Input.GetKeyDown(KeyCode.Alpha2)) { revisarR(1); }
+                if (Input.GetKeyDown(KeyCode.Alpha3)) { revisarR(2); }
+                if (Input.GetKeyDown(KeyCode.Alpha4)) { revisarR(3); }
+                if (Input.GetKeyDown(KeyCode.Escape)) { cerrar(); }
+                                                        
+            }
+            
         }
     }
 
     void MostrarPregunta()
     {
+        
         canvasPregunta.SetActive(true);
-        textoPregunta.text = "¿Cuál de las siguientes acciones ayuda a cuidar el medio ambiente?";
-        textosRespuestas[0].text = "A. Dejar luces encendidas todo el día";
-        textosRespuestas[1].text = "B. Reciclar y reutilizar materiales";
-        textosRespuestas[2].text = "C. Usar plástico de un solo uso";
-        textosRespuestas[3].text = "D. Tirar basura en la calle";
+        fatherMoment1Script.puedeMoverse = false; 
+        textoPregunta.text = preguntaT;
+        textosRespuestas[0].text = re1;
+        textosRespuestas[1].text = re2 ;
+        textosRespuestas[2].text = re3 ;
+        textosRespuestas[3].text = re4;
     }
 
     void revisarR(int index)
     {
-        if (index == repuestaC)
+        if (intentosRestantes > 0)
         {
-            Destroy(puerta);
-            cerrar();
+            if (index == repuestaC)
+            {
+                intentosRestantes--;
+                StartCoroutine(EsperarYCerrarC());
+            }
+            else if (index <= 3 && index >= 0)
+            {
+                intentosRestantes--;
+                if (intentosRestantes > 0)
+                {
+                    StartCoroutine(EsperarI());
+                }
+                else
+                {
+                    StartCoroutine(EsperarIYDesactivar());
+                }
+            }
         }
+        else
+        {
+            DesactivarScript();
+        }
+    }
+    
+    IEnumerator EsperarYCerrarC()
+    {
+        cerrar();
+        mensajeCorrecto.SetActive(true);
+        rCorrecta.Play();
+        
+        yield return new WaitForSeconds(3f);
+        
+        mensajeCorrecto.SetActive(false);
+        Destroy(puerta);        
+    }
+    IEnumerator EsperarI()
+    {
+        cerrar();
+        mensajeInCorrecto.SetActive(true);
+        rIncorrecta.Play();
+        
+        yield return new WaitForSeconds(3f);
+        
+        mensajeInCorrecto.SetActive(false);
+    }
+
+    IEnumerator EsperarIYDesactivar()
+    {
+        cerrar();
+        mensajeInCorrecto.SetActive(true);
+        rIncorrecta.Play();
+        yield return new WaitForSeconds(3f);
+        mensajeInCorrecto.SetActive(false);
+        DesactivarScript();
     }
 
     void cerrar()
     {
         canvasPregunta.SetActive(false);
+        fatherMoment1Script.puedeMoverse = true; 
+    }
+
+    void DesactivarScript()
+    {
+        cerrar();
+        this.enabled = false;
+        fatherMoment1Script.puedeMoverse = true;
+        if (aviso != null)
+        {
+            aviso.OcultarUI();
+            aviso.enabled = false;
+            
+        }
+            
+            
     }
 }

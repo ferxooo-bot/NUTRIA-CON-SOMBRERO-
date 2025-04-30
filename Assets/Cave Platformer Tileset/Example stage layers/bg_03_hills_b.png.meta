@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bg_03_hills_b_0: 1784275925303564702
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

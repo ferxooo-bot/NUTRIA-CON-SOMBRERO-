@@ -7,6 +7,7 @@ public class Aviso : MonoBehaviour
         [SerializeField] private float rangoDeteccion = 2f;
         private GameObject jugador;
         
+        
     
     void Start()
     {
@@ -48,7 +49,7 @@ public class Aviso : MonoBehaviour
             Debug.Log("Mostrando UI");
         }
     }
-    void OcultarUI()
+    public void OcultarUI()
     {
         if (promptUI != null)
         {

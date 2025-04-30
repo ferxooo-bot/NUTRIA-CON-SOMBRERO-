@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d44e26ae803d04779a1c713330506a83
+timeCreated: 1498423510
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 94029
+  packageName: UnderWater Diving
+  packageVersion: 1.0
+  assetPath: Assets/Underwater Diving/Prefabs/Sprites/FishMid.prefab
+  uploadId: 186884

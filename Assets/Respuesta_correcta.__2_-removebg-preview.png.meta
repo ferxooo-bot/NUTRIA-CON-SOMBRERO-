@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: 5afe7a84f686d3f4f8ad0b1ec147b7a3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6922047504232693255
+    second: Respuesta_correcta.__2_-removebg-preview_0
+  - first:
+      213: 1768912345678312484
+    second: Respuesta_correcta.__2_-removebg-preview_1
+  - first:
+      213: 615800191789389494
+    second: Respuesta_correcta.__2_-removebg-preview_2
+  - first:
+      213: 1512127530491102841
+    second: Respuesta_correcta.__2_-removebg-preview_3
+  - first:
+      213: 3700902413335865845
+    second: Respuesta_correcta.__2_-removebg-preview_4
+  - first:
+      213: -6120037417815302187
+    second: Respuesta_correcta.__2_-removebg-preview_5
+  - first:
+      213: -3843427224354803742
+    second: Respuesta_correcta.__2_-removebg-preview_6
+  - first:
+      213: -8302003007655884385
+    second: Respuesta_correcta.__2_-removebg-preview_7
+  - first:
+      213: 1564364363129672334
+    second: Respuesta_correcta.__2_-removebg-preview_8
+  - first:
+      213: 1087120132425853917
+    second: Respuesta_correcta.__2_-removebg-preview_9
+  - first:
+      213: -7517698291968819063
+    second: Respuesta_correcta.__2_-removebg-preview_10
+  - first:
+      213: -3755180685283336333
+    second: Respuesta_correcta.__2_-removebg-preview_11
+  - first:
+      213: -2567405688700523536
+    second: Respuesta_correcta.__2_-removebg-preview_12
+  - first:
+      213: -5459491183189313672
+    second: Respuesta_correcta.__2_-removebg-preview_13
+  - first:
+      213: -6817594918889070064
+    second: Respuesta_correcta.__2_-removebg-preview_14
+  - first:
+      213: -8534892267534928671
+    second: Respuesta_correcta.__2_-removebg-preview_15
+  - first:
+      213: 6311174801369194065
+    second: Respuesta_correcta.__2_-removebg-preview_16
+  - first:
+      213: 6180589000395372509
+    second: Respuesta_correcta.__2_-removebg-preview_17
+  - first:
+      213: -2825440431307744233
+    second: Respuesta_correcta.__2_-removebg-preview_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Respuesta_correcta.__2_-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 145
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70e3b20d78d001060800000000000000
+      internalID: 6922047504232693255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta_correcta.__2_-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 66
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42475f208607c8810800000000000000
+      internalID: 1768912345678312484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta_correcta.__2_-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 66
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b659340303cb8800800000000000000
+      internalID: 615800191789389494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta_correcta.__2_-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 66
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 976c2063af72cf410800000000000000
+      internalID: 1512127530491102841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta_correcta.__2_-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 62
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f9254ff22f3c5330800000000000000
+      internalID: 3700902413335865845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta_correcta.__2_-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 61
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df1503d462411ba0800000000000000
+      internalID: -6120037417815302187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta_correcta.__2_-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 66
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ef24448d4769aac0800000000000000
+      internalID: -3843427224354803742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta_correcta.__2_-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 65
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f99427c104c59cc80800000000000000
+      internalID: -8302003007655884385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta_correcta.__2_-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 51
+        width: 88
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e82df93991db5b510800000000000000
+      internalID: 1564364363129672334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta_correcta.__2_-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 66
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddb2b69200a361f00800000000000000
+      internalID: 1087120132425853917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta_correcta.__2_-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 29
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98043a2eb35cba790800000000000000
+      internalID: -7517698291968819063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta_correcta.__2_-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 29
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37f5742001be2ebc0800000000000000
+      internalID: -3755180685283336333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta_correcta.__2_-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 2
+        width: 26
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fb20baf02ebe5cd0800000000000000
+      internalID: -2567405688700523536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta_correcta.__2_-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 29
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877bf9bc1bdfb34b0800000000000000
+      internalID: -5459491183189313672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta_correcta.__2_-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 5
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 012eb1dda890361a0800000000000000
+      internalID: -6817594918889070064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta_correcta.__2_-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 26
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e43a55d3b8fd8980800000000000000
+      internalID: -8534892267534928671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta_correcta.__2_-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 2
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15ed1073b0cc59750800000000000000
+      internalID: 6311174801369194065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta_correcta.__2_-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 24
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd7b04f13fcd5c550800000000000000
+      internalID: 6180589000395372509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Respuesta_correcta.__2_-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 8
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71c10e5c5e40ac8d0800000000000000
+      internalID: -2825440431307744233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Respuesta_correcta.__2_-removebg-preview_0: 6922047504232693255
+      Respuesta_correcta.__2_-removebg-preview_1: 1768912345678312484
+      Respuesta_correcta.__2_-removebg-preview_10: -7517698291968819063
+      Respuesta_correcta.__2_-removebg-preview_11: -3755180685283336333
+      Respuesta_correcta.__2_-removebg-preview_12: -2567405688700523536
+      Respuesta_correcta.__2_-removebg-preview_13: -5459491183189313672
+      Respuesta_correcta.__2_-removebg-preview_14: -6817594918889070064
+      Respuesta_correcta.__2_-removebg-preview_15: -8534892267534928671
+      Respuesta_correcta.__2_-removebg-preview_16: 6311174801369194065
+      Respuesta_correcta.__2_-removebg-preview_17: 6180589000395372509
+      Respuesta_correcta.__2_-removebg-preview_18: -2825440431307744233
+      Respuesta_correcta.__2_-removebg-preview_2: 615800191789389494
+      Respuesta_correcta.__2_-removebg-preview_3: 1512127530491102841
+      Respuesta_correcta.__2_-removebg-preview_4: 3700902413335865845
+      Respuesta_correcta.__2_-removebg-preview_5: -6120037417815302187
+      Respuesta_correcta.__2_-removebg-preview_6: -3843427224354803742
+      Respuesta_correcta.__2_-removebg-preview_7: -8302003007655884385
+      Respuesta_correcta.__2_-removebg-preview_8: 1564364363129672334
+      Respuesta_correcta.__2_-removebg-preview_9: 1087120132425853917
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

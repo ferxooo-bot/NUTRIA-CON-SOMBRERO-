@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 3cde7c031df54416aa320c38539a0efe
+timeCreated: 1498236486
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 94029
+  packageName: UnderWater Diving
+  packageVersion: 1.0
+  assetPath: Assets/Underwater Diving/Animations/PlayerRush.anim
+  uploadId: 186884

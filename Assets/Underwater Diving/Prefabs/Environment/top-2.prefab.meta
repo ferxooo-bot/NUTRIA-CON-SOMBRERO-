@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 18708289733dd469db6ae9b9d5cd8d0f
+timeCreated: 1498423751
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 94029
+  packageName: UnderWater Diving
+  packageVersion: 1.0
+  assetPath: Assets/Underwater Diving/Prefabs/Environment/top-2.prefab
+  uploadId: 186884
