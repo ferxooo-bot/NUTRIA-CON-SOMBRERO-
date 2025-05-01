@@ -11,12 +11,6 @@ public class EnemyHunting : MonoBehaviour
     [Header("Configuración de Persecución")]
     [SerializeField] private float velocidadPersecucion = 5f;
     
-    [Header("Configuración de Ataque")]
-    [SerializeField] private int contactoDano = 3; // Daño por contacto
-    [SerializeField] private float contactoKnockback = 5f; // Fuerza de retroceso
-    [SerializeField] private float tiempoEntreDanoContacto = 1f; // Tiempo entre daños
-    private float ultimoTiempoDano; // Temporizador interno
-    
     
     [Header("Referencias")]
     [SerializeField] private Transform jugador;
@@ -81,16 +75,17 @@ public class EnemyHunting : MonoBehaviour
         float distancia = Vector2.Distance(transform.position, jugador.position);
         if (distancia > rangoVision) return false;
 
-        // 👇 Nueva lógica: filtra por altura
-        if (Mathf.Abs(jugador.position.y - transform.position.y) > 1f) return false;
-
-        // 👇 Nueva lógica: solo ve al frente
-        bool jugadorADerecha = jugador.position.x > transform.position.x;
-        if (jugadorADerecha != mirandoDerecha) return false;
-
-        // 👁 Revisión de obstáculos en línea recta
         Vector2 direccionAlJugador = (jugador.position - transform.position).normalized;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, direccionAlJugador, distancia, obstacleMask);
+        Vector2 direccionMirada = mirandoDerecha ? Vector2.right : Vector2.left;
+        
+        float angulo = Vector2.Angle(direccionMirada, direccionAlJugador);
+        if (angulo > anguloVision / 2) return false;
+
+        RaycastHit2D hit = Physics2D.Raycast(
+            transform.position, 
+            direccionAlJugador, 
+            distancia, 
+            obstacleMask);
 
         return hit.collider == null;
     }
@@ -127,10 +122,10 @@ public class EnemyHunting : MonoBehaviour
     private void Perseguir()
     {
         Vector2 direccion = (jugador.position - transform.position).normalized;
-        rb.linearVelocity = new Vector2(direccion.x * velocidadPersecucion, rb.linearVelocity.y);
+        rb.linearVelocity = direccion * velocidadPersecucion;
+
         GestionarOrientacion(direccion);
     }
-
 
     private void VolverBase()
     {
@@ -170,31 +165,6 @@ public class EnemyHunting : MonoBehaviour
         transform.localScale = escala;
     }
     
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            if (Time.time - ultimoTiempoDano >= tiempoEntreDanoContacto)
-            {
-                AplicarDanoContacto(collision.transform);
-                ultimoTiempoDano = Time.time;
-            }
-        }
-    }
-
-    private void AplicarDanoContacto(Transform jugador)
-    {
-        // Calcular dirección del knockback
-        Vector2 direccionKnockback = (jugador.position - transform.position).normalized;
-        Vector2 knockback = direccionKnockback * contactoKnockback;
-    
-        // Aplicar daño
-        FatherMoment1 playerController = jugador.GetComponent<FatherMoment1>();
-        if (playerController != null)
-        {
-            playerController.TakeDamage(contactoDano, knockback);
-        }
-    }
 
     private void OnDrawGizmosSelected()
     {

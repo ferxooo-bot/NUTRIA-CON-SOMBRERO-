@@ -4,7 +4,6 @@ using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.InputSystem.HID;
 using System.Collections;
-using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 
 public class FatherMoment1 : MonoBehaviour
@@ -19,8 +18,6 @@ public class FatherMoment1 : MonoBehaviour
     public GameObject sprite; // Animación de correr y saltar
     public Animator animatorSprite;
     public Animator animatorBones; 
-    private BoxCollider2D boxCollider;
-    private ShadowCaster2D shadowCaster;
 
    
 [Header("Heart System")]
@@ -28,31 +25,12 @@ public class FatherMoment1 : MonoBehaviour
 [SerializeField] private SpriteRenderer[] heartEmptys = new SpriteRenderer[3]; // Corazones vacíos
 [SerializeField] private float flashIntensity = 3f; // Intensidad del brillo al parpadear
 
-
-
 [Header("Configuración de Muerte")]
-[SerializeField] private Transform respawnPoint; // Arrastra el punto de reinicio
+[SerializeField] public Transform respawnPoint; // Arrastra el punto de reinicio
 [SerializeField] private float respawnDelay = 1.0f; // Tiempo antes de reiniciar
 private bool isDead = false;
-
-[Header("Configuración del Collider")]
-[SerializeField] private Vector2 normalColliderSize = new Vector2(0.27f, 0.82f);
-[SerializeField] private Vector2 normalColliderSizeOffSet = new Vector2(0.27f, 0.82f);
-[SerializeField] private Vector2 normalColliderSizeI = new Vector2(0.27f, 0.82f);
-[SerializeField] private Vector2 normalColliderSizeOffSetI = new Vector2(0.27f, 0.82f);
-[SerializeField] private Vector2 runningColliderSize = new Vector2(0.92f, 0.20f);
-[SerializeField] private Vector2 jumpingColliderSize = new Vector2(0.42f, 0.38f);
-[SerializeField] private Vector2 runningColliderOffset = new Vector2(0f, 0.5f);
-[SerializeField] private Vector2 jumpingColliderOffset = new Vector2(0f, 0.6f);
-
-private bool isJumping;
-[Header("Configuración de Daño")]
-
-[SerializeField] private float invulnerabilityTime = 1.5f;
-[SerializeField] private float blinkInterval = 0.15f;
-private SpriteRenderer playerSprite;
     //-------
-    private int currentHealth;
+    public int currentHealth;
     public float jumpForce = 4f; 
     public LayerMask whatIsGround; 
     public bool inGround; 
@@ -65,11 +43,7 @@ private SpriteRenderer playerSprite;
     private bool isInvulnerable = false;
     //---------------------
 
-    // Variables agregadas para el nuevo sistema de ground check
-    public Transform groundCheck;
-    public float groundCheckRadius = 0.2f;
-    public float groundCheckWidth = 0.8f;
-    private bool wasGrounded;
+
 
 
     // -------------------- ANIMACIÓN HIJOS--------------
@@ -82,7 +56,7 @@ private SpriteRenderer playerSprite;
         ResetHearts();
         stateHandler = GetComponent<StateHandler>(); 
         controls = new();  
-        playerSprite = GetComponentInChildren<SpriteRenderer>();
+        
         animatorSprite = transform.GetChild(0).GetComponent<Animator>();       
         animatorBones = transform.GetChild(1).GetComponent<Animator>(); 
         currentHealth = maxHealth;
@@ -93,24 +67,10 @@ private SpriteRenderer playerSprite;
     
     }
     private void Start()
-    {
-        Physics2D.autoSyncTransforms = true; 
-        Physics2D.defaultContactOffset = 0.01f;
-        
-        
-
-        boxCollider = GetComponent<BoxCollider2D>();
-        // Si no se ha asignado groundCheck en el inspector, crear uno
-        if (groundCheck == null)
-        {
-            GameObject checkObject = new GameObject("GroundCheck");
-            checkObject.transform.parent = this.transform;
-            checkObject.transform.localPosition = new Vector3(0, -0.5f, 0); // Ajusta esta posición según tu personaje
-            groundCheck = checkObject.transform;
-        }
-        
-        ResetHearts();
-    }
+{
+    
+    ResetHearts();
+}
     private void OnEnable()
     {
         controls.Enable(); 
@@ -129,20 +89,6 @@ private SpriteRenderer playerSprite;
 
     // ----------- update ------------
     private void Update(){
-        
-        if(isJumping){
-            boxCollider.size = jumpingColliderSize;
-            boxCollider.offset = jumpingColliderOffset;
-        }
-        else if(isRunning && (direction.x != 0)){
-            boxCollider.size = runningColliderSize;
-            boxCollider.offset = runningColliderOffset;
-        } else if(direction.x != 0){
-            boxCollider.size = normalColliderSize;
-            boxCollider.offset = normalColliderSizeOffSet;
-        }
-
-        
         // si otro script modifica esa varibale no va a poder  moverse 
         if (puedeMoverse)
         {
@@ -187,8 +133,12 @@ private SpriteRenderer playerSprite;
             rb2D.linearVelocity = Vector2.zero;
         }
          
-        // Método mejorado para detectar el suelo
-        CheckGrounded();
+        
+
+        //OverlapBox detecta coliciones en un area determinada, a un layer determinado => devuelve true/false
+        //Caja para detectar suelo
+        // Parámetros => posiciónDelCentroDeLaCaja Transform => ObjEmpty / Dimensiones V3 / Rotación / LayerMask  
+        GroundCheck(); 
         
         animatorSprite.SetBool("inGround", inGround); 
         animatorBones.SetBool("inGround", inGround); 
@@ -212,8 +162,7 @@ private SpriteRenderer playerSprite;
         lookRight = !lookRight;
         Vector3 escala = transform.localScale; 
         escala.x *= -1;
-        transform.localScale = escala;
-        
+        transform.localScale = escala; 
     }
 
     
@@ -221,63 +170,39 @@ private SpriteRenderer playerSprite;
     private void Jump(){
         if(inGround){
             rb2D.AddForce(new Vector2(0,jumpForce), ForceMode2D.Impulse);     
-            isJumping = true;
         }        
     }
 
 // -----------------------------
 
-    // Método mejorado para detectar el suelo
-    void CheckGrounded()
-    {
-        // Usar tres puntos para la detección: izquierda, centro y derecha
-        Vector2 center = groundCheck.position;
-        Vector2 left = new Vector2(center.x - groundCheckWidth/2, center.y);
-        Vector2 right = new Vector2(center.x + groundCheckWidth/2, center.y);
-        
-        bool centerGrounded = Physics2D.OverlapCircle(center, groundCheckRadius, whatIsGround);
-        bool leftGrounded = Physics2D.OverlapCircle(left, groundCheckRadius, whatIsGround);
-        bool rightGrounded = Physics2D.OverlapCircle(right, groundCheckRadius, whatIsGround);
-        
-        // Si cualquiera de los tres puntos detecta suelo, entonces está en el suelo
-        bool currentlyGrounded = centerGrounded || leftGrounded || rightGrounded;
-        
-        // Actualizamos el estado previo y actual
-        wasGrounded = inGround;
-        inGround = currentlyGrounded;
-        
-        // También podemos detectar el momento de aterrizaje si es necesario
-        // (cuando pasamos de estar en el aire a tocar suelo)
-        if (!wasGrounded && inGround)
-        {
-            isJumping = false;
-            // Aquí podríamos agregar lógica para el aterrizaje si es necesario
-            // Por ejemplo, reproducir un sonido o una animación específica
-        }
-    }
 
-    // Visualización de depuración
-    void OnDrawGizmos()
-    {
-        if (groundCheck != null)
-        {
-            // Dibujar el punto central
-            Gizmos.color = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround) ? Color.green : Color.red;
-            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
-            
-            // Dibujar puntos laterales
-            Vector2 center = groundCheck.position;
-            Vector2 left = new Vector2(center.x - groundCheckWidth/2, center.y);
-            Vector2 right = new Vector2(center.x + groundCheckWidth/2, center.y);
-            
-            Gizmos.color = Physics2D.OverlapCircle(left, groundCheckRadius, whatIsGround) ? Color.green : Color.red;
-            Gizmos.DrawWireSphere(left, groundCheckRadius);
-            
-            Gizmos.color = Physics2D.OverlapCircle(right, groundCheckRadius, whatIsGround) ? Color.green : Color.red;
-            Gizmos.DrawWireSphere(right, groundCheckRadius);
-        }
+    private void GroundCheck(){
+        float rayLenth = 0.7f; 
+        Ray ray= new Ray(transform.position, Vector2.down); 
+
+        Debug.DrawRay(ray.origin, ray.direction * rayLenth, Color.red); 
+
+        inGround = Physics2D.Raycast(ray.origin, ray.direction, rayLenth, whatIsGround); 
+
     }
+    public void Hurt()
+{ if (isInvulnerable || currentHealth <= 0) return;
     
+    if (isInvulnerable || currentHealth <= 0) return;
+    
+    currentHealth--;
+    int heartIndex = Mathf.Clamp(currentHealth, 0, heartFulls.Length - 1);
+    StartCoroutine(FlashAndDisableHeart(heartIndex));
+    
+
+
+    ApplyKnockback();
+     if (currentHealth <= 0) Die();
+
+     
+    
+    
+}
 private void ApplyKnockback()
 {
    if (rb2D == null) // Verifica que el Rigidbody2D esté asignado
@@ -357,7 +282,7 @@ private void Die()
     StartCoroutine(RespawnAfterDelay());
     
 }
-private IEnumerator RespawnAfterDelay()
+public IEnumerator RespawnAfterDelay()
 {
    yield return new WaitForSeconds(respawnDelay);
 
@@ -374,63 +299,26 @@ private IEnumerator RespawnAfterDelay()
     controls.Enable();
     isDead = false;
 }
-public void TakeDamage(int damageAmount, Vector2 knockback)
-{
-    if(isDead || isInvulnerable) return;
 
-    currentHealth -= damageAmount;
-    UpdateHeartsUI();
-    
-    // Aplicar knockback
-    rb2D.linearVelocity = Vector2.zero;
-    rb2D.AddForce(knockback, ForceMode2D.Impulse);
-    
-    // Manejar muerte o invulnerabilidad
-    if(currentHealth <= 0)
+
+public void SetRespawnPoint(string lastRespawn)
+{
+    // Buscar el Transform con el nombre 'lastRespawn'
+    Transform newRespawnPoint = GameObject.Find(lastRespawn)?.transform;
+
+    // Verificar si se encontró el respawn
+    if (newRespawnPoint != null)
     {
-        Die();
+        // Asignar el nuevo respawn al campo 'respawnPoint'
+        respawnPoint = newRespawnPoint;
     }
     else
     {
-        StartCoroutine(InvulnerabilityRoutine());
+        Debug.LogWarning("No se encontró el respawn con el nombre: " + lastRespawn);
     }
 }
-public void InstantKill()
-{
-    if(isDead) return;
-    
-    currentHealth = 0;
-    UpdateHeartsUI();
-    Die();
-}
 
 
-private IEnumerator InvulnerabilityRoutine()
-{
-    isInvulnerable = true;
-    float timer = 0f;
-    bool visible = true;
-
-    while(timer < invulnerabilityTime)
-    {
-        playerSprite.enabled = visible;
-        visible = !visible;
-        timer += blinkInterval;
-        yield return new WaitForSeconds(blinkInterval);
-    }
-    
-    playerSprite.enabled = true;
-    isInvulnerable = false;
-}
-
-private void UpdateHeartsUI()
-{
-    for(int i = 0; i < heartFulls.Length; i++)
-    {
-        heartFulls[i].enabled = i < currentHealth;
-        heartEmptys[i].enabled = i >= currentHealth;
-    }
-}
 
     // --- Curacion, aun sin utilizar ---
     /*public void Heal()
@@ -441,3 +329,8 @@ private void UpdateHeartsUI()
     }*/
 
 }
+
+
+
+
+
