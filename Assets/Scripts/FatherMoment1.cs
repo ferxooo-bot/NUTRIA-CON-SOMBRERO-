@@ -6,6 +6,8 @@ using UnityEngine.InputSystem.HID;
 using System.Collections;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
+using System;
+using System.Collections.Generic;
 
 public class FatherMoment1 : MonoBehaviour
 {
@@ -45,6 +47,8 @@ public class FatherMoment1 : MonoBehaviour
     public float invulnerabilityTime = 1.5f;
     public float blinkInterval = 0.15f;
     private bool isInvulnerable = false;
+    [Header("Inventario")]
+    public List<string> inventario = new List<string>();
 
     [Header("Sistema de Corazones (UI)")]
     [SerializeField] private SpriteRenderer[] heartFulls = new SpriteRenderer[3];  // Corazones llenos
@@ -373,28 +377,6 @@ public IEnumerator RespawnAfterDelay()
     controls.Enable();
     isDead = false;
 }
-
-
-public void SetRespawnPoint(string lastRespawn)
-{
-    // Buscar el Transform con el nombre 'lastRespawn'
-    Transform newRespawnPoint = GameObject.Find(lastRespawn)?.transform;
-
-    // Verificar si se encontró el respawn
-    if (newRespawnPoint != null)
-    {
-        // Asignar el nuevo respawn al campo 'respawnPoint'
-        respawnPoint = newRespawnPoint;
-    }
-    else
-    {
-        Debug.LogWarning("No se encontró el respawn con el nombre: " + lastRespawn);
-    }
-}
-
-
-
-
 public void TakeDamage(int damageAmount, Vector2 knockback)
 {
     if(isDead || isInvulnerable) return;
@@ -453,7 +435,11 @@ private void UpdateHeartsUI()
     }
 }
 
-
+    internal void SetRespawnPoint(string name)
+    {
+        throw new NotImplementedException();
+    }
+  
 
 
     // --- Curacion, aun sin utilizar ---
