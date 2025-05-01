@@ -435,11 +435,24 @@ private void UpdateHeartsUI()
     }
 }
 
-    internal void SetRespawnPoint(string name)
+
+public void SetRespawnPoint(string lastRespawn)
+{
+    // Buscar el Transform con el nombre 'lastRespawn'
+    Transform newRespawnPoint = GameObject.Find(lastRespawn)?.transform;
+
+    // Verificar si se encontró el respawn
+    if (newRespawnPoint != null)
     {
-        throw new NotImplementedException();
+        // Asignar el nuevo respawn al campo 'respawnPoint'
+        respawnPoint = newRespawnPoint;
     }
-  
+    else
+    {
+        Debug.LogWarning("No se encontró el respawn con el nombre: " + lastRespawn);
+    }
+}
+
 
 
     // --- Curacion, aun sin utilizar ---
