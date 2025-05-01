@@ -92,7 +92,7 @@ public class Teleporter : MonoBehaviour
         if (promptUI != null)
         {
             promptUI.SetActive(true);
-            
+            Debug.Log("Mostrando UI");
         }
     }
 
@@ -101,7 +101,7 @@ public class Teleporter : MonoBehaviour
         if (promptUI != null)
         {
             promptUI.SetActive(false);
-            
+            Debug.Log("Ocultando UI");
         }
     }
     
