@@ -481,6 +481,7 @@ GameObject:
   - component: {fileID: 50501297716491483}
   - component: {fileID: 6446650456525154058}
   - component: {fileID: 3438327926545939593}
+  - component: {fileID: 7592514124166446981}
   m_Layer: 0
   m_Name: 'Puerta '
   m_TagString: Untagged
@@ -662,6 +663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcc9423d8a3fa4a47b93c3b9259bfbcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorId: 
   canvasPregunta: {fileID: 0}
   textoPregunta: {fileID: 0}
   textosRespuestas:
@@ -683,6 +685,7 @@ MonoBehaviour:
   intentosRestantes: 2
   mensajeCorrecto: {fileID: 5877232263057228104}
   mensajeInCorrecto: {fileID: 864491663272553028}
+  doorController: {fileID: 7592514124166446981}
   fatherMoment1Script: {fileID: 0}
 --- !u!114 &3438327926545939593
 MonoBehaviour:
@@ -699,6 +702,27 @@ MonoBehaviour:
   damage: 1
   knockbackForce: 10
   knockbackDirection: {x: 5, y: 2}
+--- !u!114 &7592514124166446981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3846847790766480363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7cd46f3f5f4953138bd4a274ec6e559, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  preguntasScript: {fileID: 6446650456525154058}
+  doorId: 
+  startClosed: 1
+  currentLevel:
+    levelId: 0
+    levelName: 
+    openedChests: []
+    openedDoors: []
+    isCompleted: 0
 --- !u!1 &5877232263057228104
 GameObject:
   m_ObjectHideFlags: 0
