@@ -41,7 +41,7 @@ public class FatherMoment1 : MonoBehaviour
 
     [Header("Salud y Daño")]
     public int maxHealth = 3;
-    private int currentHealth;
+    public int currentHealth;
     public float invulnerabilityTime = 1.5f;
     public float blinkInterval = 0.15f;
     private bool isInvulnerable = false;
@@ -60,7 +60,7 @@ public class FatherMoment1 : MonoBehaviour
     [SerializeField] private Vector2 jumpingColliderOffset = new Vector2(0f, 0.6f);
 
     [Header("Configuración de Muerte y Reaparición")]
-    [SerializeField] private Transform respawnPoint; // Arrastra el punto de reinicio
+    [SerializeField] public Transform respawnPoint; // Arrastra el punto de reinicio
     [SerializeField] private float respawnDelay = 1.0f; // Tiempo antes de reiniciar
     private bool isDead = false;
 
@@ -356,7 +356,7 @@ private void Die()
     StartCoroutine(RespawnAfterDelay());
     
 }
-private IEnumerator RespawnAfterDelay()
+public IEnumerator RespawnAfterDelay()
 {
    yield return new WaitForSeconds(respawnDelay);
 
@@ -373,6 +373,28 @@ private IEnumerator RespawnAfterDelay()
     controls.Enable();
     isDead = false;
 }
+
+
+public void SetRespawnPoint(string lastRespawn)
+{
+    // Buscar el Transform con el nombre 'lastRespawn'
+    Transform newRespawnPoint = GameObject.Find(lastRespawn)?.transform;
+
+    // Verificar si se encontró el respawn
+    if (newRespawnPoint != null)
+    {
+        // Asignar el nuevo respawn al campo 'respawnPoint'
+        respawnPoint = newRespawnPoint;
+    }
+    else
+    {
+        Debug.LogWarning("No se encontró el respawn con el nombre: " + lastRespawn);
+    }
+}
+
+
+
+
 public void TakeDamage(int damageAmount, Vector2 knockback)
 {
     if(isDead || isInvulnerable) return;
@@ -430,6 +452,9 @@ private void UpdateHeartsUI()
         heartEmptys[i].enabled = i >= currentHealth;
     }
 }
+
+
+
 
     // --- Curacion, aun sin utilizar ---
     /*public void Heal()
