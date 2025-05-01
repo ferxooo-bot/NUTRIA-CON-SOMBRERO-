@@ -1,20 +1,28 @@
 ﻿using UnityEngine;
 
-public class HurtPlayer : MonoBehaviour 
+public class HurtPlayer : MonoBehaviour
 {
-    // Elimina la búsqueda en Start() y hazlo directamente en OnTriggerEnter2D
+    [Header("Configuración de Daño")] [SerializeField]
+    private int damage = 1;
+
+    [SerializeField] private float knockbackForce = 10f;
+    [SerializeField] private Vector2 knockbackDirection = new Vector2(5f, 2f);
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player")) // Usa CompareTag en lugar de .tag (más eficiente)
+        if (other.CompareTag("Player"))
         {
-            FatherMoment1 player = other.GetComponent<FatherMoment1>(); // Obtén el componente del jugador colisionado
+            FatherMoment1 player = other.GetComponent<FatherMoment1>();
             if (player != null)
             {
-                player.Hurt(); // Llama al método hurt() solo si el jugador existe
-            }
-            else
-            {
-                Debug.LogWarning("El jugador no tiene el componente FatherMoment1.");
+                // Calcular dirección del knockback basada en la posición
+                float direction = Mathf.Sign(other.transform.position.x - transform.position.x);
+                Vector2 finalKnockback = new Vector2(
+                    knockbackDirection.x * direction,
+                    knockbackDirection.y
+                ) * knockbackForce;
+
+                player.TakeDamage(damage, finalKnockback);
             }
         }
     }
