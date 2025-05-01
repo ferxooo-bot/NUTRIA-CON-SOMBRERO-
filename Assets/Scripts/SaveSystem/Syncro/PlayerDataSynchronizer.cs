@@ -41,9 +41,7 @@ public class PlayerDataSynchronizer : MonoBehaviour
 
         int currentLevelID = currentSave.playerData.currentLevelId; 
 
-        currentSave.playerData.health= fatherMovement.currentHealth; 
-
-        currentSave.playerData.lastRespawn = fatherMovement.respawnPoint.name; 
+       
 
         saveSystem.SaveGame();
     }
@@ -62,6 +60,6 @@ public class PlayerDataSynchronizer : MonoBehaviour
         string lastRespawn = currentSave.playerData.lastRespawn; 
 
         fatherMovement.SetRespawnPoint(lastRespawn); 
-        StartCoroutine(fatherMovement.RespawnAfterDelay());
+        
     }
 }
