@@ -9,73 +9,64 @@ using UnityEngine.UI;
 
 public class FatherMoment1 : MonoBehaviour
 {
-   public Controls controls; // se crea la variable para controlar el Input Action llamado Controls
+   [Header("Input")]
+    public Controls controls; // Se crea la variable para controlar el Input Action llamado Controls
+    public Vector2 direction; // Almacena la dirección del movimiento
     public bool puedeMoverse = true;
-    public Vector2 direction; // almacena la dirección del movimiento
-    public Rigidbody2D rb2D; 
-    public float movementVelocityWalk =7f; 
-    public float movementVelocityRun;
-    public GameObject bones;  // Animación de caminar
-    public GameObject sprite; // Animación de correr y saltar
-    public Animator animatorSprite;
-    public Animator animatorBones; 
+
+    [Header("Componentes")]
+    public Rigidbody2D rb2D;
     private BoxCollider2D boxCollider;
-    private ShadowCaster2D shadowCaster;
+    public GameObject bones;  // GameObject para la animación de caminar (huesos)
+    public GameObject sprite; // GameObject para la animación de correr y saltar (sprite)
+    public Animator animatorSprite;
+    public Animator animatorBones;
+    private SpriteRenderer playerSprite;
 
-   
-[Header("Heart System")]
-[SerializeField] private SpriteRenderer[] heartFulls = new SpriteRenderer[3];  // Corazones llenos
-[SerializeField] private SpriteRenderer[] heartEmptys = new SpriteRenderer[3]; // Corazones vacíos
-[SerializeField] private float flashIntensity = 3f; // Intensidad del brillo al parpadear
-
-
-
-[Header("Configuración de Muerte")]
-[SerializeField] private Transform respawnPoint; // Arrastra el punto de reinicio
-[SerializeField] private float respawnDelay = 1.0f; // Tiempo antes de reiniciar
-private bool isDead = false;
-
-[Header("Configuración del Collider")]
-[SerializeField] private Vector2 normalColliderSize = new Vector2(0.27f, 0.82f);
-[SerializeField] private Vector2 normalColliderSizeOffSet = new Vector2(0.27f, 0.82f);
-[SerializeField] private Vector2 normalColliderSizeI = new Vector2(0.27f, 0.82f);
-[SerializeField] private Vector2 normalColliderSizeOffSetI = new Vector2(0.27f, 0.82f);
-[SerializeField] private Vector2 runningColliderSize = new Vector2(0.92f, 0.20f);
-[SerializeField] private Vector2 jumpingColliderSize = new Vector2(0.42f, 0.38f);
-[SerializeField] private Vector2 runningColliderOffset = new Vector2(0f, 0.5f);
-[SerializeField] private Vector2 jumpingColliderOffset = new Vector2(0f, 0.6f);
-
-private bool isJumping;
-[Header("Configuración de Daño")]
-
-[SerializeField] private float invulnerabilityTime = 1.5f;
-[SerializeField] private float blinkInterval = 0.15f;
-private SpriteRenderer playerSprite;
-    //-------
-    private int currentHealth;
-    public float jumpForce = 4f; 
-    public LayerMask whatIsGround; 
-    public bool inGround; 
+    [Header("Movimiento")]
+    public float movementVelocityWalk = 5f;
+    public float movementVelocityRun = 7f;
+    public float jumpForce = 4f;
     public bool isRunning;
+    public bool isJumping;
+    public bool rushing; // Variable adicional relacionada con el movimiento rápido
 
-    public int maxHealth = 3;
-    
-    // ---------------------
-    public StateHandler stateHandler;
-    private bool isInvulnerable = false;
-    //---------------------
-
-    // Variables agregadas para el nuevo sistema de ground check
+    [Header("Detección de Suelo")]
+    public LayerMask whatIsGround;
+    public bool inGround;
     public Transform groundCheck;
     public float groundCheckRadius = 0.2f;
     public float groundCheckWidth = 0.8f;
     private bool wasGrounded;
 
+    [Header("Salud y Daño")]
+    public int maxHealth = 3;
+    private int currentHealth;
+    public float invulnerabilityTime = 1.5f;
+    public float blinkInterval = 0.15f;
+    private bool isInvulnerable = false;
 
-    // -------------------- ANIMACIÓN HIJOS--------------
+    [Header("Sistema de Corazones (UI)")]
+    [SerializeField] private SpriteRenderer[] heartFulls = new SpriteRenderer[3];  // Corazones llenos
+    [SerializeField] private SpriteRenderer[] heartEmptys = new SpriteRenderer[3]; // Corazones vacíos
+    [SerializeField] private float flashIntensity = 3f; // Intensidad del brillo al parpadear
 
+    [Header("Configuración del Collider")]
+    [SerializeField] private Vector2 normalColliderSize = new Vector2(0.27f, 0.82f);
+    [SerializeField] private Vector2 normalColliderSizeOffSet = new Vector2(0.27f, 0.82f);
+    [SerializeField] private Vector2 runningColliderSize = new Vector2(0.92f, 0.20f);
+    [SerializeField] private Vector2 runningColliderOffset = new Vector2(0f, 0.5f);
+    [SerializeField] private Vector2 jumpingColliderSize = new Vector2(0.42f, 0.38f);
+    [SerializeField] private Vector2 jumpingColliderOffset = new Vector2(0f, 0.6f);
+
+    [Header("Configuración de Muerte y Reaparición")]
+    [SerializeField] private Transform respawnPoint; // Arrastra el punto de reinicio
+    [SerializeField] private float respawnDelay = 1.0f; // Tiempo antes de reiniciar
+    private bool isDead = false;
+
+    [Header("Estados y Animación")]
+    public StateHandler stateHandler;
     public bool lookRight = true;
-    internal bool rushing;
 
     private void Awake() 
     {
@@ -133,13 +124,16 @@ private SpriteRenderer playerSprite;
         if(isJumping){
             boxCollider.size = jumpingColliderSize;
             boxCollider.offset = jumpingColliderOffset;
+            Physics2D.SyncTransforms();
         }
         else if(isRunning && (direction.x != 0)){
             boxCollider.size = runningColliderSize;
             boxCollider.offset = runningColliderOffset;
+            Physics2D.SyncTransforms();
         } else if(direction.x != 0){
             boxCollider.size = normalColliderSize;
             boxCollider.offset = normalColliderSizeOffSet;
+            Physics2D.SyncTransforms();
         }
 
         
@@ -178,6 +172,7 @@ private SpriteRenderer playerSprite;
     private void FixedUpdate()
     {
         float speed = isRunning ? movementVelocityRun : movementVelocityWalk;
+        
         if (puedeMoverse)
         {
             rb2D.linearVelocity = new Vector2(direction.x * speed, rb2D.linearVelocityY);
@@ -187,6 +182,10 @@ private SpriteRenderer playerSprite;
             rb2D.linearVelocity = Vector2.zero;
         }
          
+        
+        if (speed > 15f) speed = 15f; // Límite máximo
+        
+        
         // Método mejorado para detectar el suelo
         CheckGrounded();
         
