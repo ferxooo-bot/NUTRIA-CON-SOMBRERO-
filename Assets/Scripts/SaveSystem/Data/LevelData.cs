@@ -9,11 +9,10 @@ public class LevelData
     public string levelName;
     public List<string> openedChests = new List<string>();
     public List<string> openedDoors = new List<string>();
-    public List<string> completedDialogues = new List<string>();
-    public List<string> collectedItems = new List<string>();
-    public List<string> defeatedEnemies = new List<string>();
-    public List<string> activatedSwitches = new List<string>();
     public bool isCompleted = false;
+    
+    
+
     
     // Campo para almacenar datos adicionales en formato string:valor
     public Dictionary<string, string> additionalData = new Dictionary<string, string>();

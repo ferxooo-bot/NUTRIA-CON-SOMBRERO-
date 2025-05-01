@@ -98,7 +98,7 @@ public class SaveSystem : MonoBehaviour
             currentLevelId = 1
         };
         
-        GameSave newSave = new GameSave
+        GameSave newSave = new GameSave(1)
         {
             saveName = saveName,
             saveDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"),
@@ -202,7 +202,7 @@ public class SaveSystem : MonoBehaviour
         currentSave.playerData.currentLevelId = levelId;
         
         // Asegurarse de que existe el nivel en la lista
-        LevelData levelData = currentSave.playerData.GetLevelData(levelId);
+        LevelData levelData = currentSave.GetLevelData(levelId);
         if (!string.IsNullOrEmpty(levelName) && string.IsNullOrEmpty(levelData.levelName))
         {
             levelData.levelName = levelName;
@@ -214,7 +214,7 @@ public class SaveSystem : MonoBehaviour
     public LevelData GetCurrentLevelData()
     {
         if (currentSave == null) return null;
-        return currentSave.playerData.GetLevelData(currentSave.playerData.currentLevelId);
+        return currentSave.GetLevelData(currentSave.playerData.currentLevelId);
     }
 
     // Métodos específicos para modificar datos del jugador
@@ -279,24 +279,6 @@ public class SaveSystem : MonoBehaviour
         }
     }
 
-    public void UnlockLevel(int levelId, string levelName = "")
-    {
-        if (currentSave == null) return;
-        
-        if (!currentSave.playerData.unlockedLevels.Contains(levelId))
-        {
-            currentSave.playerData.unlockedLevels.Add(levelId);
-            
-            // Crear o actualizar información del nivel
-            LevelData levelData = currentSave.playerData.GetLevelData(levelId);
-            if (!string.IsNullOrEmpty(levelName))
-            {
-                levelData.levelName = levelName;
-            }
-            
-            SaveGame();
-        }
-    }
 
     public void SetRespawnPoint(string lastRespawn, int levelId)
     {
@@ -312,7 +294,8 @@ public class SaveSystem : MonoBehaviour
     {
         if (currentSave == null) return;
         
-        LevelData levelData = currentSave.playerData.GetLevelData(levelId);
+        LevelData levelData = currentSave.GetLevelData(levelId);
+
         if (!levelData.openedChests.Contains(chestId))
         {
             levelData.openedChests.Add(chestId);
@@ -320,23 +303,12 @@ public class SaveSystem : MonoBehaviour
         }
     }
 
-    public void CompleteDialogue(string dialogueId, int levelId)
-    {
-        if (currentSave == null) return;
-        
-        LevelData levelData = currentSave.playerData.GetLevelData(levelId);
-        if (!levelData.completedDialogues.Contains(dialogueId))
-        {
-            levelData.completedDialogues.Add(dialogueId);
-            SaveGame();
-        }
-    }
 
     public void OpenDoor(string doorId, int levelId)
     {
         if (currentSave == null) return;
         
-        LevelData levelData = currentSave.playerData.GetLevelData(levelId);
+        LevelData levelData = currentSave.GetLevelData(levelId);
         if (!levelData.openedDoors.Contains(doorId))
         {
             levelData.openedDoors.Add(doorId);
@@ -344,47 +316,12 @@ public class SaveSystem : MonoBehaviour
         }
     }
 
-    public void CollectItem(string itemId, int levelId)
-    {
-        if (currentSave == null) return;
-        
-        LevelData levelData = currentSave.playerData.GetLevelData(levelId);
-        if (!levelData.collectedItems.Contains(itemId))
-        {
-            levelData.collectedItems.Add(itemId);
-            SaveGame();
-        }
-    }
-
-    public void DefeatEnemy(string enemyId, int levelId)
-    {
-        if (currentSave == null) return;
-        
-        LevelData levelData = currentSave.playerData.GetLevelData(levelId);
-        if (!levelData.defeatedEnemies.Contains(enemyId))
-        {
-            levelData.defeatedEnemies.Add(enemyId);
-            SaveGame();
-        }
-    }
-
-    public void ActivateSwitch(string switchId, int levelId)
-    {
-        if (currentSave == null) return;
-        
-        LevelData levelData = currentSave.playerData.GetLevelData(levelId);
-        if (!levelData.activatedSwitches.Contains(switchId))
-        {
-            levelData.activatedSwitches.Add(switchId);
-            SaveGame();
-        }
-    }
 
     public void CompleteLevel(int levelId)
     {
         if (currentSave == null) return;
         
-        LevelData levelData = currentSave.playerData.GetLevelData(levelId);
+        LevelData levelData = currentSave.GetLevelData(levelId);
         levelData.isCompleted = true;
         SaveGame();
     }
@@ -394,7 +331,7 @@ public class SaveSystem : MonoBehaviour
     {
         if (currentSave == null) return;
         
-        LevelData levelData = currentSave.playerData.GetLevelData(levelId);
+        LevelData levelData = currentSave.GetLevelData(levelId);
         if (levelData.additionalData == null)
         {
             levelData.additionalData = new Dictionary<string, string>();
@@ -408,7 +345,7 @@ public class SaveSystem : MonoBehaviour
     {
         if (currentSave == null) return defaultValue;
         
-        LevelData levelData = currentSave.playerData.GetLevelData(levelId);
+        LevelData levelData = currentSave.GetLevelData(levelId);
         if (levelData.additionalData != null && levelData.additionalData.ContainsKey(key))
         {
             return levelData.additionalData[key];
@@ -457,68 +394,46 @@ public class SaveSystem : MonoBehaviour
         return currentSave.playerData.GetBoolProperty(key, defaultValue);
     }
 
-    // Métodos para verificar estados guardados
+
+
+
+
+
+
+
+
     public bool IsChestOpened(string chestId, int levelId)
     {
         if (currentSave == null) return false;
         
-        LevelData levelData = currentSave.playerData.GetLevelData(levelId);
+        LevelData levelData = currentSave.GetLevelData(levelId);
         return levelData.openedChests.Contains(chestId);
     }
 
-    public bool IsDialogueCompleted(string dialogueId, int levelId)
-    {
-        if (currentSave == null) return false;
-        
-        LevelData levelData = currentSave.playerData.GetLevelData(levelId);
-        return levelData.completedDialogues.Contains(dialogueId);
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     public bool IsDoorOpened(string doorId, int levelId)
     {
         if (currentSave == null) return false;
         
-        LevelData levelData = currentSave.playerData.GetLevelData(levelId);
+        LevelData levelData = currentSave.GetLevelData(levelId);
         return levelData.openedDoors.Contains(doorId);
     }
 
-    public bool IsItemCollected(string itemId, int levelId)
-    {
-        if (currentSave == null) return false;
-        
-        LevelData levelData = currentSave.playerData.GetLevelData(levelId);
-        return levelData.collectedItems.Contains(itemId);
-    }
-
-    public bool IsEnemyDefeated(string enemyId, int levelId)
-    {
-        if (currentSave == null) return false;
-        
-        LevelData levelData = currentSave.playerData.GetLevelData(levelId);
-        return levelData.defeatedEnemies.Contains(enemyId);
-    }
-
-    public bool IsSwitchActivated(string switchId, int levelId)
-    {
-        if (currentSave == null) return false;
-        
-        LevelData levelData = currentSave.playerData.GetLevelData(levelId);
-        return levelData.activatedSwitches.Contains(switchId);
-    }
-
-    public bool IsLevelUnlocked(int levelId)
-    {
-        if (currentSave == null) return false;
-        return currentSave.playerData.unlockedLevels.Contains(levelId);
-    }
-
-    public bool IsLevelCompleted(int levelId)
-    {
-        if (currentSave == null) return false;
-        
-        LevelData levelData = currentSave.playerData.GetLevelData(levelId);
-        return levelData.isCompleted;
-    }
 
 
 

@@ -2,43 +2,58 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
+    [SerializeField] private pregunta preguntasScript;
     public string doorId;
-    public Animator doorAnimator;
     public bool startClosed = true;
-    
-    private int currentLevelId;
     private bool isOpen;
-    
+    private SaveSystem saveSystem;
+    public LevelData currentLevel; 
+
     private void Start()
     {
-        // Obtener el ID del nivel actual
-        currentLevelId = FindObjectOfType<LevelManager>().levelId;
-        
-        // Verificar si la puerta ya está abierta
-        isOpen = SaveSystem.Instance.IsDoorOpened(doorId, currentLevelId);
-        
-        // Actualizar el estado visual de la puerta
-        UpdateDoorVisual();
-    }
-    
-    public void ToggleDoor()
-    {
-        isOpen = !isOpen;
-        
-        if (isOpen)
+        preguntasScript = GetComponent<pregunta>(); 
+        doorId = preguntasScript.doorId; 
+
+        saveSystem = SaveSystem.Instance;
+        if (saveSystem != null)
         {
-            // Guardar que la puerta ha sido abierta
-            SaveSystem.Instance.OpenDoor(doorId, currentLevelId);
-        }
-        
-        UpdateDoorVisual();
-    }
-    
-    private void UpdateDoorVisual()
-    {
-        if (doorAnimator != null)
-        {
-            doorAnimator.SetBool("IsOpen", isOpen);
+            // Obtener datos del nivel actual
+            currentLevel = saveSystem.GetCurrentLevelData();
+            
+            // Verificar si la puerta ya está abierta en el guardado
+            if (currentLevel != null)
+            {
+                isOpen = currentLevel.openedDoors.Contains(doorId);
+                // Si la puerta ya está abierta en la base de datos, destruirla
+                if (isOpen)
+                {
+                    Destroy(gameObject);
+                    return;
+                }
+            }
+            else
+            {
+                Debug.LogWarning("No se pudieron cargar datos del nivel actual para la puerta " + doorId);
+                isOpen = !startClosed;
+            }
         }
     }
+
+
+    public void AddNewDoorOpen()
+    {
+        if (currentLevel != null && !string.IsNullOrEmpty(doorId))
+        {
+            if (!currentLevel.openedDoors.Contains(doorId))
+            {
+                currentLevel.openedDoors.Add(doorId);
+                saveSystem.SaveGame();
+
+                Debug.Log("Puerta " + doorId + " actualizada en la base de datos");
+            }
+        }
+
+        
+    }
+
 }

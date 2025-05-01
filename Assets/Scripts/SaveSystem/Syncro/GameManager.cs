@@ -6,7 +6,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    // Referencia al sistema de guardado
+
+
+
     private SaveSystem saveSystem;
 
     private void Awake() 
@@ -48,6 +50,9 @@ public class GameManager : MonoBehaviour
         StartCoroutine(SafeSyncAllObjects());
     }
 
+
+
+
     private IEnumerator SafeSyncAllObjects()
     {
         GameObject playerObj = null;
@@ -65,6 +70,10 @@ public class GameManager : MonoBehaviour
         playerSync.SyncPlayerWithSaveData();
         Debug.Log("Todos los objetos del jugador en la escena han sido sincronizados con los datos guardados");
     }
+
+
+
+
 
     public void SaveAllObjectsData()
     {
@@ -88,6 +97,14 @@ public class GameManager : MonoBehaviour
         playerSync.UpdateSaveWithPlayerData();
         Debug.Log("Todos los datos del jugador han sido guardados");
     }
+
+
+
+
+
+
+
+
 
     private int GetCurrentLevelId()
     {

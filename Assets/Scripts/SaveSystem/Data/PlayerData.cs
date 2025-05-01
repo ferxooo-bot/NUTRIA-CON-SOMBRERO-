@@ -16,8 +16,6 @@ public class PlayerData
     public string lastRespawn;
     public int currentLevelId;
     
-    // Lista de datos de cada nivel
-    public List<LevelData> levelDataList = new List<LevelData>();
     
     // Diccionario serializable para el inventario
     public SerializableDictionary inventory = new SerializableDictionary();
@@ -28,18 +26,7 @@ public class PlayerData
     private Dictionary<string, string> _inventoryCache;
     private Dictionary<string, string> _propertiesCache;
     
-    // Método para obtener datos de un nivel específico
-    public LevelData GetLevelData(int levelId)
-    {
-        LevelData levelData = levelDataList.Find(ld => ld.levelId == levelId);
-        if (levelData == null)
-        {
-            // Si no existe, crear uno nuevo
-            levelData = new LevelData { levelId = levelId, levelName = "Nivel " + levelId };
-            levelDataList.Add(levelData);
-        }
-        return levelData;
-    }
+
     
     // Métodos para manejar el inventario
     public Dictionary<string, string> GetInventory()
