@@ -4,6 +4,7 @@ using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.InputSystem.HID;
 using System.Collections;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 
 public class FatherMoment1 : MonoBehaviour
@@ -18,6 +19,8 @@ public class FatherMoment1 : MonoBehaviour
     public GameObject sprite; // Animación de correr y saltar
     public Animator animatorSprite;
     public Animator animatorBones; 
+    private BoxCollider2D boxCollider;
+    private ShadowCaster2D shadowCaster;
 
    
 [Header("Heart System")]
@@ -25,12 +28,31 @@ public class FatherMoment1 : MonoBehaviour
 [SerializeField] private SpriteRenderer[] heartEmptys = new SpriteRenderer[3]; // Corazones vacíos
 [SerializeField] private float flashIntensity = 3f; // Intensidad del brillo al parpadear
 
+
+
 [Header("Configuración de Muerte")]
-[SerializeField] private Transform respawnPoint; // Arrastra el punto de reinicio
+[SerializeField] public Transform respawnPoint; // Arrastra el punto de reinicio
 [SerializeField] private float respawnDelay = 1.0f; // Tiempo antes de reiniciar
 private bool isDead = false;
+
+[Header("Configuración del Collider")]
+[SerializeField] private Vector2 normalColliderSize = new Vector2(0.27f, 0.82f);
+[SerializeField] private Vector2 normalColliderSizeOffSet = new Vector2(0.27f, 0.82f);
+[SerializeField] private Vector2 normalColliderSizeI = new Vector2(0.27f, 0.82f);
+[SerializeField] private Vector2 normalColliderSizeOffSetI = new Vector2(0.27f, 0.82f);
+[SerializeField] private Vector2 runningColliderSize = new Vector2(0.92f, 0.20f);
+[SerializeField] private Vector2 jumpingColliderSize = new Vector2(0.42f, 0.38f);
+[SerializeField] private Vector2 runningColliderOffset = new Vector2(0f, 0.5f);
+[SerializeField] private Vector2 jumpingColliderOffset = new Vector2(0f, 0.6f);
+
+private bool isJumping;
+[Header("Configuración de Daño")]
+
+[SerializeField] private float invulnerabilityTime = 1.5f;
+[SerializeField] private float blinkInterval = 0.15f;
+private SpriteRenderer playerSprite;
     //-------
-    private int currentHealth;
+    public int currentHealth;
     public float jumpForce = 4f; 
     public LayerMask whatIsGround; 
     public bool inGround; 
@@ -60,7 +82,7 @@ private bool isDead = false;
         ResetHearts();
         stateHandler = GetComponent<StateHandler>(); 
         controls = new();  
-        
+        playerSprite = GetComponentInChildren<SpriteRenderer>();
         animatorSprite = transform.GetChild(0).GetComponent<Animator>();       
         animatorBones = transform.GetChild(1).GetComponent<Animator>(); 
         currentHealth = maxHealth;
@@ -72,6 +94,12 @@ private bool isDead = false;
     }
     private void Start()
     {
+        Physics2D.autoSyncTransforms = true; 
+        Physics2D.defaultContactOffset = 0.01f;
+        
+        
+
+        boxCollider = GetComponent<BoxCollider2D>();
         // Si no se ha asignado groundCheck en el inspector, crear uno
         if (groundCheck == null)
         {
@@ -101,6 +129,20 @@ private bool isDead = false;
 
     // ----------- update ------------
     private void Update(){
+        
+        if(isJumping){
+            boxCollider.size = jumpingColliderSize;
+            boxCollider.offset = jumpingColliderOffset;
+        }
+        else if(isRunning && (direction.x != 0)){
+            boxCollider.size = runningColliderSize;
+            boxCollider.offset = runningColliderOffset;
+        } else if(direction.x != 0){
+            boxCollider.size = normalColliderSize;
+            boxCollider.offset = normalColliderSizeOffSet;
+        }
+
+        
         // si otro script modifica esa varibale no va a poder  moverse 
         if (puedeMoverse)
         {
@@ -170,7 +212,8 @@ private bool isDead = false;
         lookRight = !lookRight;
         Vector3 escala = transform.localScale; 
         escala.x *= -1;
-        transform.localScale = escala; 
+        transform.localScale = escala;
+        
     }
 
     
@@ -178,6 +221,7 @@ private bool isDead = false;
     private void Jump(){
         if(inGround){
             rb2D.AddForce(new Vector2(0,jumpForce), ForceMode2D.Impulse);     
+            isJumping = true;
         }        
     }
 
@@ -206,6 +250,7 @@ private bool isDead = false;
         // (cuando pasamos de estar en el aire a tocar suelo)
         if (!wasGrounded && inGround)
         {
+            isJumping = false;
             // Aquí podríamos agregar lógica para el aterrizaje si es necesario
             // Por ejemplo, reproducir un sonido o una animación específica
         }
@@ -232,25 +277,7 @@ private bool isDead = false;
             Gizmos.DrawWireSphere(right, groundCheckRadius);
         }
     }
-
-    public void Hurt()
-{ if (isInvulnerable || currentHealth <= 0) return;
     
-    if (isInvulnerable || currentHealth <= 0) return;
-    
-    currentHealth--;
-    int heartIndex = Mathf.Clamp(currentHealth, 0, heartFulls.Length - 1);
-    StartCoroutine(FlashAndDisableHeart(heartIndex));
-    
-
-
-    ApplyKnockback();
-     if (currentHealth <= 0) Die();
-
-     
-    
-    
-}
 private void ApplyKnockback()
 {
    if (rb2D == null) // Verifica que el Rigidbody2D esté asignado
@@ -330,7 +357,7 @@ private void Die()
     StartCoroutine(RespawnAfterDelay());
     
 }
-private IEnumerator RespawnAfterDelay()
+public IEnumerator RespawnAfterDelay()
 {
    yield return new WaitForSeconds(respawnDelay);
 
@@ -347,6 +374,83 @@ private IEnumerator RespawnAfterDelay()
     controls.Enable();
     isDead = false;
 }
+public void TakeDamage(int damageAmount, Vector2 knockback)
+{
+    if(isDead || isInvulnerable) return;
+
+    currentHealth -= damageAmount;
+    UpdateHeartsUI();
+    
+    // Aplicar knockback
+    rb2D.linearVelocity = Vector2.zero;
+    rb2D.AddForce(knockback, ForceMode2D.Impulse);
+    
+    // Manejar muerte o invulnerabilidad
+    if(currentHealth <= 0)
+    {
+        Die();
+    }
+    else
+    {
+        StartCoroutine(InvulnerabilityRoutine());
+    }
+}
+public void InstantKill()
+{
+    if(isDead) return;
+    
+    currentHealth = 0;
+    UpdateHeartsUI();
+    Die();
+}
+
+
+private IEnumerator InvulnerabilityRoutine()
+{
+    isInvulnerable = true;
+    float timer = 0f;
+    bool visible = true;
+
+    while(timer < invulnerabilityTime)
+    {
+        playerSprite.enabled = visible;
+        visible = !visible;
+        timer += blinkInterval;
+        yield return new WaitForSeconds(blinkInterval);
+    }
+    
+    playerSprite.enabled = true;
+    isInvulnerable = false;
+}
+
+private void UpdateHeartsUI()
+{
+    for(int i = 0; i < heartFulls.Length; i++)
+    {
+        heartFulls[i].enabled = i < currentHealth;
+        heartEmptys[i].enabled = i >= currentHealth;
+    }
+}
+
+
+public void SetRespawnPoint(string lastRespawn)
+{
+    // Buscar el Transform con el nombre 'lastRespawn'
+    Transform newRespawnPoint = GameObject.Find(lastRespawn)?.transform;
+
+    // Verificar si se encontró el respawn
+    if (newRespawnPoint != null)
+    {
+        // Asignar el nuevo respawn al campo 'respawnPoint'
+        respawnPoint = newRespawnPoint;
+    }
+    else
+    {
+        Debug.LogWarning("No se encontró el respawn con el nombre: " + lastRespawn);
+    }
+}
+
+
 
     // --- Curacion, aun sin utilizar ---
     /*public void Heal()
