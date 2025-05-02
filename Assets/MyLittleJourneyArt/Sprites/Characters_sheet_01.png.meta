@@ -1,0 +1,514 @@
+fileFormatVersion: 2
+guid: 9dc7d14879d9a4ce3951fea071483e12
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8352183922249677669
+    second: thunder_prop
+  - first:
+      213: 2679950803299108835
+    second: thunder_medal
+  - first:
+      213: 2823888841151012947
+    second: thunder_prop_destroyed
+  - first:
+      213: -2323094997910561296
+    second: fish_body_silver
+  - first:
+      213: -2214289812194629306
+    second: fish_mouth_silver
+  - first:
+      213: -3946363341379189304
+    second: fish_eye
+  - first:
+      213: -6868548041117527653
+    second: fish_eyelide_silver
+  - first:
+      213: 828017757962732392
+    second: coin_cloud
+  - first:
+      213: 6545413277634359787
+    second: fish_body_blue
+  - first:
+      213: -6304331780252167717
+    second: fish_mouth_blue
+  - first:
+      213: -3819611633512511639
+    second: fish_eyelide_blue
+  - first:
+      213: -7204643903923567630
+    second: fin_01
+  - first:
+      213: 8670594212165427204
+    second: fin_02
+  - first:
+      213: 778526549845457317
+    second: fin_03
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: thunder_prop
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1023
+        width: 216
+        height: 469
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c46ef53c0254d1a9186f1fe6b1d1e5
+      internalID: 8352183922249677669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder_medal
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 1114
+        width: 122
+        height: 303
+      alignment: 9
+      pivot: {x: 0.685732, y: 0.78666866}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e196cb5c13849328b2df6bd0413835
+      internalID: 2679950803299108835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder_prop_destroyed
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 583
+        width: 257
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd90185d8c03c440a978165633d29e51
+      internalID: 2823888841151012947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_body_silver
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 1053
+        width: 482
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e918fd0aa52cc4a94870331b5148cb21
+      internalID: -2323094997910561296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_mouth_silver
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1300
+        width: 295
+        height: 157
+      alignment: 9
+      pivot: {x: 0.74900687, y: 0.33043733}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc618f89fb2fd44cdbd6bcf67ae84c07
+      internalID: -2214289812194629306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_eye
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 1258
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d78bf4ca242d4c6d80e8502e8d8a90e
+      internalID: -3946363341379189304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_eyelide_silver
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1243
+        width: 93
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df0baec2e5bd4e0389586f3d767bec6
+      internalID: -6868548041117527653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coin_cloud
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 675
+        width: 482
+        height: 486
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7368ad7606094cf8a41939a25e5fa04
+      internalID: 828017757962732392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_body_blue
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 533
+        width: 509
+        height: 355
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049ac7cbe339e4e9c88de7a7b4b3170c
+      internalID: 6545413277634359787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_mouth_blue
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 754
+        width: 291
+        height: 164
+      alignment: 9
+      pivot: {x: 0.7895483, y: 0.38574255}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4265d5ddea5644ff49cf5f333d811a8d
+      internalID: -6304331780252167717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_eyelide_blue
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 642
+        width: 124
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb99d3cb2b6a4014884d99dc3c38f01
+      internalID: -3819611633512511639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fin_01
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 982
+        width: 332
+        height: 299
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89774246000884fb48f0cd71e2f90580
+      internalID: -7204643903923567630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fin_02
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 1217
+        width: 112
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5559d2f2978d84c368b77648f2547dfa
+      internalID: 8670594212165427204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fin_03
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 1329
+        width: 347
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e9c7710c4574564b942b63ba9b35f3
+      internalID: 778526549845457317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      coin_cloud: 828017757962732392
+      fin_01: -7204643903923567630
+      fin_02: 8670594212165427204
+      fin_03: 778526549845457317
+      fish_body_blue: 6545413277634359787
+      fish_body_silver: -2323094997910561296
+      fish_eye: -3946363341379189304
+      fish_eyelide_blue: -3819611633512511639
+      fish_eyelide_silver: -6868548041117527653
+      fish_mouth_blue: -6304331780252167717
+      fish_mouth_silver: -2214289812194629306
+      thunder_medal: 2679950803299108835
+      thunder_prop: 8352183922249677669
+      thunder_prop_destroyed: 2823888841151012947
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 157298
+  packageName: My Little Journey Sprites Art
+  packageVersion: 1.0
+  assetPath: Assets/MyLittleJourneyArt/Sprites/Characters_sheet_01.png
+  uploadId: 721339

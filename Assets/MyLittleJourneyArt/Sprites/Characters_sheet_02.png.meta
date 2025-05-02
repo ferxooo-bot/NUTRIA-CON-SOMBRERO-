@@ -1,0 +1,1294 @@
+fileFormatVersion: 2
+guid: 4b86f827d2fe04fd9812d726434afc05
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2910352011751878848
+    second: sheep_body
+  - first:
+      213: 3214810274687789850
+    second: sheep_mouth_angry
+  - first:
+      213: -4417906204736454883
+    second: sheep_foot_F
+  - first:
+      213: 679031080130649164
+    second: sheep_foot_B
+  - first:
+      213: 8819704134035100616
+    second: sheep_eye_L
+  - first:
+      213: -6400508815592550645
+    second: sheep_eye_R
+  - first:
+      213: 3214810274687789850
+    second: sheep_mouth
+  - first:
+      213: -5375049532597124285
+    second: captus_yellow
+  - first:
+      213: 4191577403299223237
+    second: captus_black
+  - first:
+      213: 2507370321085539839
+    second: plant_shot_body
+  - first:
+      213: 5636333269408493113
+    second: cloud_tunder
+  - first:
+      213: -6489641430224058750
+    second: captus_eye
+  - first:
+      213: 7672765731302292991
+    second: captus_eye_pupil
+  - first:
+      213: 741426857091001380
+    second: coconut_bullet
+  - first:
+      213: 4552572416664834168
+    second: cloud_body
+  - first:
+      213: -5612862133705562126
+    second: cloud_body_up
+  - first:
+      213: -7434925276830671507
+    second: cloud_eye
+  - first:
+      213: -1125045551608946686
+    second: cloud_mouth
+  - first:
+      213: 3011552611721663136
+    second: cloud_mouth_blowing
+  - first:
+      213: 4014929011620105421
+    second: leaf_01
+  - first:
+      213: -888827152428682369
+    second: leaf_02
+  - first:
+      213: -9157367836114923374
+    second: leaf_03
+  - first:
+      213: -7338501505045093014
+    second: pig_body
+  - first:
+      213: -7162852875139950466
+    second: pig_tale
+  - first:
+      213: 6067799066236590212
+    second: pig_nose
+  - first:
+      213: -9155831708846342621
+    second: pig_ear_R
+  - first:
+      213: -2972191885896867575
+    second: pig_ear_L
+  - first:
+      213: 7966298686453560605
+    second: sheep_horn
+  - first:
+      213: -2072288141766894619
+    second: plant_shot_eyelide_L
+  - first:
+      213: 8319811055176483578
+    second: plant_shot_eyelide_R
+  - first:
+      213: 3816259097030002837
+    second: pig_foot_B
+  - first:
+      213: 9041330670673072216
+    second: pig_foot_F
+  - first:
+      213: -35270464537545177
+    second: pig_tear
+  - first:
+      213: -7235108318487837712
+    second: pig_eyelide_L
+  - first:
+      213: 6372180937319379283
+    second: pig_eyelide_R
+  - first:
+      213: 6754199653881354307
+    second: pig_eye_L
+  - first:
+      213: -86529195903976247
+    second: pig_eye_R
+  - first:
+      213: 6272203849598161113
+    second: pig_cheek
+  - first:
+      213: -7668714769705111319
+    second: plant_body_back
+  - first:
+      213: 2614417565965518647
+    second: cloud_eyelide
+  - first:
+      213: 1429696382443093996
+    second: cloud_part_01
+  - first:
+      213: 7240835833481085364
+    second: cloud_part_02
+  - first:
+      213: 1855256328815762475
+    second: plant_eye_back_R
+  - first:
+      213: -5444941517919503832
+    second: plant_eye_back_L
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sheep_body
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 555
+        width: 220
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432f39e8dce094aa79f8fc17b3a28983
+      internalID: 2910352011751878848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheep_mouth_angry
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 764
+        width: 111
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 395b82b19872c4357913e7dc11d58cb6
+      internalID: 3214810274687789850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheep_foot_F
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 759
+        width: 55
+        height: 48
+      alignment: 9
+      pivot: {x: 0.47307518, y: 0.7159602}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5fc028bcf464f43add843f7c159ce3
+      internalID: -4417906204736454883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheep_foot_B
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 755
+        width: 51
+        height: 52
+      alignment: 9
+      pivot: {x: 0.47939345, y: 0.7563042}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1710cafd739a44b99e08fda1ddff3e2
+      internalID: 679031080130649164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheep_eye_L
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 820
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3aebdefc82a45008bc53961f2b78e0
+      internalID: 8819704134035100616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheep_eye_R
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 815
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e15ef737cc345f49649a9ffdb497de
+      internalID: -6400508815592550645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheep_mouth
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 499
+        width: 146
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfab59d633a89415db3af5a4b2e1f912
+      internalID: 1996850583252173634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captus_yellow
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 666
+        width: 216
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1cffe6615d79438aab201b071531ff1
+      internalID: -5375049532597124285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captus_black
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 502
+        width: 185
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c67af8455464028bb7784df1aa065a
+      internalID: 4191577403299223237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant_shot_body
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 553
+        width: 228
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b90b4a3de31f4da79a8ae362a951a48
+      internalID: 2507370321085539839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_tunder
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 558
+        width: 63
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cacb5b543d6f475fa7cdd6acc635a72
+      internalID: 5636333269408493113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captus_eye
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 416
+        width: 72
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c8e19cba7d8f4a4ca79c1d0b4e5652b
+      internalID: -6489641430224058750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captus_eye_pupil
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 437
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e75d97b3ced423db996e04c614ed53
+      internalID: 7672765731302292991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coconut_bullet
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 298
+        width: 118
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5794823dac1c9402398414d390b41b0a
+      internalID: 741426857091001380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_body
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 147
+        width: 459
+        height: 302
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ff83e56513b4beda206273d921ce75
+      internalID: 4552572416664834168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_body_up
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 188
+        width: 77
+        height: 249
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581853a18f0734693a2d5f75dc7bdc83
+      internalID: -5612862133705562126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_eye
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 5
+        width: 142
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97a57f40db174aed9e720ac900c779a
+      internalID: -7434925276830671507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_mouth
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 479
+        width: 97
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1343955edd6154e49885a83839bae951
+      internalID: -1125045551608946686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_mouth_blowing
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 472
+        width: 74
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49139fca1e5e44770820468665d95b36
+      internalID: 3011552611721663136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leaf_01
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 149
+        width: 239
+        height: 160
+      alignment: 9
+      pivot: {x: 0.8489075, y: 0.14340277}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb47dd6bb286465e8edceda5f319820
+      internalID: 4014929011620105421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leaf_02
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 314
+        width: 239
+        height: 176
+      alignment: 9
+      pivot: {x: 0.1419107, y: 0.15088393}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30d0d52424db4604b8436b35dc17d6a
+      internalID: -888827152428682369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leaf_03
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 163
+        width: 141
+        height: 130
+      alignment: 9
+      pivot: {x: 0.17316782, y: 0.11175232}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef114ecd49ed446c19e47aed4859d593
+      internalID: -9157367836114923374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pig_body
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 390
+        width: 287
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47e2c0be71c9348209b772bafabcd84c
+      internalID: -7338501505045093014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pig_tale
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 609
+        width: 83
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c63d9f2c91f14ae292d28b0e8594789
+      internalID: -7162852875139950466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pig_nose
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 627
+        width: 75
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288baebd68d5f4cada6b007201ef4dcb
+      internalID: 6067799066236590212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pig_ear_R
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 752
+        width: 85
+        height: 81
+      alignment: 9
+      pivot: {x: 0.8933393, y: 0.18861747}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e4eb3a1bde44334b65f916bb4ad1de
+      internalID: -9155831708846342621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pig_ear_L
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 778
+        width: 65
+        height: 63
+      alignment: 9
+      pivot: {x: 0.29244947, y: 0.38827467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18540ecad61ea4a3196fc65923d83029
+      internalID: -2972191885896867575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheep_horn
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 806
+        width: 91
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df395b45d5db9423b845dcf0fa6677e4
+      internalID: 7966298686453560605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant_shot_eyelide_L
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 49
+        width: 121
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29ad8062cb7d4b90aa76dca34575738
+      internalID: -2072288141766894619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant_shot_eyelide_R
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 33
+        width: 118
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c2363b450696489ea25b2a1e1ac5786
+      internalID: 8319811055176483578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pig_foot_B
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 692
+        width: 67
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898676bdbcf2d464c927bf332b2313e7
+      internalID: 3816259097030002837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pig_foot_F
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 690
+        width: 75
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed2c0067f1184e37b2ae261236f34ff
+      internalID: 9041330670673072216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pig_tear
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 646
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727ce981797bd4b2d88221ffe2fa8096
+      internalID: -35270464537545177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pig_eyelide_L
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 790
+        width: 71
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ecf859d7dfe84c3fbeae79e820a2159
+      internalID: -7235108318487837712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pig_eyelide_R
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 790
+        width: 91
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8758dc5a5331c4511867b5d13e8c003c
+      internalID: 6372180937319379283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pig_eye_L
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 718
+        width: 74
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd7bddeae1b5d44159a3ece1c99b0756
+      internalID: 6754199653881354307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pig_eye_R
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 699
+        width: 84
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44655a8dca58d4d2fb61c2a9d956bd7d
+      internalID: -86529195903976247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pig_cheek
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 632
+        width: 72
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ffc22749913f4fb38cb0bd17ce3300a
+      internalID: 6272203849598161113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant_body_back
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 487
+        width: 131
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad73bd3f5ff84fe68addc40d10bd34a
+      internalID: -7668714769705111319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_eyelide
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 5
+        width: 181
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c481aba7bfcbd4075aa2b09aa7f367c5
+      internalID: 2614417565965518647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_part_01
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 699
+        width: 146
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ea421bbe5314396977469012ce0431
+      internalID: 1429696382443093996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_part_02
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 10
+        width: 151
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a79f973fc7b949649eaca21c8b9f69c
+      internalID: 7240835833481085364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant_eye_back_R
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 70
+        width: 79
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7ef50198f7d483baf7f00f85d3a0cd
+      internalID: 1855256328815762475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant_eye_back_L
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 80
+        width: 90
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05bb1573a01294f1e843af299dfcf046
+      internalID: -5444941517919503832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      captus_black: 4191577403299223237
+      captus_eye: -6489641430224058750
+      captus_eye_pupil: 7672765731302292991
+      captus_yellow: -5375049532597124285
+      cloud_body: 4552572416664834168
+      cloud_body_up: -5612862133705562126
+      cloud_eye: -7434925276830671507
+      cloud_eyelide: 2614417565965518647
+      cloud_mouth: -1125045551608946686
+      cloud_mouth_blowing: 3011552611721663136
+      cloud_part_01: 1429696382443093996
+      cloud_part_02: 7240835833481085364
+      cloud_tunder: 5636333269408493113
+      coconut_bullet: 741426857091001380
+      leaf_01: 4014929011620105421
+      leaf_02: -888827152428682369
+      leaf_03: -9157367836114923374
+      pig_body: -7338501505045093014
+      pig_cheek: 6272203849598161113
+      pig_ear_L: -2972191885896867575
+      pig_ear_R: -9155831708846342621
+      pig_eye_L: 6754199653881354307
+      pig_eye_R: -86529195903976247
+      pig_eyelide_L: -7235108318487837712
+      pig_eyelide_R: 6372180937319379283
+      pig_foot_B: 3816259097030002837
+      pig_foot_F: 9041330670673072216
+      pig_nose: 6067799066236590212
+      pig_tale: -7162852875139950466
+      pig_tear: -35270464537545177
+      plant_body_back: -7668714769705111319
+      plant_eye_back_L: -5444941517919503832
+      plant_eye_back_R: 1855256328815762475
+      plant_shot_body: 2507370321085539839
+      plant_shot_eyelide_L: -2072288141766894619
+      plant_shot_eyelide_R: 8319811055176483578
+      sheep_body: 2910352011751878848
+      sheep_eye_L: 8819704134035100616
+      sheep_eye_R: -6400508815592550645
+      sheep_foot_B: 679031080130649164
+      sheep_foot_F: -4417906204736454883
+      sheep_horn: 7966298686453560605
+      sheep_mouth: 1996850583252173634
+      sheep_mouth_angry: 3214810274687789850
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 157298
+  packageName: My Little Journey Sprites Art
+  packageVersion: 1.0
+  assetPath: Assets/MyLittleJourneyArt/Sprites/Characters_sheet_02.png
+  uploadId: 721339

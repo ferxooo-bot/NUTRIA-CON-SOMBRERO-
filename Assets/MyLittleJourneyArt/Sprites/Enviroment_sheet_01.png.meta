@@ -1,0 +1,800 @@
+fileFormatVersion: 2
+guid: d47f7aba535874c8a81c8c95121f838e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8308645310357700998
+    second: ground_hole_back
+  - first:
+      213: 8442814842781286163
+    second: ground_hole_front
+  - first:
+      213: -8308645310357700998
+    second: house_bird
+  - first:
+      213: 5239910892252043604
+    second: wagon_rail
+  - first:
+      213: -8308645310357700998
+    second: stop_door
+  - first:
+      213: 2714835537830703461
+    second: traffic_light_off
+  - first:
+      213: -5820727512042105006
+    second: traffic_light_on
+  - first:
+      213: -4558986153141574545
+    second: tube
+  - first:
+      213: -1686205122147406568
+    second: tube_end
+  - first:
+      213: 1282763827006820221
+    second: tube_union
+  - first:
+      213: 3185956431139067401
+    second: hole_table
+  - first:
+      213: 37795288821563370
+    second: key_rock
+  - first:
+      213: -5581790527274920917
+    second: key
+  - first:
+      213: 2646026753853954478
+    second: cross_sign
+  - first:
+      213: 8464627282614862601
+    second: lock
+  - first:
+      213: 4779613464303295134
+    second: sculptRock
+  - first:
+      213: 8518174746344248452
+    second: key_rock_destroyed_01
+  - first:
+      213: -3341501904049284763
+    second: key_rock_destroyed_02
+  - first:
+      213: 5083596271836379924
+    second: key_rock_destroyed_03
+  - first:
+      213: 6648582965917329956
+    second: key_rock_destroyed_04
+  - first:
+      213: 3932122396835326409
+    second: key_rock_destroyed_05
+  - first:
+      213: -6980458806127437488
+    second: key_rock_destroyed_06
+  - first:
+      213: 8791622882009464751
+    second: key_rock_destroyed_07
+  - first:
+      213: 6746541831056066293
+    second: key_rock_destroyed_08
+  - first:
+      213: 6289843477957218177
+    second: key_rock_destroyed_09
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ground_hole_back
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 462
+        width: 383
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c646860e84a9144b094bdb857f9870d6
+      internalID: -8308645310357700998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_hole_front
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 364
+        width: 474
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405ab0f04c9f34fd0b8239c045a14b0a
+      internalID: 8442814842781286163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: house_bird
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 587
+        width: 459
+        height: 493
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6568589ac6fe46b88a8a4baf39259d8
+      internalID: -1195071081292354515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wagon_rail
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 291
+        width: 159
+        height: 893
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 527, z: 0, w: 292}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d00c6e87c0af248488d630a0b03adfe2
+      internalID: 5239910892252043604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stop_door
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 20
+        width: 163
+        height: 263
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b243256660ab845bea3c0091200ae70b
+      internalID: 9133267307593533570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: traffic_light_off
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 180
+        width: 370
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c8651a4f28345b980c02c714f4dac3
+      internalID: 2714835537830703461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: traffic_light_on
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 161
+        width: 459
+        height: 456
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d5974cbd00b410993e72eea1dbd6c7
+      internalID: -5820727512042105006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tube
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 1299
+        width: 54
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 61, z: 0, w: 62}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28aa018610ad7452ba8f50fb6b334e98
+      internalID: -4558986153141574545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tube_end
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 1134
+        width: 102
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa240fc318c146e1a129e56c822c6d1
+      internalID: -1686205122147406568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tube_union
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 65
+        width: 296
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98edd50a80c2342658b722fae1c6e160
+      internalID: 1282763827006820221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hole_table
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 17
+        width: 434
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3186749fcf04ec495465bcb8501593
+      internalID: 3185956431139067401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: key_rock
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 1054
+        width: 326
+        height: 446
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f90ccc481124ea0a4d003207c2f10d
+      internalID: 37795288821563370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: key
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 1165
+        width: 162
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78ea24dad5e14b6b89a4603604d95fe
+      internalID: -5581790527274920917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cross_sign
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 1183
+        width: 363
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed337c7fdc8214d498f0d5d875ea84fa
+      internalID: 2646026753853954478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lock
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 155
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c47b1f6826046279342c3fc3d125fb
+      internalID: 8464627282614862601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sculptRock
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 724
+        width: 530
+        height: 537
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0372776d91a174480860321ac7fa2c14
+      internalID: 4779613464303295134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: key_rock_destroyed_01
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1331
+        width: 163
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df1bf656b2fb4faa9a85ab26ce1b306
+      internalID: 8518174746344248452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: key_rock_destroyed_02
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1398
+        width: 137
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c098b885f214f8db94cf5ae1c27564
+      internalID: -3341501904049284763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: key_rock_destroyed_03
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1387
+        width: 148
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d404fe0b86e6a4607b6d48458563859e
+      internalID: 5083596271836379924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: key_rock_destroyed_04
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1257
+        width: 134
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57af68ac790bb476a8febbd54f17c9f8
+      internalID: 6648582965917329956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: key_rock_destroyed_05
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1265
+        width: 144
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f39698c9bb156423fb360b26ba57c042
+      internalID: 3932122396835326409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: key_rock_destroyed_06
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1117
+        width: 189
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d55285c296ea4f13a7d6b9da54a3907
+      internalID: -6980458806127437488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: key_rock_destroyed_07
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 946
+        width: 204
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee99618490324ab1b3fd15c2671ab06
+      internalID: 8791622882009464751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: key_rock_destroyed_08
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 794
+        width: 167
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189a6cdbaa48e4ffd80390cb993afa82
+      internalID: 6746541831056066293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: key_rock_destroyed_09
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 643
+        width: 307
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c7416c882b3439ab62f27321e8e8c8
+      internalID: 6289843477957218177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cross_sign: 2646026753853954478
+      ground_hole_back: -8308645310357700998
+      ground_hole_front: 8442814842781286163
+      hole_table: 3185956431139067401
+      house_bird: -1195071081292354515
+      key: -5581790527274920917
+      key_rock: 37795288821563370
+      key_rock_destroyed_01: 8518174746344248452
+      key_rock_destroyed_02: -3341501904049284763
+      key_rock_destroyed_03: 5083596271836379924
+      key_rock_destroyed_04: 6648582965917329956
+      key_rock_destroyed_05: 3932122396835326409
+      key_rock_destroyed_06: -6980458806127437488
+      key_rock_destroyed_07: 8791622882009464751
+      key_rock_destroyed_08: 6746541831056066293
+      key_rock_destroyed_09: 6289843477957218177
+      lock: 8464627282614862601
+      sculptRock: 4779613464303295134
+      stop_door: 9133267307593533570
+      traffic_light_off: 2714835537830703461
+      traffic_light_on: -5820727512042105006
+      tube: -4558986153141574545
+      tube_end: -1686205122147406568
+      tube_union: 1282763827006820221
+      wagon_rail: 5239910892252043604
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 157298
+  packageName: My Little Journey Sprites Art
+  packageVersion: 1.0
+  assetPath: Assets/MyLittleJourneyArt/Sprites/Enviroment_sheet_01.png
+  uploadId: 721339

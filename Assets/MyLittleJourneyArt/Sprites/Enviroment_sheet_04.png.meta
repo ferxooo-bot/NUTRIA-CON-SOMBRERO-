@@ -1,0 +1,748 @@
+fileFormatVersion: 2
+guid: fceca1505e49a4a0082ffc7ce7f0d741
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1983710737447133119
+    second: branch
+  - first:
+      213: -3836351776158029503
+    second: treeTop
+  - first:
+      213: -1983710737447133119
+    second: ground_water
+  - first:
+      213: -3836351776158029503
+    second: cloud_back
+  - first:
+      213: -5599036976312192172
+    second: cloud_front
+  - first:
+      213: 3610065799656105746
+    second: water_plant_01
+  - first:
+      213: 3284778923675408622
+    second: water_plant_02
+  - first:
+      213: 1345092255172271709
+    second: water_plant_03
+  - first:
+      213: -7145547402123972887
+    second: water_plant_04
+  - first:
+      213: -2991834860444107893
+    second: water_plant_05
+  - first:
+      213: -1211808063446370931
+    second: water_plant_06
+  - first:
+      213: 6207078398803004402
+    second: water_plant_07
+  - first:
+      213: -2216455887217197310
+    second: bridge_base_front
+  - first:
+      213: -5817984124661237114
+    second: bridge_base_back
+  - first:
+      213: 4781866660820742793
+    second: bridge_table
+  - first:
+      213: 8310845267431930890
+    second: bridge_table_destroyed
+  - first:
+      213: 8145409561515331782
+    second: wheel
+  - first:
+      213: -1538352052946049631
+    second: cave
+  - first:
+      213: -2606978592766168434
+    second: cave_entry
+  - first:
+      213: -1012387330275345332
+    second: wood_tile
+  - first:
+      213: -5771915196245728218
+    second: peak
+  - first:
+      213: 860012282615713788
+    second: plant_exit
+  - first:
+      213: -7054737398275472964
+    second: plant_exit_back
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: branch
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 1339
+        width: 346
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7abce1625670416a824d9a7b4b547cb
+      internalID: -1983710737447133119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treeTop
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 59
+        width: 480
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ade4b316800e443aa16b8448cfce4af
+      internalID: -3836351776158029503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_back
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 166
+        width: 356
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 55, y: 0, z: 64, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b550262e89fd1421ebe7a7f2e488b75b
+      internalID: -6688448207046895296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_front
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 19
+        width: 159
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b00cc3b3c8e143e6a77f7c3650f9570
+      internalID: -5599036976312192172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_water
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1577
+        width: 616
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ba2101a17f2420cbe16f86e5cbdbb5
+      internalID: -3991395941488654055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_plant_01
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 1461
+        width: 137
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8783f080370064e9ea7e6c43a01b7d30
+      internalID: 3610065799656105746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_plant_02
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 1216
+        width: 154
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ff44cd4bdc842ac99d1bfaeb2c9657
+      internalID: 3284778923675408622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_plant_03
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 1199
+        width: 141
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf7c74f4937a4981816fd7dde400579
+      internalID: 1345092255172271709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_plant_04
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 1377
+        width: 118
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf4098b787c041fab87b417f829e3ff
+      internalID: -7145547402123972887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_plant_05
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1461
+        width: 113
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7a5d536342e4e23b3515fd8b1d1c99
+      internalID: -2991834860444107893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_plant_06
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1248
+        width: 218
+        height: 323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab268ea89dd74ac6b4be0a01fd781c8
+      internalID: -1211808063446370931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_plant_07
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 788
+        width: 205
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f830ff01142554d0890568fdfb95f4aa
+      internalID: 6207078398803004402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bridge_base_front
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 518
+        width: 789
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 118, y: 0, z: 151, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896431c3113354a4db40495d84a05604
+      internalID: -2216455887217197310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bridge_base_back
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 414
+        width: 785
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 97, y: 0, z: 88, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3b74ddb3eb8463e89994dfa722efe2
+      internalID: -5817984124661237114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bridge_table
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 638
+        width: 190
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57535912d80a146809285f875ed4fd17
+      internalID: 4781866660820742793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bridge_table_destroyed
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 638
+        width: 203
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b31fe0b4105aa4db1b801dd855d70064
+      internalID: 8310845267431930890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wheel
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 1060
+        width: 329
+        height: 313
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d5c89136da041b083aae6a01e40674
+      internalID: 8145409561515331782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 842
+        width: 745
+        height: 457
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c7a0164069a948a6bf12ec11893446d
+      internalID: -1538352052946049631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave_entry
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 1319
+        width: 415
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca46fc8e6c9234aedbd652617cbf418b
+      internalID: -2606978592766168434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood_tile
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 547
+        width: 499
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 102, y: 31, z: 95, w: 49}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 062e7c5379c12465ca37d83ee60de69e
+      internalID: -1012387330275345332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peak
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 873
+        width: 84
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcea20dd2caa44a3cbc779949b04335b
+      internalID: -5771915196245728218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant_exit
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 758
+        width: 292
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211c198cd334141cc9e1c03febeb38ed
+      internalID: 860012282615713788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant_exit_back
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 593
+        width: 263
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d658cbab02a2147e2b69796d331618c4
+      internalID: -7054737398275472964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      branch: -1983710737447133119
+      bridge_base_back: -5817984124661237114
+      bridge_base_front: -2216455887217197310
+      bridge_table: 4781866660820742793
+      bridge_table_destroyed: 8310845267431930890
+      cave: -1538352052946049631
+      cave_entry: -2606978592766168434
+      cloud_back: -6688448207046895296
+      cloud_front: -5599036976312192172
+      ground_water: -3991395941488654055
+      peak: -5771915196245728218
+      plant_exit: 860012282615713788
+      plant_exit_back: -7054737398275472964
+      treeTop: -3836351776158029503
+      water_plant_01: 3610065799656105746
+      water_plant_02: 3284778923675408622
+      water_plant_03: 1345092255172271709
+      water_plant_04: -7145547402123972887
+      water_plant_05: -2991834860444107893
+      water_plant_06: -1211808063446370931
+      water_plant_07: 6207078398803004402
+      wheel: 8145409561515331782
+      wood_tile: -1012387330275345332
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 157298
+  packageName: My Little Journey Sprites Art
+  packageVersion: 1.0
+  assetPath: Assets/MyLittleJourneyArt/Sprites/Enviroment_sheet_04.png
+  uploadId: 721339

@@ -1,0 +1,1128 @@
+fileFormatVersion: 2
+guid: 6156dbdc660b84f5f9703ccf0f41c6ab
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7844753685467444729
+    second: frog_body
+  - first:
+      213: 3364022732875912204
+    second: bird_wing
+  - first:
+      213: -3798766578413054635
+    second: Rock
+  - first:
+      213: -4340404735234735974
+    second: Characters_sheet_03_3
+  - first:
+      213: -7189716149903387009
+    second: reveal_circle
+  - first:
+      213: -6637388157179787421
+    second: Characters_sheet_03_5
+  - first:
+      213: -6110837220019887687
+    second: Characters_sheet_03_6
+  - first:
+      213: 726961260639398255
+    second: bird_body
+  - first:
+      213: 7191369074148896063
+    second: Characters_sheet_03_8
+  - first:
+      213: 7534476010768107511
+    second: mud
+  - first:
+      213: 2153171487793966507
+    second: Characters_sheet_03_10
+  - first:
+      213: 191359945687659070
+    second: Characters_sheet_03_11
+  - first:
+      213: -6278655452531012112
+    second: frog_thigh_L
+  - first:
+      213: -1137798049312984290
+    second: Characters_sheet_03_13
+  - first:
+      213: 3562925301674726066
+    second: bird_chest
+  - first:
+      213: -133559947720190013
+    second: bird_eye
+  - first:
+      213: -6204301908949944819
+    second: Characters_sheet_03_16
+  - first:
+      213: -2360163640746930360
+    second: bird_eye_pupil
+  - first:
+      213: 6756863020562959838
+    second: bird_beak
+  - first:
+      213: -1455389683913489698
+    second: Crown
+  - first:
+      213: -5699147260170153323
+    second: frog_leg_R
+  - first:
+      213: -5210747009301013124
+    second: frog_foot_L
+  - first:
+      213: 392530781677309160
+    second: bird_outline
+  - first:
+      213: 5019211131811393202
+    second: Characters_sheet_03_23
+  - first:
+      213: -4387421284330629026
+    second: frog_foot_R
+  - first:
+      213: -2701359058094295924
+    second: pig_coin
+  - first:
+      213: 9153443739659492058
+    second: Characters_sheet_03_26
+  - first:
+      213: 1652991145640362128
+    second: frog_mouth_up
+  - first:
+      213: 2563786164133868653
+    second: frog_eye_R
+  - first:
+      213: -7950663358503926712
+    second: frog_eye_L
+  - first:
+      213: -915810227785293969
+    second: Characters_sheet_03_30
+  - first:
+      213: -6883235375378132478
+    second: Characters_sheet_03_31
+  - first:
+      213: 6519033347760616910
+    second: frog_mouth_down
+  - first:
+      213: 6496503380292811917
+    second: frog_pupil
+  - first:
+      213: -4530467719313726126
+    second: frog_eye_close_R
+  - first:
+      213: -5867848429504631363
+    second: frog_eyebrown_L
+  - first:
+      213: 3403176337656284423
+    second: frog_eyebrown_R
+  - first:
+      213: 8638095289921307605
+    second: frog_eye_close_L
+  - first:
+      213: -3661788766056501464
+    second: Characters_sheet_03_38
+  - first:
+      213: -800445251940267294
+    second: frog_eyelid_R
+  - first:
+      213: -3123479415800582773
+    second: frog_eyelid_L
+  - first:
+      213: 471365923662616668
+    second: ground_reveal
+  - first:
+      213: 6451211346167113799
+    second: Characters_sheet_03_42
+  - first:
+      213: -530282426065592871
+    second: Characters_sheet_03_43
+  - first:
+      213: -4919937018043613630
+    second: frog_thigh_R
+  - first:
+      213: 1232038126089313087
+    second: frog_hand_L
+  - first:
+      213: -176394288279151918
+    second: frog_hand_R
+  - first:
+      213: -5918954658820276704
+    second: frog_leg_L
+  - first:
+      213: -7844753685467444729
+    second: Characters_sheet_03_0
+  - first:
+      213: 3364022732875912204
+    second: Characters_sheet_03_1
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: frog_body
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1086
+        width: 411
+        height: 554
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 046f73d9800164588a80b91e86ecf2d2
+      internalID: -7844753685467444729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_wing
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1431
+        width: 253
+        height: 236
+      alignment: 9
+      pivot: {x: 0.84743935, y: 0.53990716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2737fa1ded6074b28a90bdbeef95d065
+      internalID: 3364022732875912204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rock
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 1355
+        width: 375
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a74c5c79e7ce41b39082448a04eb16b
+      internalID: -3798766578413054635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reveal_circle
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 798
+        width: 870
+        height: 847
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db9d7ddd99b64ee385790b27a418cb6
+      internalID: -7189716149903387009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_body
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1113
+        width: 256
+        height: 323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2fad11148714624b3524aaf6fefd84
+      internalID: 726961260639398255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mud
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 1325
+        width: 254
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 70, y: 0, z: 83, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d62f39aa5f149818b95bea850b8453
+      internalID: 7534476010768107511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Characters_sheet_03_11
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 1073
+        width: 328
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf303ebd3dbe74a95b537d5285340ddb
+      internalID: 191359945687659070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_thigh_L
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 826
+        width: 77
+        height: 248
+      alignment: 9
+      pivot: {x: 0.52828586, y: 0.16627577}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df0df08af2f94b40bef36a5c215fa12
+      internalID: -6278655452531012112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Characters_sheet_03_13
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 800
+        width: 41
+        height: 273
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5861c2b2cdfb744cca861497256521a2
+      internalID: -1137798049312984290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_chest
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 964
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65f0e9cb62d0498e8a587848f914c64
+      internalID: 3562925301674726066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_eye
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 1033
+        width: 106
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3d9074b6d04413f9d089d3da077bbd
+      internalID: -133559947720190013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_eye_pupil
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 982
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4b7194111444f48b57e92e44de5b6b
+      internalID: -2360163640746930360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_beak
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 976
+        width: 62
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d615c7f29429d4970a2443478ab43663
+      internalID: 6756863020562959838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crown
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 682
+        width: 359
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39254cc8d4755417a884d1d17f324fe9
+      internalID: -1455389683913489698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_leg_R
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 634
+        width: 70
+        height: 290
+      alignment: 9
+      pivot: {x: 0.5622284, y: 0.8680056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fcf9966d25884e7298dee8c253afc24
+      internalID: -5699147260170153323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_foot_L
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 617
+        width: 318
+        height: 85
+      alignment: 9
+      pivot: {x: 0.9148292, y: 0.40470546}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc3b689b4f784a4d8d31ddc24ab8327
+      internalID: -5210747009301013124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird_outline
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 563
+        width: 216
+        height: 377
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07efb2b07adb84521a0e21f12b8b2170
+      internalID: 392530781677309160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_foot_R
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 702
+        width: 318
+        height: 90
+      alignment: 9
+      pivot: {x: 0.9075515, y: 0.5128581}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993ee4ba3477042d49eaa5c470eb77d3
+      internalID: -4387421284330629026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pig_coin
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 284
+        width: 466
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939c50b5f9b0e4a8191c14282c64531a
+      internalID: -2701359058094295924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_mouth_up
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 550
+        width: 156
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de003c7ac9a1541a79d28fa46aeb2998
+      internalID: 1652991145640362128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eye_R
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 540
+        width: 82
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cafef0be496c4382b3eaa78a19a708c
+      internalID: 2563786164133868653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eye_L
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 539
+        width: 88
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5242abbe8fd0842a181618a92bff1dc8
+      internalID: -7950663358503926712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Characters_sheet_03_31
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 539
+        width: 205
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41394efd97365480b9735fb0db18b91b
+      internalID: -6883235375378132478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_mouth_down
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 465
+        width: 160
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb3bab171d8e43aba71ae4da3505ff6
+      internalID: 6519033347760616910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_pupil
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 483
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124d63f948f1d44da9ba94d1232c7bfa
+      internalID: 6496503380292811917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eye_close_R
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 440
+        width: 99
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f527eacac1b45e3bacdcc5d425a58e
+      internalID: -4530467719313726126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eyebrown_L
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 367
+        width: 104
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229a80e5217994f7d8b413112864fcff
+      internalID: -5867848429504631363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eyebrown_R
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 359
+        width: 68
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2cfc46291e4646d2aab34e69e805ced
+      internalID: 3403176337656284423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eye_close_L
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 322
+        width: 101
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b874e1afecb8c44889d55c0b694fc792
+      internalID: 8638095289921307605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eyelid_R
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 237
+        width: 97
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2218c7212a944f97aefb677f940f2e6
+      internalID: -800445251940267294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eyelid_L
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 244
+        width: 98
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9562964fc50324c5291b25580fb4850b
+      internalID: -3123479415800582773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_reveal
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 4
+        width: 718
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30edab8b869af4349893dd2b5200c812
+      internalID: 471365923662616668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_thigh_R
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 830
+        width: 75
+        height: 252
+      alignment: 9
+      pivot: {x: 0.5290401, y: 0.1197161}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db44f0a7917cc4b99afa3919204326da
+      internalID: -4919937018043613630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_hand_L
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 927
+        width: 66
+        height: 144
+      alignment: 9
+      pivot: {x: 0.52956194, y: 0.8387315}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9edafe1eabcc948dca74a23728c12464
+      internalID: 1232038126089313087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_hand_R
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 932
+        width: 72
+        height: 137
+      alignment: 9
+      pivot: {x: 0.44580296, y: 0.17244525}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776b34b22609e49139d82b69a22b3d2f
+      internalID: -176394288279151918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_leg_L
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 649
+        width: 55
+        height: 275
+      alignment: 9
+      pivot: {x: 0.5395999, y: 0.86431885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09d0199d7fb44f908d891ad9a858788
+      internalID: -5918954658820276704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Characters_sheet_03_11: 191359945687659070
+      Characters_sheet_03_13: -1137798049312984290
+      Characters_sheet_03_31: -6883235375378132478
+      Crown: -1455389683913489698
+      Rock: -3798766578413054635
+      bird_beak: 6756863020562959838
+      bird_body: 726961260639398255
+      bird_chest: 3562925301674726066
+      bird_eye: -133559947720190013
+      bird_eye_pupil: -2360163640746930360
+      bird_outline: 392530781677309160
+      bird_wing: 3364022732875912204
+      frog_body: -7844753685467444729
+      frog_eye_L: -7950663358503926712
+      frog_eye_R: 2563786164133868653
+      frog_eye_close_L: 8638095289921307605
+      frog_eye_close_R: -4530467719313726126
+      frog_eyebrown_L: -5867848429504631363
+      frog_eyebrown_R: 3403176337656284423
+      frog_eyelid_L: -3123479415800582773
+      frog_eyelid_R: -800445251940267294
+      frog_foot_L: -5210747009301013124
+      frog_foot_R: -4387421284330629026
+      frog_hand_L: 1232038126089313087
+      frog_hand_R: -176394288279151918
+      frog_leg_L: -5918954658820276704
+      frog_leg_R: -5699147260170153323
+      frog_mouth_down: 6519033347760616910
+      frog_mouth_up: 1652991145640362128
+      frog_pupil: 6496503380292811917
+      frog_thigh_L: -6278655452531012112
+      frog_thigh_R: -4919937018043613630
+      ground_reveal: 471365923662616668
+      mud: 7534476010768107511
+      pig_coin: -2701359058094295924
+      reveal_circle: -7189716149903387009
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 157298
+  packageName: My Little Journey Sprites Art
+  packageVersion: 1.0
+  assetPath: Assets/MyLittleJourneyArt/Sprites/Characters_sheet_03.png
+  uploadId: 721339
