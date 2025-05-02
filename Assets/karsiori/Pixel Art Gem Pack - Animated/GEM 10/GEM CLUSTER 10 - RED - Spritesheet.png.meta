@@ -309,6 +309,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1909,7 +1922,79 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GEM CLUSTER 10 - RED - Spritesheet_0: 3763312063444065696
+      GEM CLUSTER 10 - RED - Spritesheet_1: -972185882847066667
+      GEM CLUSTER 10 - RED - Spritesheet_10: -8887795693846262691
+      GEM CLUSTER 10 - RED - Spritesheet_11: -3822088509112576801
+      GEM CLUSTER 10 - RED - Spritesheet_12: 6786752480260214691
+      GEM CLUSTER 10 - RED - Spritesheet_13: 4373551768108865115
+      GEM CLUSTER 10 - RED - Spritesheet_14: -2464293278999617234
+      GEM CLUSTER 10 - RED - Spritesheet_15: -8087335153606564108
+      GEM CLUSTER 10 - RED - Spritesheet_16: 7208082421817917258
+      GEM CLUSTER 10 - RED - Spritesheet_17: -5662220373041229545
+      GEM CLUSTER 10 - RED - Spritesheet_18: -3806974969728903375
+      GEM CLUSTER 10 - RED - Spritesheet_19: -7518736170326802762
+      GEM CLUSTER 10 - RED - Spritesheet_2: 5305633192820061653
+      GEM CLUSTER 10 - RED - Spritesheet_20: 6623583633339314949
+      GEM CLUSTER 10 - RED - Spritesheet_21: -3381341893227362973
+      GEM CLUSTER 10 - RED - Spritesheet_22: 6433327936244910861
+      GEM CLUSTER 10 - RED - Spritesheet_23: 942918640308141950
+      GEM CLUSTER 10 - RED - Spritesheet_24: -1565952967379441672
+      GEM CLUSTER 10 - RED - Spritesheet_25: -770519609652066444
+      GEM CLUSTER 10 - RED - Spritesheet_26: 7059385373325571035
+      GEM CLUSTER 10 - RED - Spritesheet_27: 754192082347537970
+      GEM CLUSTER 10 - RED - Spritesheet_28: 2140951185331148528
+      GEM CLUSTER 10 - RED - Spritesheet_29: 5790558172736411161
+      GEM CLUSTER 10 - RED - Spritesheet_3: 3846123276786222792
+      GEM CLUSTER 10 - RED - Spritesheet_30: -5984484365201820043
+      GEM CLUSTER 10 - RED - Spritesheet_31: -5236196685717091527
+      GEM CLUSTER 10 - RED - Spritesheet_32: -4867056192171376749
+      GEM CLUSTER 10 - RED - Spritesheet_33: 6104382778111117662
+      GEM CLUSTER 10 - RED - Spritesheet_34: 2022821145985003389
+      GEM CLUSTER 10 - RED - Spritesheet_35: -5119503392586624204
+      GEM CLUSTER 10 - RED - Spritesheet_36: 3096716958313536546
+      GEM CLUSTER 10 - RED - Spritesheet_37: 7410894436792285535
+      GEM CLUSTER 10 - RED - Spritesheet_38: 6927276632588402076
+      GEM CLUSTER 10 - RED - Spritesheet_39: 3847684888119306894
+      GEM CLUSTER 10 - RED - Spritesheet_4: 4840098856098839262
+      GEM CLUSTER 10 - RED - Spritesheet_40: 7320136152411470544
+      GEM CLUSTER 10 - RED - Spritesheet_41: 751371096995321269
+      GEM CLUSTER 10 - RED - Spritesheet_42: 5933571169392979403
+      GEM CLUSTER 10 - RED - Spritesheet_43: 130171783958450697
+      GEM CLUSTER 10 - RED - Spritesheet_44: 8362406734918169370
+      GEM CLUSTER 10 - RED - Spritesheet_45: -5237286735382332058
+      GEM CLUSTER 10 - RED - Spritesheet_46: 3021025475346962971
+      GEM CLUSTER 10 - RED - Spritesheet_47: 9047697560519862427
+      GEM CLUSTER 10 - RED - Spritesheet_48: 7170699391444560250
+      GEM CLUSTER 10 - RED - Spritesheet_49: 5063120300312709050
+      GEM CLUSTER 10 - RED - Spritesheet_5: -1222433747782402613
+      GEM CLUSTER 10 - RED - Spritesheet_50: -4899493890653609422
+      GEM CLUSTER 10 - RED - Spritesheet_51: 3465199060608433105
+      GEM CLUSTER 10 - RED - Spritesheet_52: -7234848649478579327
+      GEM CLUSTER 10 - RED - Spritesheet_53: 2865121754391799945
+      GEM CLUSTER 10 - RED - Spritesheet_54: 4197747351800924315
+      GEM CLUSTER 10 - RED - Spritesheet_55: -5672684077473482633
+      GEM CLUSTER 10 - RED - Spritesheet_56: 2140600534985240124
+      GEM CLUSTER 10 - RED - Spritesheet_57: 4118991584473836587
+      GEM CLUSTER 10 - RED - Spritesheet_58: -6636381365590267022
+      GEM CLUSTER 10 - RED - Spritesheet_59: -7240121599261289752
+      GEM CLUSTER 10 - RED - Spritesheet_6: -7986016785735739835
+      GEM CLUSTER 10 - RED - Spritesheet_60: -654215035022864286
+      GEM CLUSTER 10 - RED - Spritesheet_61: -2149991801017927673
+      GEM CLUSTER 10 - RED - Spritesheet_62: -4523925232593096854
+      GEM CLUSTER 10 - RED - Spritesheet_63: -6301547710836402754
+      GEM CLUSTER 10 - RED - Spritesheet_64: -8694153330000605864
+      GEM CLUSTER 10 - RED - Spritesheet_65: 8267362773503384800
+      GEM CLUSTER 10 - RED - Spritesheet_66: 8306262923567359643
+      GEM CLUSTER 10 - RED - Spritesheet_67: -3769617894404733148
+      GEM CLUSTER 10 - RED - Spritesheet_68: 8383880914369998246
+      GEM CLUSTER 10 - RED - Spritesheet_69: 7406796012159250606
+      GEM CLUSTER 10 - RED - Spritesheet_7: 8471083702315411412
+      GEM CLUSTER 10 - RED - Spritesheet_70: -3606741641180020471
+      GEM CLUSTER 10 - RED - Spritesheet_71: 7851432834166314496
+      GEM CLUSTER 10 - RED - Spritesheet_8: 1150534586895367952
+      GEM CLUSTER 10 - RED - Spritesheet_9: 8672620028440292578
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
