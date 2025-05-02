@@ -26,7 +26,7 @@ public class PuertaCueva : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S) && PuedeAbrirse() && EstaCercaDelJugador())
+        if (Input.GetKeyDown(KeyCode.S) && PuedeAbrirse() && EsLaPuertaMasCercana())
         {
             abrir = true;
             ControladorPuertas.instancia.AbrirPuerta(numeroPuerta);
@@ -46,10 +46,6 @@ public class PuertaCueva : MonoBehaviour
                 velocidad * Time.deltaTime
             );
         }
-        Debug.Log("Distancia al jugador: " + Vector3.Distance(transform.position, jugador.position));
-        float distancia = Vector3.Distance(paloIzquierdo.transform.position, jugador.position);
-
-
     }
 
     bool PuedeAbrirse()
@@ -64,4 +60,24 @@ public class PuertaCueva : MonoBehaviour
         float distancia = Vector3.Distance(transform.position, jugador.position);
         return distancia <= distanciaMinima;
     }
+
+    bool EsLaPuertaMasCercana()
+{
+    PuertaCueva[] todasLasPuertas = FindObjectsOfType<PuertaCueva>();
+    float miDistancia = Vector3.Distance(transform.position, jugador.position);
+
+    foreach (var puerta in todasLasPuertas)
+    {
+        if (puerta == this) continue;
+
+        float distanciaOtra = Vector3.Distance(puerta.transform.position, jugador.position);
+        if (distanciaOtra < miDistancia)
+        {
+            return false; // Hay otra puerta más cerca
+        }
+    }
+
+    return EstaCercaDelJugador();
+}
+
 }
