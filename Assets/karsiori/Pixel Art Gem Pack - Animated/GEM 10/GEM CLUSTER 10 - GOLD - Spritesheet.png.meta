@@ -1,0 +1,1917 @@
+fileFormatVersion: 2
+guid: c90cea75325f0796b9613c64c72a0db9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5753782694821587151
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_0
+  - first:
+      213: 1001137521114011394
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_1
+  - first:
+      213: 4505441199310450577
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_2
+  - first:
+      213: -7219749215345619370
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_3
+  - first:
+      213: -1441731104538764155
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_4
+  - first:
+      213: -86382376965892929
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_5
+  - first:
+      213: -7327323318649921522
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_6
+  - first:
+      213: 2887961026235132150
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_7
+  - first:
+      213: -2753383535833305882
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_8
+  - first:
+      213: -6274908455001050973
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_9
+  - first:
+      213: -7103316224561941070
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_10
+  - first:
+      213: 262980221839096763
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_11
+  - first:
+      213: 7309084127751408547
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_12
+  - first:
+      213: -3632083030620229089
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_13
+  - first:
+      213: 5185529098076622687
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_14
+  - first:
+      213: 2130376434862985753
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_15
+  - first:
+      213: -3567369028397042443
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_16
+  - first:
+      213: -3143409972580836300
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_17
+  - first:
+      213: -8609233709440491185
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_18
+  - first:
+      213: 8409077806067344043
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_19
+  - first:
+      213: 7668976650322804673
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_20
+  - first:
+      213: 5509078970678764864
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_21
+  - first:
+      213: 6352915607978260088
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_22
+  - first:
+      213: 3223638507657761027
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_23
+  - first:
+      213: 4816060712951444717
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_24
+  - first:
+      213: 5735086457322353585
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_25
+  - first:
+      213: -9168888572513430290
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_26
+  - first:
+      213: 2980844135108786477
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_27
+  - first:
+      213: 5059472012157472027
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_28
+  - first:
+      213: 5442681811017057431
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_29
+  - first:
+      213: -5748185245576537120
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_30
+  - first:
+      213: -9201631233853029300
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_31
+  - first:
+      213: -2816247190284548589
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_32
+  - first:
+      213: -315921358305145546
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_33
+  - first:
+      213: -9185272649158766262
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_34
+  - first:
+      213: 3765388222454106194
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_35
+  - first:
+      213: -1894714084358281047
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_36
+  - first:
+      213: -2364992503896739211
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_37
+  - first:
+      213: 808220189077032006
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_38
+  - first:
+      213: -4198233427183428355
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_39
+  - first:
+      213: -6636095534828288057
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_40
+  - first:
+      213: 1551572366646648366
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_41
+  - first:
+      213: -3709988438971792790
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_42
+  - first:
+      213: -2827934762769211063
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_43
+  - first:
+      213: 1505257461104248104
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_44
+  - first:
+      213: -3293589097016701121
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_45
+  - first:
+      213: 5542449658301752070
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_46
+  - first:
+      213: 7193658808561982005
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_47
+  - first:
+      213: -3234582374413002335
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_48
+  - first:
+      213: -1318634819086549826
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_49
+  - first:
+      213: -5515812998022480083
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_50
+  - first:
+      213: -7423164254280982260
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_51
+  - first:
+      213: 5502546670623808016
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_52
+  - first:
+      213: 3091672321437793592
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_53
+  - first:
+      213: -4440929887963577929
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_54
+  - first:
+      213: 5027846906102488321
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_55
+  - first:
+      213: 1122188551452534308
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_56
+  - first:
+      213: 7487168244746839454
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_57
+  - first:
+      213: -7587537684824448844
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_58
+  - first:
+      213: -2286492964451897466
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_59
+  - first:
+      213: -255008066586269808
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_60
+  - first:
+      213: 1396180374090220873
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_61
+  - first:
+      213: 5003417288887758884
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_62
+  - first:
+      213: 4614372344289577629
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_63
+  - first:
+      213: 7233872922217434120
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_64
+  - first:
+      213: -8269216255486268657
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_65
+  - first:
+      213: 3818451278656872214
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_66
+  - first:
+      213: 7949032681257340262
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_67
+  - first:
+      213: -298068322121249082
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_68
+  - first:
+      213: -4426913065429578354
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_69
+  - first:
+      213: -3449733813305467939
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_70
+  - first:
+      213: -3600906615343238382
+    second: GEM CLUSTER 10 - GOLD - Spritesheet_71
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 137
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1379e58bf157620b0800000000000000
+      internalID: -5753782694821587151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 137
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 207d05d6541c4ed00800000000000000
+      internalID: 1001137521114011394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 137
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19f2f4166ea868e30800000000000000
+      internalID: 4505441199310450577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 137
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e4beb275c4ecb90800000000000000
+      internalID: -7219749215345619370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 137
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58cd554f231fdfbe0800000000000000
+      internalID: -1441731104538764155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 137
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb418129fab1dcef0800000000000000
+      internalID: -86382376965892929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 137
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e006f65734e105a90800000000000000
+      internalID: -7327323318649921522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 137
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f8eae59049141820800000000000000
+      internalID: 2887961026235132150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 137
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ec2f3023440ac9d0800000000000000
+      internalID: -2753383535833305882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 137
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a0319d810c0be8a0800000000000000
+      internalID: -6274908455001050973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 137
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b577bb5783fb6d90800000000000000
+      internalID: -7103316224561941070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 137
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbb3ca15e1b46a300800000000000000
+      internalID: 262980221839096763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 137
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ab811cf9451f6560800000000000000
+      internalID: 7309084127751408547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 137
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f12382d2abf389dc0800000000000000
+      internalID: -3632083030620229089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 137
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5f0f479d33b6f740800000000000000
+      internalID: 5185529098076622687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 137
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9121fdd841e909d10800000000000000
+      internalID: 2130376434862985753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 137
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f4f9a7f4c82e7ec0800000000000000
+      internalID: -3567369028397042443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 137
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43c16e0d84d5064d0800000000000000
+      internalID: -3143409972580836300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 93
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f412b701e8bd58880800000000000000
+      internalID: -8609233709440491185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 93
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba2e34f16bb03b470800000000000000
+      internalID: 8409077806067344043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 93
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cf7149a1adad6a60800000000000000
+      internalID: 7668976650322804673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 93
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 045e1eea22e247c40800000000000000
+      internalID: 5509078970678764864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 93
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 876349516171a2850800000000000000
+      internalID: 6352915607978260088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 93
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3011635a42aacbc20800000000000000
+      internalID: 3223638507657761027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 93
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de47f2ca3b516d240800000000000000
+      internalID: 4816060712951444717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 93
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b33ad44fbe179f40800000000000000
+      internalID: 5735086457322353585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 93
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee4d2321c6091c080800000000000000
+      internalID: -9168888572513430290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 93
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2937fb92f51e5920800000000000000
+      internalID: 2980844135108786477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 93
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d4da32dfad63640800000000000000
+      internalID: 5059472012157472027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 93
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 794c623454a488b40800000000000000
+      internalID: 5442681811017057431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 93
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ebd44e69f75a30b0800000000000000
+      internalID: -5748185245576537120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 93
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c440d08252d3d4080800000000000000
+      internalID: -9201631233853029300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 93
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 316c56ff91eaae8d0800000000000000
+      internalID: -2816247190284548589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 93
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63d434dc23f9d9bf0800000000000000
+      internalID: -315921358305145546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 93
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a41d7c5f03b578080800000000000000
+      internalID: -9185272649158766262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 93
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25801d073a8514430800000000000000
+      internalID: 3765388222454106194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 49
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a825e2349f94b5e0800000000000000
+      internalID: -1894714084358281047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 49
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 572f5c419dbdd2fd0800000000000000
+      internalID: -2364992503896739211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 49
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c4c36daff573b00800000000000000
+      internalID: 808220189077032006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 49
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc9f80f0f0ecb5c0800000000000000
+      internalID: -4198233427183428355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 49
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c70107454ad7e3a0800000000000000
+      internalID: -6636095534828288057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 49
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2e194dc8da488510800000000000000
+      internalID: 1551572366646648366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 49
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a62c74ecb29738cc0800000000000000
+      internalID: -3709988438971792790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 49
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 941a929f05821c8d0800000000000000
+      internalID: -2827934762769211063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 49
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82500a88fafb3e410800000000000000
+      internalID: 1505257461104248104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 49
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3f483c9a22da42d0800000000000000
+      internalID: -3293589097016701121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 49
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 603af8c599cbaec40800000000000000
+      internalID: 5542449658301752070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 49
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a52bf929205d360800000000000000
+      internalID: 7193658808561982005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 49
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a99f50d7747c13d0800000000000000
+      internalID: -3234582374413002335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 49
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc72e35e9443bde0800000000000000
+      internalID: -1318634819086549826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 49
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2f33656d45e373b0800000000000000
+      internalID: -5515812998022480083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 49
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c01643ab07f9bf890800000000000000
+      internalID: -7423164254280982260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 49
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a5a8e0b09fc5c40800000000000000
+      internalID: 5502546670623808016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 49
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83df4319893d7ea20800000000000000
+      internalID: 3091672321437793592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 5
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b10483cbc5ae52c0800000000000000
+      internalID: -4440929887963577929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 5
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d19475f1086c540800000000000000
+      internalID: 5027846906102488321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 5
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 426a65cba80d29f00800000000000000
+      internalID: 1122188551452534308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 5
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9568b199d3c7e760800000000000000
+      internalID: 7487168244746839454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 5
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b026281da6a3b690800000000000000
+      internalID: -7587537684824448844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 5
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68f2a6063ceb440e0800000000000000
+      internalID: -2286492964451897466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 5
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0972448b387067cf0800000000000000
+      internalID: -255008066586269808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 2
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 945050827aa306310800000000000000
+      internalID: 1396180374090220873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 3
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 420f337d385bf6540800000000000000
+      internalID: 5003417288887758884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 5
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a44caf23b890040800000000000000
+      internalID: 4614372344289577629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 5
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80c46179811e36460800000000000000
+      internalID: 7233872922217434120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 5
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0bead8b0a7dd3d80800000000000000
+      internalID: -8269216255486268657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 5
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61f9a78f43dddf430800000000000000
+      internalID: 3818451278656872214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 3
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66d805a9b13a05e60800000000000000
+      internalID: 7949032681257340262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ce8a25b07c0ddbf0800000000000000
+      internalID: -298068322121249082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 0
+        width: 48
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8dc88395027092c0800000000000000
+      internalID: -4426913065429578354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 0
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddb1640df551020d0800000000000000
+      internalID: -3449733813305467939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEM CLUSTER 10 - GOLD - Spritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 5
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 213bc130382070ec0800000000000000
+      internalID: -3600906615343238382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

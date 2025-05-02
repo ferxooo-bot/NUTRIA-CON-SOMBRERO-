@@ -217,6 +217,10 @@ public class SaveSystem : MonoBehaviour
         return currentSave.GetLevelData(currentSave.playerData.currentLevelId);
     }
 
+
+
+
+
     // Métodos específicos para modificar datos del jugador
     public void AddItem(string itemType, int amount)
     {
@@ -257,6 +261,60 @@ public class SaveSystem : MonoBehaviour
         SaveGame();
     }
 
+    public void RemoveItem(string itemType, int amount)
+    {
+        if (currentSave == null) return;
+        if (amount <= 0) return;
+        
+        bool changed = false;
+        
+        switch (itemType.ToLower())
+        {
+            case "keys":
+                if (currentSave.playerData.keys >= amount)
+                {
+                    currentSave.playerData.keys -= amount;
+                    changed = true;
+                }
+                break;
+            case "food":
+                if (currentSave.playerData.food >= amount)
+                {
+                    currentSave.playerData.food -= amount;
+                    changed = true;
+                }
+                break;
+            case "coins":
+                if (currentSave.playerData.coins >= amount)
+                {
+                    currentSave.playerData.coins -= amount;
+                    changed = true;
+                }
+                break;
+            default:
+                // Para otros tipos de items, quitar del inventario
+                var inventory = currentSave.playerData.GetInventory();
+                if (inventory.ContainsKey(itemType) && int.TryParse(inventory[itemType], out int currentAmount))
+                {
+                    if (currentAmount >= amount)
+                    {
+                        inventory[itemType] = (currentAmount - amount).ToString();
+                        currentSave.playerData.UpdateInventory(inventory);
+                        changed = true;
+                    }
+                }
+                break;
+        }
+        
+        if (changed)
+        {
+            SaveGame();
+        }
+}
+
+
+
+
     public int GetItemCount(string itemType)
     {
         if (currentSave == null) return 0;
@@ -278,6 +336,12 @@ public class SaveSystem : MonoBehaviour
                 return 0;
         }
     }
+
+
+
+
+
+
 
 
     public void SetRespawnPoint(string lastRespawn, int levelId)
