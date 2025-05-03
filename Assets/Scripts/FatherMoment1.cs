@@ -15,7 +15,9 @@ public class FatherMoment1 : MonoBehaviour
     public Controls controls; // Se crea la variable para controlar el Input Action llamado Controls
     public Vector2 direction; // Almacena la dirección del movimiento
     public bool puedeMoverse = true;
-
+    public bool mar = false;
+    
+    
     [Header("Componentes")]
     public Rigidbody2D rb2D;
     private BoxCollider2D boxCollider;
@@ -125,6 +127,16 @@ public class FatherMoment1 : MonoBehaviour
     // ----------- update ------------
     private void Update(){
         
+        if (mar)
+        {
+            isRunning = false; // No se puede correr en el agua
+            isJumping = false; // No se puede saltar
+        }
+        
+        else
+        {
+            direction = Vector2.zero;
+        }
         if(isJumping){
             boxCollider.size = jumpingColliderSize;
             boxCollider.offset = jumpingColliderOffset;
@@ -386,6 +398,7 @@ public void TakeDamage(int damageAmount, Vector2 knockback)
     
     // Aplicar knockback
     rb2D.linearVelocity = Vector2.zero;
+    
     rb2D.AddForce(knockback, ForceMode2D.Impulse);
     
     // Manejar muerte o invulnerabilidad
