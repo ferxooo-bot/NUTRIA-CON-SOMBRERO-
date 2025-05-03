@@ -354,18 +354,7 @@ public class SaveSystem : MonoBehaviour
     }
 
     // Métodos para objetos específicos de niveles
-    public void OpenChest(string chestId, int levelId)
-    {
-        if (currentSave == null) return;
-        
-        LevelData levelData = currentSave.GetLevelData(levelId);
-
-        if (!levelData.openedChests.Contains(chestId))
-        {
-            levelData.openedChests.Add(chestId);
-            SaveGame();
-        }
-    }
+    
 
 
     public void OpenDoor(string doorId, int levelId)
@@ -463,7 +452,18 @@ public class SaveSystem : MonoBehaviour
 
 
 
+    public void OpenChest(string chestId, int levelId)
+    {
+        if (currentSave == null) return;
+        
+        LevelData levelData = currentSave.GetLevelData(levelId);
 
+        if (!levelData.openedChests.Contains(chestId))
+        {
+            levelData.openedChests.Add(chestId);
+            SaveGame();
+        }
+    }
 
 
     public bool IsChestOpened(string chestId, int levelId)

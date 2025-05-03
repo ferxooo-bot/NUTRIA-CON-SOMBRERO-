@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class InventoryPlayer : MonoBehaviour
 {
-
+    // Singleton instance
+    public static InventoryPlayer Instance { get; private set; }
 
     private int keys; 
     private int food; 
@@ -10,6 +11,18 @@ public class InventoryPlayer : MonoBehaviour
     private SaveSystem saveSystem;
     public bool mostrarDebug = true;
 
+    private void Awake()
+    {
+        // Implementación del patrón Singleton
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        
+        Instance = this;
+        DontDestroyOnLoad(gameObject); // Persiste entre escenas
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,7 +36,6 @@ public class InventoryPlayer : MonoBehaviour
     {
         
     }
-
 
     public void AddItem(string item, int amount)
     {
@@ -119,8 +131,6 @@ public class InventoryPlayer : MonoBehaviour
         return resultado;
     }
 
-
-
     public void LoadInventoryFromSaveSystem() 
     {
          if (saveSystem != null)
@@ -143,5 +153,20 @@ public class InventoryPlayer : MonoBehaviour
             Debug.LogError("SaveSystem no está disponible.Todo inicializado en = 0.");
         }
     }
-
+    
+    // Métodos para obtener cantidades (útiles para UI y referencias externas)
+    public int GetKeyCount()
+    {
+        return keys;
+    }
+    
+    public int GetFoodCount()
+    {
+        return food;
+    }
+    
+    public int GetCoinCount()
+    {
+        return coins;
+    }
 }
