@@ -10,7 +10,6 @@ public class PlayerData
     public int keys;
     public int food;
     public int coins;
-    public int level;
     public int health; 
     public List<int> unlockedLevels = new List<int>();
     public string lastRespawn;

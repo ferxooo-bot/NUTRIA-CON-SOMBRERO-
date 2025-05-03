@@ -92,13 +92,12 @@ public class SaveSystem : MonoBehaviour
         {
             playerName = playerName,
             health = 3,
-            level = 1,//PRUEBAS
             food =23,
             coins =100,
             currentLevelId = 1
         };
         
-        GameSave newSave = new GameSave(1)
+        GameSave newSave = new GameSave(3)
         {
             saveName = saveName,
             saveDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"),
