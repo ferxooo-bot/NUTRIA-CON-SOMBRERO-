@@ -1,21 +1,41 @@
+
 using UnityEngine;
-using UnityEngine.InputSystem;
+
+using System.Collections;
+
 
 public class MovementSwin : MonoBehaviour
 {   
     public StateHandler stateHandler;
-    [SerializeField] private Transform headPivot; //pivote
-
+    [SerializeField] private Transform headPivot;
+    
     [Header("Configuración de Movimiento en Agua")]
     [SerializeField] private float baseWaterVelocity = 14f;  
     private float waterVelocity;
 
-    // Declaramos variables locales para simular las propiedades del agua
-    [SerializeField] private float waterDensity = 1.0f;              // Densidad del agua
-    [SerializeField] private float waterDrag = 0.9f;                 // Resistencia del agua
-    [SerializeField] private float waterBuoyancy = -1f;             // Fuerza de flotabilidad
-    [SerializeField] private float rotationSpeed = 10f;             // Velocidad de rotación (ajústala en el inspector)
-    private float playerMass;  // Masa del jugador
+    [Header("Salud y Daño")]
+    public int maxHealth = 3;
+    public int currentHealth;
+    public float invulnerabilityTime = 1.5f;
+    public float blinkInterval = 0.15f;
+    private bool isInvulnerable = false;
+    private bool isDead = false;
+
+    [Header("Sistema de Corazones (UI)")]
+    [SerializeField] private SpriteRenderer[] heartFulls = new SpriteRenderer[3];
+    [SerializeField] private SpriteRenderer[] heartEmptys = new SpriteRenderer[3];
+    [SerializeField] private float flashIntensity = 3f;
+
+    [Header("Configuración de Muerte y Reaparición")]
+    [SerializeField] public Transform respawnPoint;
+    [SerializeField] private float respawnDelay = 1.0f;
+
+    // Variables de agua
+    [SerializeField] private float waterDensity = 1.0f;
+    [SerializeField] private float waterDrag = 0.9f;
+    [SerializeField] private float waterBuoyancy = -1f;
+    [SerializeField] private float rotationSpeed = 10f;
+    private float playerMass;
 
     private bool isInWater = false;
     private Rigidbody2D rb;
@@ -23,6 +43,7 @@ public class MovementSwin : MonoBehaviour
     private Controls controls;
     private bool isRunning; 
     public bool lookRight = true;  
+    private SpriteRenderer playerSprite;
 
     public GameObject BonesHeadBody;  
     public Animator animatorBonesHeadBody; 
@@ -32,8 +53,15 @@ public class MovementSwin : MonoBehaviour
         animatorBonesHeadBody = transform.GetChild(1).GetComponent<Animator>(); 
         rb = GetComponent<Rigidbody2D>();
         controls = new Controls();
-        waterVelocity = baseWaterVelocity; // Inicializar con el valor base
-        playerMass = rb.mass; 
+        waterVelocity = baseWaterVelocity;
+        playerMass = rb.mass;
+        playerSprite = GetComponentInChildren<SpriteRenderer>();
+        currentHealth = maxHealth;
+    }
+
+    private void Start()
+    {
+        ResetHearts();
     }
 
     private void OnEnable()
@@ -41,7 +69,7 @@ public class MovementSwin : MonoBehaviour
         controls.Enable();
         controls.Movement.Run.performed += _ => isRunning = true;  
         controls.Movement.Run.canceled += _ => isRunning = false;  
-        rb.gravityScale = 0; // Desactivar
+        rb.gravityScale = 0;
         isInWater = true;
         animatorBonesHeadBody.SetBool("isInWater", isInWater); 
     }
@@ -51,21 +79,17 @@ public class MovementSwin : MonoBehaviour
         controls.Disable(); 
         controls.Movement.Run.performed -= _ => isRunning = true;  
         controls.Movement.Run.canceled -= _ => isRunning = false;
-        rb.gravityScale = 1; //activar
+        rb.gravityScale = 1;
         isInWater = false;
         animatorBonesHeadBody.SetBool("isInWater", isInWater); 
     }
 
     void Update()
     {
-        if(isInWater)
+        if(isInWater && !isDead)
         {
             direction = controls.Movement.Move.ReadValue<Vector2>();
-
-            // Actualizamos la rotación del personaje según la dirección
             HandleRotation();
-            
-            // Actualizamos el flip del sprite según la dirección horizontal
             HandleSpriteFlip();
         }
 
@@ -75,14 +99,9 @@ public class MovementSwin : MonoBehaviour
 
     void FixedUpdate()
     {   
-        if (isRunning)
-        {
-            waterVelocity = baseWaterVelocity * 2f; // Ajustar velocidad si está corriendo
-        }
-        else
-        {
-            waterVelocity = baseWaterVelocity; // Restablecer velocidad al valor base
-        }
+        if (isDead) return;
+        
+        waterVelocity = isRunning ? baseWaterVelocity * 2f : baseWaterVelocity;
 
         if (isInWater)
         {
@@ -90,28 +109,110 @@ public class MovementSwin : MonoBehaviour
         }
     }
 
-    // Método actualizado para rotación directa
+    // Sistema de daño y salud
+    public void TakeDamage(int damageAmount, Vector2 knockback)
+    {
+        if(isDead || isInvulnerable) return;
+
+        currentHealth -= damageAmount;
+        UpdateHeartsUI();
+    
+        rb.linearVelocity = Vector2.zero;
+        rb.AddForce(knockback, ForceMode2D.Impulse);
+    
+        if(currentHealth <= 0)
+        {
+            Die();
+        }
+        else
+        {
+            StartCoroutine(InvulnerabilityRoutine());
+        }
+    }
+
+    private void Die()
+    {
+        if (isDead) return;
+        isDead = true;
+
+        rb.bodyType = RigidbodyType2D.Kinematic; 
+        rb.linearVelocity = Vector2.zero;
+        LeanTween.alpha(gameObject, 0f, 0.5f)
+            .setEase(LeanTweenType.easeInOutQuad);
+            
+        controls.Disable();
+        StartCoroutine(RespawnAfterDelay());
+    }
+
+    private IEnumerator RespawnAfterDelay()
+    {
+        yield return new WaitForSeconds(respawnDelay);
+        
+        LeanTween.alpha(gameObject, 1f, 0.3f);
+        rb.bodyType = RigidbodyType2D.Dynamic;
+        transform.position = respawnPoint.position;
+        currentHealth = maxHealth;
+        ResetHearts();
+        controls.Enable();
+        isDead = false;
+    }
+
+    private IEnumerator InvulnerabilityRoutine()
+    {
+        isInvulnerable = true;
+        float timer = 0f;
+        bool visible = true;
+
+        while(timer < invulnerabilityTime)
+        {
+           
+            visible = !visible;
+            timer += blinkInterval;
+            yield return new WaitForSeconds(blinkInterval);
+        }
+        
+        isInvulnerable = false;
+    }
+
+    // Sistema de corazones
+    private void UpdateHeartsUI()
+    {
+        for(int i = 0; i < heartFulls.Length; i++)
+        {
+            if(heartFulls[i] != null) heartFulls[i].enabled = i < currentHealth;
+            if(heartEmptys[i] != null) heartEmptys[i].enabled = i >= currentHealth;
+        }
+    }
+
+    private void ResetHearts()
+    {
+        for (int i = 0; i < heartFulls.Length; i++)
+        {
+            if(heartFulls[i] != null)
+            {
+                heartFulls[i].enabled = (i < currentHealth);
+                heartFulls[i].color = Color.white;
+            }
+            if(heartEmptys[i] != null)
+                heartEmptys[i].enabled = (i >= currentHealth);
+        }
+    }
+
+    // Resto de métodos de movimiento y rotación (sin cambios)
     private void HandleRotation()
     {
-        if(direction.magnitude > 0.1f) // Si hay suficiente movimiento
+        if(direction.magnitude > 0.1f)
         {
-            // Calculamos el ángulo basado en la dirección
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
-            
-            // Rotamos directamente hacia la dirección de movimiento
             Quaternion targetRotation = Quaternion.Euler(0, 0, angle);
-            
-            // Aplicamos la rotación con la velocidad configurada
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
         }
         else
         {
-            // Si no hay movimiento, volvemos a la rotación normal gradualmente
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.identity, Time.deltaTime * rotationSpeed);
         }
     }
 
-    // Método simplificado para el flip del sprite
     private void HandleSpriteFlip()
     {
         if (direction.x > 0.1f && !lookRight)
@@ -133,31 +234,10 @@ public class MovementSwin : MonoBehaviour
         BonesHeadBody.transform.localScale = newScale;
     }
 
-    void MoveInWater()
+    private void MoveInWater()
     {
-        float maxWaterSpeed = waterVelocity;
-
-        Vector2 currentVelocity = rb.linearVelocity;  // Velocidad actual
-        
-        // Aplicamos resistencia del agua (desaceleración gradual)
-        currentVelocity *= waterDrag;
-        
-        // Calculamos fuerza de impulso basada en los controles (direction)
-        Vector2 moveForce = direction * waterVelocity;
-        
-        // Simulamos flotabilidad (empuje hacia arriba)
-        Vector2 buoyancyForce = new Vector2(0, waterBuoyancy * playerMass * waterDensity);
-        
-        // Combinamos todas las fuerzas
-        Vector2 totalForce = moveForce + buoyancyForce;
-        
-        // Aplicamos la fuerza a la velocidad actual
-        currentVelocity += totalForce * Time.deltaTime;
-        
-        // Limitamos la velocidad máxima
-        currentVelocity = Vector2.ClampMagnitude(currentVelocity, maxWaterSpeed);
-        
-        // Aplicamos la velocidad resultante
-        rb.linearVelocity = currentVelocity;
+        Vector2 movement = direction * waterVelocity;
+        rb.AddForce(movement, ForceMode2D.Force);
+        rb.linearVelocity = Vector2.ClampMagnitude(rb.linearVelocity, waterVelocity);
     }
 }
