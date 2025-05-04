@@ -664,8 +664,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorId: 
-  canvasPregunta: {fileID: 0}
-  textoPregunta: {fileID: 0}
+  canvasPregunta: {fileID: 8069373900130146265}
+  textoPregunta: {fileID: 5151700045974504704}
   textosRespuestas:
   - {fileID: 0}
   - {fileID: 0}
