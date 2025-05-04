@@ -62,6 +62,6 @@ public class PlayerDataSynchronizer : MonoBehaviour
         string lastRespawn = currentSave.playerData.lastRespawn; 
 
         fatherMovement.SetRespawnPoint(lastRespawn); 
-        StartCoroutine(fatherMovement.RespawnAfterDelay());
+        StartCoroutine(fatherMovement.RespawnWithOutDelay());
     }
 }

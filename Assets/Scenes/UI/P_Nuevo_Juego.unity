@@ -719,6 +719,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNameInput: {fileID: 1571054036}
   startButton: {fileID: 1338331185}
+  cinematicSceneName: Introduction
 --- !u!224 &717939975 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6208776617113563416, guid: 14cb7969ba5d98d8795ed3a5ac5a087c, type: 3}

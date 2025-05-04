@@ -1,9 +1,13 @@
 using UnityEngine;
+using System;
 
 public class InventoryPlayer : MonoBehaviour
 {
     // Singleton instance
     public static InventoryPlayer Instance { get; private set; }
+
+    // Evento que se dispara cuando cambia el inventario
+    public event Action OnInventoryChanged;
 
     private int keys; 
     private int food; 
@@ -31,10 +35,11 @@ public class InventoryPlayer : MonoBehaviour
         LoadInventoryFromSaveSystem();
     }
 
-    // Update is called once per frame
-    void Update()
+    // Método auxiliar para notificar cambios en el inventario
+    private void NotifyInventoryChanged()
     {
-        
+        // Invocar el evento solo si hay suscriptores
+        OnInventoryChanged?.Invoke();
     }
 
     public void AddItem(string item, int amount)
@@ -59,7 +64,10 @@ public class InventoryPlayer : MonoBehaviour
                 break;
         }
 
-        saveSystem.AddItem(item, amount); 
+        saveSystem.AddItem(item, amount);
+        
+        // Notificar a la UI que el inventario ha cambiado
+        NotifyInventoryChanged();
     }
 
     public bool RemoveItem(string item, int amount)
@@ -122,6 +130,9 @@ public class InventoryPlayer : MonoBehaviour
         if (resultado && saveSystem != null)
         {
             saveSystem.RemoveItem(item, amount);
+            
+            // Notificar a la UI que el inventario ha cambiado
+            NotifyInventoryChanged();
         }
         else if (!resultado && mostrarDebug)
         {
@@ -133,7 +144,7 @@ public class InventoryPlayer : MonoBehaviour
 
     public void LoadInventoryFromSaveSystem() 
     {
-         if (saveSystem != null)
+        if (saveSystem != null)
         {
             // Obtener los valores actuales del sistema de guardado
             keys = saveSystem.GetItemCount("keys");
@@ -144,13 +155,19 @@ public class InventoryPlayer : MonoBehaviour
             {
                 Debug.Log($"Inventario cargado: {keys} llaves, {food} alimentos, {coins} monedas");
             }
+            
+            // Notificar a la UI que el inventario ha sido cargado
+            NotifyInventoryChanged();
         }
         else
         {
             keys = 0; 
             food = 0;
             coins = 0; 
-            Debug.LogError("SaveSystem no está disponible.Todo inicializado en = 0.");
+            Debug.LogError("SaveSystem no está disponible. Todo inicializado en = 0.");
+            
+            // Notificar a la UI incluso con valores por defecto
+            NotifyInventoryChanged();
         }
     }
     
