@@ -1,4 +1,6 @@
 using UnityEngine;
+using TMPro;
+using System.Collections;
 
 public class PuertaCueva : MonoBehaviour
 {
@@ -11,40 +13,96 @@ public class PuertaCueva : MonoBehaviour
     public int numeroPuerta = 0;
     public int puertaAnterior = -1;
 
-    public Transform jugador; // <-- Asignar el jugador aquí en el Inspector
+    public Transform jugador;
     public float distanciaMinima = 3f;
 
-    private bool abrir = false;
+    public int basuraRequerida = 5;
+    public TextMeshProUGUI textoContador;
+
+    private bool abierta = false;
     private Vector3 posicionFinalIzquierdo;
     private Vector3 posicionFinalDerecho;
+    private PlayerInventory inventario;
 
     void Start()
     {
         posicionFinalIzquierdo = paloIzquierdo.transform.position + offsetIzquierdo;
         posicionFinalDerecho = paloDerecho.transform.position + offsetDerecho;
+
+        GameObject jugadorObj = GameObject.FindGameObjectWithTag("Player");
+        if (jugadorObj != null)
+        {
+            inventario = jugadorObj.GetComponent<PlayerInventory>();
+        }
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S) && PuedeAbrirse() && EsLaPuertaMasCercana())
+        if (abierta) return; // ✅ Ya está abierta, no hacer nada
+
+        if (EstaCercaDelJugador())
         {
-            abrir = true;
-            ControladorPuertas.instancia.AbrirPuerta(numeroPuerta);
+            MostrarMensajeFaltantes();
+
+            if (Input.GetKeyDown(KeyCode.S) && PuedeAbrirse())
+            {
+                if (inventario != null && inventario.UsarBasuraExacta(basuraRequerida))
+                {
+                    AbrirPuerta();
+                    ControladorPuertas.instancia.AbrirPuerta(numeroPuerta);
+                }
+                else
+                {
+                    MostrarMensajeFaltantes(); // muestra el mensaje aunque no tenga suficiente
+                }
+            }
         }
-
-        if (abrir)
+        else
         {
-            paloIzquierdo.transform.position = Vector3.MoveTowards(
-                paloIzquierdo.transform.position,
-                posicionFinalIzquierdo,
-                velocidad * Time.deltaTime
-            );
+            // Oculta el mensaje si está lejos
+            if (textoContador != null && !abierta)
+            {
+                textoContador.text = "";
+            }
+        }
+    }
 
-            paloDerecho.transform.position = Vector3.MoveTowards(
-                paloDerecho.transform.position,
-                posicionFinalDerecho,
-                velocidad * Time.deltaTime
-            );
+    void MostrarMensajeFaltantes()
+    {
+        if (textoContador == null || inventario == null) return;
+
+        int falta = Mathf.Max(0, basuraRequerida - inventario.GetBasuraActual());
+        if (falta > 0)
+        {
+            textoContador.text = "Faltan " + falta + " basuras para la puerta " + numeroPuerta;
+        }
+        else
+        {
+            textoContador.text = "Presiona S para abrir la puerta " + numeroPuerta;
+        }
+    }
+
+    void AbrirPuerta()
+    {
+        abierta = true;
+        StartCoroutine(MoverPuerta());
+
+        if (textoContador != null)
+            textoContador.text = "¡Puerta abierta!";
+    }
+
+    IEnumerator MoverPuerta()
+    {
+        float tiempo = 0f;
+        Vector3 inicioIzquierdo = paloIzquierdo.transform.position;
+        Vector3 inicioDerecho = paloDerecho.transform.position;
+
+        while (tiempo < 1f)
+        {
+            tiempo += Time.deltaTime * velocidad;
+            paloIzquierdo.transform.position = Vector3.Lerp(inicioIzquierdo, posicionFinalIzquierdo, tiempo);
+            paloDerecho.transform.position = Vector3.Lerp(inicioDerecho, posicionFinalDerecho, tiempo);
+            yield return null;
         }
     }
 
@@ -57,27 +115,6 @@ public class PuertaCueva : MonoBehaviour
     bool EstaCercaDelJugador()
     {
         if (jugador == null) return false;
-        float distancia = Vector3.Distance(transform.position, jugador.position);
-        return distancia <= distanciaMinima;
+        return Vector3.Distance(transform.position, jugador.position) <= distanciaMinima;
     }
-
-    bool EsLaPuertaMasCercana()
-{
-    PuertaCueva[] todasLasPuertas = FindObjectsOfType<PuertaCueva>();
-    float miDistancia = Vector3.Distance(transform.position, jugador.position);
-
-    foreach (var puerta in todasLasPuertas)
-    {
-        if (puerta == this) continue;
-
-        float distanciaOtra = Vector3.Distance(puerta.transform.position, jugador.position);
-        if (distanciaOtra < miDistancia)
-        {
-            return false; // Hay otra puerta más cerca
-        }
-    }
-
-    return EstaCercaDelJugador();
-}
-
 }
