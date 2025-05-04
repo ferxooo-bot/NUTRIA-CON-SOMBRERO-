@@ -533,7 +533,8 @@ MonoBehaviour:
     transitionDuration: 0.5
   autoStart: 1
   loopCinematic: 0
-  defaultNextSceneName: Level1
+  defaultNextSceneName: Lv.1
+  nextSceneName: Lv.1
   defaultTransitionDuration: 0.5
 --- !u!4 &710605152
 Transform:
