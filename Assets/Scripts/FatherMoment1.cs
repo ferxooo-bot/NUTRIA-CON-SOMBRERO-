@@ -466,6 +466,23 @@ public void SetRespawnPoint(string lastRespawn)
     }
 }
 
+public IEnumerator RespawnWithOutDelay()
+{
+   yield return new WaitForSeconds(0);
+
+    // 1. Reactivar visibilidad (Alpha a 1 en 0.3 segundos)
+    LeanTween.alpha(gameObject, 1f, 0.3f);
+
+    // 2. Restaurar física
+    rb2D.bodyType = RigidbodyType2D.Dynamic;
+    
+    // 3. Resetear posición y estado
+    transform.position = respawnPoint.position;
+    currentHealth = maxHealth;
+    ResetHearts();
+    controls.Enable();
+    isDead = false;
+}
 
 
     // --- Curacion, aun sin utilizar ---
