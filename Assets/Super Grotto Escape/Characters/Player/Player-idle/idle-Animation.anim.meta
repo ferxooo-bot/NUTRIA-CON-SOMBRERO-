@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 11fb112e0f3ded64ca52424227405153
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 238393
+  packageName: Super Grotto Escape Pack
+  packageVersion: 1.0
+  assetPath: Assets/Super Grotto Escape/Characters/Player/Player-idle/idle-Animation.anim
+  uploadId: 545561

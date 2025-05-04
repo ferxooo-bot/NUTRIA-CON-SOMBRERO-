@@ -95,6 +95,20 @@ public class MovementSwin : MonoBehaviour
 
         animatorBonesHeadBody.SetBool("isInWater", isInWater); 
         animatorBonesHeadBody.SetFloat("Speed", direction.magnitude);
+
+        void Update()
+{
+    if (isInWater && !isDead)
+    {
+        direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        HandleRotation();
+        HandleSpriteFlip();
+    }
+
+    animatorBonesHeadBody.SetBool("isInWater", isInWater); 
+    animatorBonesHeadBody.SetFloat("Speed", direction.magnitude);
+}
+
     }
 
     void FixedUpdate()

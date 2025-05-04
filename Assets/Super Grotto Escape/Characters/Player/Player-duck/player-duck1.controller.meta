@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2f8c6f2f8603e0248ae14623a1b3725b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 238393
+  packageName: Super Grotto Escape Pack
+  packageVersion: 1.0
+  assetPath: Assets/Super Grotto Escape/Characters/Player/Player-duck/player-duck1.controller
+  uploadId: 545561

@@ -1,35 +1,34 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class ControladorPuertas : MonoBehaviour
 {
-    public static ControladorPuertas instancia;
-    public bool[] puertasAbiertas;
+    public static ControladorPuertas instancia; // Singleton
+
+    private HashSet<int> puertasAbiertas = new HashSet<int>();
 
     void Awake()
     {
         if (instancia == null)
         {
             instancia = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(gameObject); // Evita duplicados si ya existe otro
         }
     }
 
-    void Start()
+    public void AbrirPuerta(int numeroPuerta)
     {
-        puertasAbiertas = new bool[10]; // Hasta 10 puertas (ajustable)
+        if (!puertasAbiertas.Contains(numeroPuerta))
+        {
+            puertasAbiertas.Add(numeroPuerta);
+        }
     }
 
-    public bool EstaPuertaAbierta(int numero)
+    public bool EstaPuertaAbierta(int numeroPuerta)
     {
-        return puertasAbiertas[numero];
-    }
-
-    public void AbrirPuerta(int numero)
-    {
-        puertasAbiertas[numero] = true;
+        return puertasAbiertas.Contains(numeroPuerta);
     }
 }
