@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class RompeCajas : MonoBehaviour
+public class RompedorDeCajas : MonoBehaviour
 {
-    private BreakingBox cajaCercana = null;
+    private CajaRompiendose cajaCercana = null;
 
     private void Update()
     {
@@ -14,7 +14,7 @@ public class RompeCajas : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        BreakingBox caja = collision.GetComponent<BreakingBox>();
+        CajaRompiendose caja = collision.GetComponent<CajaRompiendose>();
         if (caja != null)
         {
             cajaCercana = caja;
@@ -23,7 +23,7 @@ public class RompeCajas : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        BreakingBox caja = collision.GetComponent<BreakingBox>();
+        CajaRompiendose caja = collision.GetComponent<CajaRompiendose>();
         if (caja != null && caja == cajaCercana)
         {
             cajaCercana = null;

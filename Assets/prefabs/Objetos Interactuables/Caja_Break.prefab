@@ -78,7 +78,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 28216951
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: -1651435348156117143, guid: a5ea66e4a88141741baeea430b3f3f12, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -146,16 +146,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2337719724680313569}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c73d69483aec1d42bbbf4374e2c69ff, type: 3}
+  m_Script: {fileID: 11500000, guid: a3fdea4e00a35e349adbc78a1242af93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spriteBase: {fileID: -1651435348156117143, guid: a5ea66e4a88141741baeea430b3f3f12, type: 3}
   spriteTransicion: {fileID: -8192989425697598493, guid: a5ea66e4a88141741baeea430b3f3f12, type: 3}
   spriteRoto: {fileID: 8831445792105230461, guid: a5ea66e4a88141741baeea430b3f3f12, type: 3}
   particulasRupturaPrefab: {fileID: 0}
-  sonidoRuptura: {fileID: 8300000, guid: bdcd93d533f02994996c9e83a57d10e7, type: 3}
-  destruirDespuesDeRomper: 1
-  tiempoAntesDeDestruir: 0.7
+  sonidoRuptura: {fileID: 8300000, guid: e1690e54246d47a479d5861ff62e1517, type: 3}
 --- !u!50 &424518576598435110
 Rigidbody2D:
   serializedVersion: 5
@@ -193,8 +191,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: bdcd93d533f02994996c9e83a57d10e7, type: 3}
-  m_Resource: {fileID: 8300000, guid: bdcd93d533f02994996c9e83a57d10e7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e1690e54246d47a479d5861ff62e1517, type: 3}
+  m_Resource: {fileID: 8300000, guid: e1690e54246d47a479d5861ff62e1517, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
