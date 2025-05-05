@@ -38,7 +38,7 @@ public class CinematicController : MonoBehaviour
     
     [Header("Game Flow")]
     public string defaultNextSceneName = "Level1"; // Nivel a cargar si no hay uno guardado
-    private string nextSceneName;
+    [SerializeField] private string nextSceneName;
 
     [Header("Transition Settings")]
     public float defaultTransitionDuration = 0.5f;
@@ -49,8 +49,7 @@ public class CinematicController : MonoBehaviour
 
     void Start()
     {
-        // Obtener el nombre del nivel desde las preferencias del jugador
-        nextSceneName = PlayerPrefs.GetString("LevelAfterCinematic", defaultNextSceneName);
+        nextSceneName = "Lv.1";
         
         if (displayImage == null)
         {
