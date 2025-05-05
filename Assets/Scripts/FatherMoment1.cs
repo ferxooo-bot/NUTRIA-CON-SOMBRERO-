@@ -126,17 +126,6 @@ public class FatherMoment1 : MonoBehaviour
 
     // ----------- update ------------
     private void Update(){
-        
-        if (mar)
-        {
-            isRunning = false; // No se puede correr en el agua
-            isJumping = false; // No se puede saltar
-        }
-        
-        else
-        {
-            direction = Vector2.zero;
-        }
         if(isJumping){
             boxCollider.size = jumpingColliderSize;
             boxCollider.offset = jumpingColliderOffset;
