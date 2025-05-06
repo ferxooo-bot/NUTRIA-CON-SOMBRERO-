@@ -496,7 +496,7 @@ MonoBehaviour:
   canvasGroup: {fileID: 146614493}
   slides:
   - image: {fileID: 21300000, guid: 456e556a1631d5b078fc8b357af4ac89, type: 3}
-    subtitle: Ayyy el mundo de las nutrias hermosas.
+    subtitle: "\xA1Qu\xE9 linda es la naturaleza!"
     duration: 3
     transition: 1
     transitionDuration: 0.5
@@ -516,7 +516,7 @@ MonoBehaviour:
     transition: 1
     transitionDuration: 0.5
   - image: {fileID: 21300000, guid: 269bcafb9e1ea414292a51684eb56a92, type: 3}
-    subtitle: Y la nutria/ tu fuiste raptado y encarcelado
+    subtitle: Fuiste raptado y encarcelado
     duration: 3
     transition: 1
     transitionDuration: 0.5
