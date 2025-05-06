@@ -259,37 +259,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2991695224385540397, guid: 61bcdcc04d858b941997eae86948f0f9, type: 3}
       propertyPath: dialoguelines.Array.size
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2991695224385540397, guid: 61bcdcc04d858b941997eae86948f0f9, type: 3}
       propertyPath: 'dialoguelines.Array.data[0]'
-      value: "\xA1Hola, guardi\xE1n del bosque! Soy Numi, la nutria exploradora.
-        Si est\xE1s leyendo esto\u2026 \xA1es porque te importa la naturaleza!"
+      value: "Estuve tan cerca... Logr\xE9 abrir este cofre, pero no el de La lagartija."
       objectReference: {fileID: 0}
     - target: {fileID: 2991695224385540397, guid: 61bcdcc04d858b941997eae86948f0f9, type: 3}
       propertyPath: 'dialoguelines.Array.data[1]'
-      value: "\xBFSab\xEDas que hay personas que capturan animales salvajes para
-        venderlos? Eso se llama tr\xE1fico de animales y est\xE1 mal."
+      value: "Llegu\xE9 hasta el cofre, vi el panel de n\xFAmeros. Pude haberlo abierto.
+        Pero escuch\xE9 pasos y no me dio tiempo..."
       objectReference: {fileID: 0}
     - target: {fileID: 2991695224385540397, guid: 61bcdcc04d858b941997eae86948f0f9, type: 3}
       propertyPath: 'dialoguelines.Array.data[2]'
-      value: "Los sacan de su hogar, los encierran en jaulas y muchas veces los venden
-        como mascotas o usan partes de su cuerpo. \xA1Qu\xE9 triste!"
+      value: "Intent\xE9 volver, lo juro. Quer\xEDa liberarla. Ayy Lagartija Andina,
+        mereces libertad..."
       objectReference: {fileID: 0}
     - target: {fileID: 2991695224385540397, guid: 61bcdcc04d858b941997eae86948f0f9, type: 3}
       propertyPath: 'dialoguelines.Array.data[3]'
-      value: "Cada animal tiene un papel en la naturaleza. Si los quitamos de su
-        hogar, el bosque se desequilibra. \U0001F43E "
+      value: "La lagartija me dijo que escondiera el c\xF3digo por si algo sal\xEDa
+        mal. As\xED que lo dej\xE9 aqu\xED, entre l\xEDneas, para quien lo sepa ver."
       objectReference: {fileID: 0}
     - target: {fileID: 2991695224385540397, guid: 61bcdcc04d858b941997eae86948f0f9, type: 3}
       propertyPath: 'dialoguelines.Array.data[4]'
-      value: "Por eso debemos protegerlos, no comprarlos, ni apoyar a quienes los
-        venden. \xA1T\xFA puedes ser parte del cambio!"
+      value: "Cuatro d\xEDgitos. Uno por cada paso que di hacia la jaula. Uno por
+        cada amigo que quise liberar. Uno por cada intento fallido. Uno por m\xED."
       objectReference: {fileID: 0}
     - target: {fileID: 2991695224385540397, guid: 61bcdcc04d858b941997eae86948f0f9, type: 3}
       propertyPath: 'dialoguelines.Array.data[5]'
-      value: "Por eso debemos protegerlos, no comprarlos, ni apoyar a quienes los
-        venden. \xA1T\xFA puedes ser parte del cambio!"
+      value: "Si est\xE1s leyendo esto, nutria, no pierdas tiempo. Abre el cofre.
+        Salva a los dem\xE1s. Haz lo que yo no pude. 2346"
       objectReference: {fileID: 0}
     - target: {fileID: 2991695224385540397, guid: 61bcdcc04d858b941997eae86948f0f9, type: 3}
       propertyPath: 'dialoguelines.Array.data[6]'
