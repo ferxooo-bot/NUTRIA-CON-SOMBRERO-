@@ -29,6 +29,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cinematicas/Introduction.unity
     guid: 9b6ff82c7f42cb44f907dddaaf9731cb
+  - enabled: 1
+    path: Assets/Scenes/Cinematicas/Cucarachero.unity
+    guid: 06b55d4120b22904b9d42cc3d0cc93fa
+  - enabled: 1
+    path: Assets/Scenes/Cinematicas/Lagartija.unity
+    guid: 686199a4379d00cc78a9bdd0b6125e13
+  - enabled: 1
+    path: Assets/Scenes/Cinematicas/Rana.unity
+    guid: df14c7001c4c2284dbca42957f846a0e
+  - enabled: 1
+    path: Assets/Scenes/Cinematicas/Zorro.unity
+    guid: 6ba0ccda49e207703a1f36ce70480fcd
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
