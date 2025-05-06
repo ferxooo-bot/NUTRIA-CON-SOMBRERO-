@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3581400208452490928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4709757558537838542}
+  - component: {fileID: 7079756738215289936}
+  m_Layer: 0
+  m_Name: CinematicController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4709757558537838542
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3581400208452490928}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 155.46565, y: 1.6722649, z: 7377.7773}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7079756738215289936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3581400208452490928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd48376ef562f3d5cb93d0f633f5bff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayImage: {fileID: 0}
+  subtitleText: {fileID: 0}
+  canvasGroup: {fileID: 0}
+  slides:
+  - image: {fileID: 21300000, guid: 456e556a1631d5b078fc8b357af4ac89, type: 3}
+    subtitle: Ayyy el mundo de las nutrias hermosas.
+    duration: 3
+    transition: 1
+    transitionDuration: 0.5
+  - image: {fileID: 21300000, guid: cad74a192e2b182728f80d7e8e35dad2, type: 3}
+    subtitle: La mejor nutria en el mejor bosque.
+    duration: 3
+    transition: 1
+    transitionDuration: 0.5
+  - image: {fileID: 21300000, guid: ce2065f9645af30ec9882f38999b784c, type: 3}
+    subtitle: "Tranquila mientras beb\xEDa agua bendita."
+    duration: 3
+    transition: 1
+    transitionDuration: 0.5
+  - image: {fileID: 21300000, guid: 78289ebe92f11e6f18bd441e14df6f81, type: 3}
+    subtitle: Hasta que ciertos cazadores....
+    duration: 3
+    transition: 1
+    transitionDuration: 0.5
+  - image: {fileID: 21300000, guid: 269bcafb9e1ea414292a51684eb56a92, type: 3}
+    subtitle: Y la nutria/ tu fuiste raptado y encarcelado
+    duration: 3
+    transition: 1
+    transitionDuration: 0.5
+  - image: {fileID: 21300000, guid: b109b13f8326845e1bd426ec2665005d, type: 3}
+    subtitle: "No eres el \xFAnico animal..."
+    duration: 3
+    transition: 1
+    transitionDuration: 0.5
+  - image: {fileID: 21300000, guid: 19f94bafd5b7b4c50aebc90871b58f75, type: 3}
+    subtitle: "Lo que est\xE1 claro es que debes regresar a tu hogar y salvar a todos
+      los animales que puedas"
+    duration: 6
+    transition: 1
+    transitionDuration: 0.5
+  autoStart: 1
+  loopCinematic: 0
+  defaultNextSceneName: Lv.1
+  nextSceneName: Lv.1
+  defaultTransitionDuration: 0.5
