@@ -29,6 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 5350528885306542297}
   - {fileID: 6051281875794665895}
   - {fileID: 1297600889562284184}
   m_Father: {fileID: 0}
@@ -259,44 +260,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2991695224385540397, guid: 61bcdcc04d858b941997eae86948f0f9, type: 3}
       propertyPath: dialoguelines.Array.size
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2991695224385540397, guid: 61bcdcc04d858b941997eae86948f0f9, type: 3}
       propertyPath: 'dialoguelines.Array.data[0]'
-      value: "Estuve tan cerca... Logr\xE9 abrir este cofre, pero no el de La lagartija."
+      value: Encuentras una nota algo humeda, parece ser escrita con apuro...
       objectReference: {fileID: 0}
     - target: {fileID: 2991695224385540397, guid: 61bcdcc04d858b941997eae86948f0f9, type: 3}
       propertyPath: 'dialoguelines.Array.data[1]'
-      value: "Llegu\xE9 hasta el cofre, vi el panel de n\xFAmeros. Pude haberlo abierto.
-        Pero escuch\xE9 pasos y no me dio tiempo..."
+      value: 'Lees lo siguiente: '
       objectReference: {fileID: 0}
     - target: {fileID: 2991695224385540397, guid: 61bcdcc04d858b941997eae86948f0f9, type: 3}
       propertyPath: 'dialoguelines.Array.data[2]'
-      value: "Intent\xE9 volver, lo juro. Quer\xEDa liberarla. Ayy Lagartija Andina,
-        mereces libertad..."
+      value: "\"Estuve tan cerca... Logr\xE9 abrir este cofre, pero no el de La lagartija.\""
       objectReference: {fileID: 0}
     - target: {fileID: 2991695224385540397, guid: 61bcdcc04d858b941997eae86948f0f9, type: 3}
       propertyPath: 'dialoguelines.Array.data[3]'
-      value: "La lagartija me dijo que escondiera el c\xF3digo por si algo sal\xEDa
-        mal. As\xED que lo dej\xE9 aqu\xED, entre l\xEDneas, para quien lo sepa ver."
+      value: "\"Llegu\xE9 hasta el cofre, vi el panel de n\xFAmeros. Pude haberlo
+        abierto. Pero escuch\xE9 pasos y no me dio tiempo...\""
       objectReference: {fileID: 0}
     - target: {fileID: 2991695224385540397, guid: 61bcdcc04d858b941997eae86948f0f9, type: 3}
       propertyPath: 'dialoguelines.Array.data[4]'
-      value: "Cuatro d\xEDgitos. Uno por cada paso que di hacia la jaula. Uno por
-        cada amigo que quise liberar. Uno por cada intento fallido. Uno por m\xED."
+      value: '"Ayy Lagartija Andina, mereces libertad..."'
       objectReference: {fileID: 0}
     - target: {fileID: 2991695224385540397, guid: 61bcdcc04d858b941997eae86948f0f9, type: 3}
       propertyPath: 'dialoguelines.Array.data[5]'
-      value: "Si est\xE1s leyendo esto, nutria, no pierdas tiempo. Abre el cofre.
-        Salva a los dem\xE1s. Haz lo que yo no pude. 2346"
+      value: "\"La lagartija me dijo que escondiera el c\xF3digo por si algo sal\xEDa
+        mal. As\xED que lo dej\xE9 aqu\xED, entre l\xEDneas, para quien lo sepa ver.\""
       objectReference: {fileID: 0}
     - target: {fileID: 2991695224385540397, guid: 61bcdcc04d858b941997eae86948f0f9, type: 3}
       propertyPath: 'dialoguelines.Array.data[6]'
-      value: 'D.Leo: ta bien pe'
+      value: "\"Cuatro d\xEDgitos. Uno por cada paso que di hacia la jaula. Uno por
+        cada amigo que quise liberar. Uno por cada intento fallido. Uno por m\xED.\""
       objectReference: {fileID: 0}
     - target: {fileID: 2991695224385540397, guid: 61bcdcc04d858b941997eae86948f0f9, type: 3}
       propertyPath: 'dialoguelines.Array.data[7]'
-      value: 'D.Leo: ta bien pe'
+      value: "\"Si est\xE1s leyendo esto, no pierdas tiempo, abre el cofre. Salva
+        a los dem\xE1s. Haz lo que yo no pude. 2346\""
       objectReference: {fileID: 0}
     - target: {fileID: 3223609062332069244, guid: 61bcdcc04d858b941997eae86948f0f9, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -380,4 +380,92 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8268172617316809869, guid: 61bcdcc04d858b941997eae86948f0f9, type: 3}
   m_PrefabInstance: {fileID: 6970571745003633685}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7081898440670226694
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2626739376514019247}
+    m_Modifications:
+    - target: {fileID: 201316314747276754, guid: d06c6bb704dac4e49823f2250c208d7b, type: 3}
+      propertyPath: dialoguelines.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 201316314747276754, guid: d06c6bb704dac4e49823f2250c208d7b, type: 3}
+      propertyPath: 'dialoguelines.Array.data[0]'
+      value: "Froggy: Oye, Ayudanos a salir de aqu\xED a todos, encerraron m\xE1s."
+      objectReference: {fileID: 0}
+    - target: {fileID: 201316314747276754, guid: d06c6bb704dac4e49823f2250c208d7b, type: 3}
+      propertyPath: 'dialoguelines.Array.data[1]'
+      value: "T\xFA: Eso pensaba hacer, aunque no se como."
+      objectReference: {fileID: 0}
+    - target: {fileID: 201316314747276754, guid: d06c6bb704dac4e49823f2250c208d7b, type: 3}
+      propertyPath: 'dialoguelines.Array.data[2]'
+      value: "Froggy: Un mono intento hacerlo...Pero fracaso, fue atrapado y llevado
+        a lo m\xE1s arriba."
+      objectReference: {fileID: 0}
+    - target: {fileID: 201316314747276754, guid: d06c6bb704dac4e49823f2250c208d7b, type: 3}
+      propertyPath: 'dialoguelines.Array.data[3]'
+      value: 'Froggy: Se lo llevaron y con el una nota, puede ser que encuentres
+        lo que el descubrio si lo buscas.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 201316314747276754, guid: d06c6bb704dac4e49823f2250c208d7b, type: 3}
+      propertyPath: 'dialoguelines.Array.data[4]'
+      value: "T\xFA: Estos humanos...Ver\xE9 que puedo hacer "
+      objectReference: {fileID: 0}
+    - target: {fileID: 2884292436511908319, guid: d06c6bb704dac4e49823f2250c208d7b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.18799
+      objectReference: {fileID: 0}
+    - target: {fileID: 2884292436511908319, guid: d06c6bb704dac4e49823f2250c208d7b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.83347225
+      objectReference: {fileID: 0}
+    - target: {fileID: 2884292436511908319, guid: d06c6bb704dac4e49823f2250c208d7b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.028110743
+      objectReference: {fileID: 0}
+    - target: {fileID: 2884292436511908319, guid: d06c6bb704dac4e49823f2250c208d7b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2884292436511908319, guid: d06c6bb704dac4e49823f2250c208d7b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2884292436511908319, guid: d06c6bb704dac4e49823f2250c208d7b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2884292436511908319, guid: d06c6bb704dac4e49823f2250c208d7b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2884292436511908319, guid: d06c6bb704dac4e49823f2250c208d7b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2884292436511908319, guid: d06c6bb704dac4e49823f2250c208d7b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2884292436511908319, guid: d06c6bb704dac4e49823f2250c208d7b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397476816848233461, guid: d06c6bb704dac4e49823f2250c208d7b, type: 3}
+      propertyPath: m_Name
+      value: NpcDialogo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d06c6bb704dac4e49823f2250c208d7b, type: 3}
+--- !u!4 &5350528885306542297 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2884292436511908319, guid: d06c6bb704dac4e49823f2250c208d7b, type: 3}
+  m_PrefabInstance: {fileID: 7081898440670226694}
   m_PrefabAsset: {fileID: 0}
