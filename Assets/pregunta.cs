@@ -28,23 +28,39 @@ public class pregunta : MonoBehaviour
     [SerializeField] public GameObject mensajeCorrecto;
     [SerializeField] public GameObject mensajeInCorrecto; 
 
-
     [SerializeField] public DoorController doorController;     
-    
     
     private Aviso aviso;
     
-    public FatherMoment1 fatherMoment1Script;
+    [SerializeField] public FatherMoment1 fatherMoment1Script;
     
     void Start()
     {
-        DoorController doorController = puerta.GetComponent<DoorController>();
+        // Corregido: Asignar al campo de la clase, no crear una variable local
+        doorController = puerta.GetComponent<DoorController>();
         aviso = GetComponent<Aviso>();
         canvasPregunta.SetActive(false);
         mensajeCorrecto.SetActive(false);
         mensajeInCorrecto.SetActive(false);
         
         jugador = GameObject.FindGameObjectWithTag("Player");
+        
+        // Si fatherMoment1Script no ha sido asignado en el inspector, intentamos encontrarlo
+        if (fatherMoment1Script == null)
+        {
+            fatherMoment1Script = FindObjectOfType<FatherMoment1>();
+        }
+
+        // Verificar que todos los componentes necesarios estén asignados
+        if (puerta == null)
+        {
+            Debug.LogError("La puerta no está asignada en el inspector para " + gameObject.name);
+        }
+        
+        if (doorController == null && puerta != null)
+        {
+            Debug.LogWarning("No se encontró DoorController en la puerta. Verificar que la puerta tenga este componente: " + puerta.name);
+        }
     }
 
     void Update()
@@ -55,7 +71,6 @@ public class pregunta : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E) && intentosRestantes > 0)
             {
-                
                 MostrarPregunta();
                 sonidoA.Play();
             }
@@ -64,22 +79,22 @@ public class pregunta : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.Alpha2)) { revisarR(1); }
                 if (Input.GetKeyDown(KeyCode.Alpha3)) { revisarR(2); }
                 if (Input.GetKeyDown(KeyCode.Alpha4)) { revisarR(3); }
-                if (Input.GetKeyDown(KeyCode.Escape)) { cerrar(); }
-                                                        
+                if (Input.GetKeyDown(KeyCode.Escape)) { cerrar(); }                                         
             }
-            
         }
     }
 
     void MostrarPregunta()
     {
-        
         canvasPregunta.SetActive(true);
-        fatherMoment1Script.puedeMoverse = false; 
+        if (fatherMoment1Script != null)
+        {
+            fatherMoment1Script.puedeMoverse = false;
+        }
         textoPregunta.text = preguntaT;
         textosRespuestas[0].text = re1;
-        textosRespuestas[1].text = re2 ;
-        textosRespuestas[2].text = re3 ;
+        textosRespuestas[1].text = re2;
+        textosRespuestas[2].text = re3;
         textosRespuestas[3].text = re4;
     }
 
@@ -121,13 +136,25 @@ public class pregunta : MonoBehaviour
         
         mensajeCorrecto.SetActive(false);
         
-        
+        // Aseguramos que se abra la puerta y luego se destruya
         if (doorController != null)
-            {
-                doorController.AddNewDoorOpen();
-            }
-        Destroy(puerta);        
+        {
+            Debug.Log("Llamando a AddNewDoorOpen para la puerta: " + puerta.name);
+            doorController.AddNewDoorOpen();
+        }
+        else
+        {
+            Debug.LogWarning("DoorController es null, no se puede llamar AddNewDoorOpen");
+        }
+        
+        // Aseguramos que la puerta se destruya
+        if (puerta != null)
+        {
+            Debug.Log("Destruyendo la puerta: " + puerta.name);
+            Destroy(puerta);
+        }
     }
+    
     IEnumerator EsperarI()
     {
         cerrar();
@@ -152,21 +179,24 @@ public class pregunta : MonoBehaviour
     void cerrar()
     {
         canvasPregunta.SetActive(false);
-        fatherMoment1Script.puedeMoverse = true; 
+        if (fatherMoment1Script != null)
+        {
+            fatherMoment1Script.puedeMoverse = true;
+        }
     }
 
     void DesactivarScript()
     {
         cerrar();
         this.enabled = false;
-        fatherMoment1Script.puedeMoverse = true;
+        if (fatherMoment1Script != null)
+        {
+            fatherMoment1Script.puedeMoverse = true;
+        }
         if (aviso != null)
         {
             aviso.OcultarUI();
             aviso.enabled = false;
-            
         }
-            
-            
     }
 }
