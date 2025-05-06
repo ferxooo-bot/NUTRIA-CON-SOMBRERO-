@@ -108,7 +108,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 500
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -181,15 +181,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7d2c84796a7ba4296d7fc6b4ebb8f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jaulaId: 
+  nombreCinematica: Introduction
+  animal: {fileID: 0}
+  jaulaId: 1
   needKey: 1
   numberKeysNeeded: 1
   closedSprite: {fileID: -3777717161865558223, guid: 7087ca9da7355044b92668759aacb3bf, type: 3}
   openedSprite: {fileID: 2079641061864409962, guid: 7087ca9da7355044b92668759aacb3bf, type: 3}
   jaulaDerecha: {fileID: 7110934094553632247}
-  rangoDeteccion: 2
+  rangoDeteccion: 7
   audioSource: {fileID: 883536426858243110}
-  openJaulaSound: {fileID: 0}
+  openJaulaSound: {fileID: 8300000, guid: 9f25ed10e32c24c23a3cac1e46c48722, type: 3}
   needKeySound: {fileID: 8300000, guid: df071d3749b3f6d0db110e5dd7a16567, type: 3}
 --- !u!61 &3496231133375568639
 BoxCollider2D:
