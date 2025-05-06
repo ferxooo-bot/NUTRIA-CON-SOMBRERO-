@@ -1,7 +1,10 @@
 using UnityEngine;
+using System.Collections;
 
 public class JaulaController : MonoBehaviour
 {
+    [SerializeField] private string nombreCinematica = "Introduction";
+    [SerializeField] public GameObject animal;
     [Header("Cage Data")]
     public string jaulaId;
     public bool needKey = true;
@@ -86,9 +89,9 @@ public class JaulaController : MonoBehaviour
         {
             float distancia = Vector2.Distance(transform.position, jugador.transform.position);
             
-            if (distancia < rangoDeteccion && Input.GetKeyDown(KeyCode.E))
+            if (distancia < rangoDeteccion && Input.GetKeyDown(KeyCode.S))
             {
-                Debug.Log("Se presionó E cerca de la jaula");
+                Debug.Log("Se presionó S cerca de la jaula");
                 TryOpenJaula();
             }
         }
@@ -154,6 +157,7 @@ public class JaulaController : MonoBehaviour
         }
         
         hasBeenOpen = true;
+        Destroy(animal); 
         
         // Eliminar la jaula derecha si existe
         if (jaulaDerecha != null)
@@ -174,7 +178,10 @@ public class JaulaController : MonoBehaviour
         
         // Actualizar el estado visual
         SetJaulaOpenState();
+
+        StartCoroutine(PlayCinematicWithDelay());
         
+
         Debug.Log("Jaula abierta y guardada en Save System");
     }
     
@@ -186,5 +193,12 @@ public class JaulaController : MonoBehaviour
             audioSource.clip = clip;
             audioSource.Play();
         }
+    }
+    private IEnumerator PlayCinematicWithDelay()
+    {
+
+        yield return new WaitForSeconds(2f); // espera 2 segundos
+        CinematicSystem.Instance.PlayCinematic(nombreCinematica);
+        Destroy(animal);
     }
 }
