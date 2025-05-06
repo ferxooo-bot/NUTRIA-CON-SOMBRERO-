@@ -9,6 +9,7 @@ TagManager:
   - Saltable
   - MovingPlatform
   - Agua
+  - Fish
   layers:
   - Default
   - TransparentFX
@@ -17,11 +18,11 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
-  - 
-  - 
-  - 
-  - 
+  - fishOriginal
+  - Predator
+  - Medusa
+  - Turtle
+  - RedSchoolFish
   - 
   - 
   - 
