@@ -348,6 +348,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6061033031231214457, guid: f3a58efa322eda8d9a5db2341cc02f56, type: 3}
+      propertyPath: m_margin.x
+      value: -8.589355
+      objectReference: {fileID: 0}
     - target: {fileID: 7249484726143610032, guid: f3a58efa322eda8d9a5db2341cc02f56, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -360,17 +364,33 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7249484726143610032, guid: f3a58efa322eda8d9a5db2341cc02f56, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7524529081622844522, guid: f3a58efa322eda8d9a5db2341cc02f56, type: 3}
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 8452263737547178470, guid: f3a58efa322eda8d9a5db2341cc02f56, type: 3}
-      propertyPath: m_AnchoredPosition.x
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8452263737547178470, guid: f3a58efa322eda8d9a5db2341cc02f56, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452263737547178470, guid: f3a58efa322eda8d9a5db2341cc02f56, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 879.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452263737547178470, guid: f3a58efa322eda8d9a5db2341cc02f56, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 14.817
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452263737547178470, guid: f3a58efa322eda8d9a5db2341cc02f56, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -105
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -441,6 +461,61 @@ PrefabInstance:
       propertyPath: subtitleText
       value: 
       objectReference: {fileID: 429512943}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[0].image
+      value: 
+      objectReference: {fileID: 440116168253700437, guid: 027fd2ed35de1540ca7ce45c6b22923e, type: 3}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[1].image
+      value: 
+      objectReference: {fileID: -5259544211349711088, guid: 40d5c0253691cb9df92d87a64b17ee0c, type: 3}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[2].image
+      value: 
+      objectReference: {fileID: -4233041983546171813, guid: 0d0fa30f5b89479cea546356dabf6e6d, type: 3}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[3].image
+      value: 
+      objectReference: {fileID: -9215352367214704073, guid: 1dd2d71fb72b1ac94b98b6b47e821baa, type: 3}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[0].duration
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[0].subtitle
+      value: "\"Ah\xED est\xE1s, Lita. Vamos a sacarte de aqu\xED.\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[1].duration
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[1].subtitle
+      value: "\"\xA1Gracias, Nutria! Soy una lagartija andina y estoy en peligro
+        de extinci\xF3n.\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[2].duration
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[2].subtitle
+      value: "\"\xA1Voy de regreso a Facatativ\xE1!\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[3].duration
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[3].subtitle
+      value: "La lagartija andina vive en zonas fr\xEDas y h\xFAmedas de monta\xF1a.
+        Est\xE1 en peligro por la deforestaci\xF3n y el cambio clim\xE1tico.\n \xA1Animal
+        liberado! Sigue cuidando la naturaleza.\n"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
