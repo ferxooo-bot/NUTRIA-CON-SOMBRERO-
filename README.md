@@ -28,8 +28,8 @@ El jugador asume el rol de una nutria que trata de regresar a su hábitat natura
 - **Lenguaje:** C#
 - **Plataforma:** PC
 
-## 📌 Imagenes 
--Interfaz donde permite crear partida con nombre y renudar partida
+## 📌 Imágenes 
+-Interfaz donde permite crear partida con nombre y reanudar partida
 ![Una nutria curiosa](img/4.png)
 -Nivel 1 
 ![Una nutria curiosa](img/1.png)
