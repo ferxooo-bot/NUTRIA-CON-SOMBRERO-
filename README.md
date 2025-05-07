@@ -34,9 +34,9 @@ El jugador asume el rol de una nutria que trata de regresar a su hábitat natura
 -Nivel 1 
 ![Una nutria curiosa](img/1.png)
 -Nivel 1
-![Una nutria curiosa](img/2.png)
+![Una nutria curiosa](img/5.png)
 -Nivel 2 
-![Una nutria curiosa](img/3.png)
+![Una nutria curiosa](img/2.png)
 
 
 
