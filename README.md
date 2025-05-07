@@ -29,11 +29,15 @@ El jugador asume el rol de una nutria que trata de regresar a su hábitat natura
 - **Plataforma:** PC
 
 ## 📌 Imagenes 
-![Una nutria curiosa](img/1.png)
-
-![Una nutria curiosa](img/2.png)
-![Una nutria curiosa](img/3.png)
+-Interfaz donde permite crear partida con nombre y renudar partida
 ![Una nutria curiosa](img/4.png)
+-Nivel 1 
+![Una nutria curiosa](img/1.png)
+-Nivel 1
+![Una nutria curiosa](img/2.png)
+-Nivel 2 
+![Una nutria curiosa](img/3.png)
+
 
 
 
