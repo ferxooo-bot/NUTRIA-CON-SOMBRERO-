@@ -21,7 +21,6 @@ El jugador asume el rol de una nutria que trata de regresar a su hábitat natura
 - Movimiento en 2D con elementos de exploración, sigilo y resolución de acertijos.
 - Mecánicas simples: nadar, saltar, interactuar con objetos y animales.
 - Visuales diseñados para niños, con narración opcional y escenas sencillas.
-- Sistema de puntuación y retroalimentación para premiar acciones positivas (como limpiar basura o ayudar a los animales).
 
 ## 🛠️ Tecnologías
 
@@ -29,11 +28,16 @@ El jugador asume el rol de una nutria que trata de regresar a su hábitat natura
 - **Lenguaje:** C#
 - **Plataforma:** PC
 
-## 📌 Contenido Planeado
+## 📌 Imagenes 
+![Una nutria curiosa](img/1.png)
 
-- Varios niveles con diferentes entornos ambientales.
-- Objetos coleccionables y UI básica (menú, puntuación, etc.).
-- Sistema de progresión simple con recompensas cosméticas.
+![Una nutria curiosa](img/2.png)
+![Una nutria curiosa](img/3.png)
+![Una nutria curiosa](img/4.png)
+
+
+
+
 
 ---
 
