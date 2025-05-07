@@ -183,6 +183,63 @@ PrefabInstance:
       propertyPath: subtitleText
       value: 
       objectReference: {fileID: 2038056016}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[0].image
+      value: 
+      objectReference: {fileID: -1624519234212452020, guid: ea6b7772073120d5288d847ff33ee94f, type: 3}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[1].image
+      value: 
+      objectReference: {fileID: 5550709636029300777, guid: 4c9f6ce6ffef2132798b92296763da19, type: 3}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[2].image
+      value: 
+      objectReference: {fileID: 7183266892038992175, guid: e55fcf8c8bf0dac7ab9eb93a9b56d7b5, type: 3}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[3].image
+      value: 
+      objectReference: {fileID: -4948830214061370685, guid: d8d34047a7c20c061abce6c18f53e8ca, type: 3}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[4].image
+      value: 
+      objectReference: {fileID: 21300000, guid: b109b13f8326845e1bd426ec2665005d, type: 3}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[5].image
+      value: 
+      objectReference: {fileID: 21300000, guid: 19f94bafd5b7b4c50aebc90871b58f75, type: 3}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[0].subtitle
+      value: "Hermoso Cucarachero, por f\xEDn te encuentro."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[1].subtitle
+      value: Se libre, vuelve a tu hogar por favor, lejos de estas escorias
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[2].subtitle
+      value: Canta libre por el mundo.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[3].subtitle
+      value: Vuela y disfruta de tu vida como debe de ser
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[4].subtitle
+      value: "No eres el \xFAnico animal..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[5].duration
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[5].subtitle
+      value: "Lo que est\xE1 claro es que debes regresar a tu hogar y salvar a todos
+        los animales que puedas"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -293,12 +350,20 @@ PrefabInstance:
       value: Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 8452263737547178470, guid: f3a58efa322eda8d9a5db2341cc02f56, type: 3}
-      propertyPath: m_AnchoredPosition.x
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8452263737547178470, guid: f3a58efa322eda8d9a5db2341cc02f56, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452263737547178470, guid: f3a58efa322eda8d9a5db2341cc02f56, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452263737547178470, guid: f3a58efa322eda8d9a5db2341cc02f56, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -105
+      value: 57
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -224,12 +224,20 @@ PrefabInstance:
       value: Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 8452263737547178470, guid: f3a58efa322eda8d9a5db2341cc02f56, type: 3}
-      propertyPath: m_AnchoredPosition.x
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8452263737547178470, guid: f3a58efa322eda8d9a5db2341cc02f56, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452263737547178470, guid: f3a58efa322eda8d9a5db2341cc02f56, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452263737547178470, guid: f3a58efa322eda8d9a5db2341cc02f56, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -105
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -311,6 +319,34 @@ PrefabInstance:
       propertyPath: subtitleText
       value: 
       objectReference: {fileID: 162770570}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[0].image
+      value: 
+      objectReference: {fileID: 4258269944910544050, guid: e24fc6765ca54325a9ebdf686ee7d44e, type: 3}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[1].image
+      value: 
+      objectReference: {fileID: -576223554243479252, guid: 5cb2084e2e7a2941480c2ff729b37c0f, type: 3}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[2].image
+      value: 
+      objectReference: {fileID: -4307453151735910247, guid: fc9e3d64364e5155fb53af7410777690, type: 3}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[0].subtitle
+      value: "Ayyy Zorro Cangrejero \xA1C\xF3mo te amo!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[1].subtitle
+      value: "Tranquilo, est\xE1s a salvo ahora..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079756738215289936, guid: 389451614480f938482120c8e88f2da8, type: 3}
+      propertyPath: slides.Array.data[2].subtitle
+      value: 'Se libre, vuelve a tu hogar, con tu familia '
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
